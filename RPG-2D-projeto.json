@@ -7,7 +7,7 @@
     "revision": 0
   },
   "properties": {
-    "adaptGameResolutionAtRuntime": false,
+    "adaptGameResolutionAtRuntime": true,
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": false,
@@ -15,18 +15,18 @@
     "packageName": "com.example.gamename",
     "pixelsRounding": true,
     "projectUuid": "5a4ddc37-2354-4343-b21e-0eee28bebace",
-    "scaleMode": "nearest",
-    "sizeOnStartupMode": "",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "scaleOuter",
     "templateSlug": "",
     "version": "1.0.0",
     "name": "RPG-2D-projeto",
     "description": "",
     "author": "",
-    "windowWidth": 1080,
+    "windowWidth": 1280,
     "windowHeight": 720,
     "latestCompilationDirectory": "",
-    "maxFPS": 60,
-    "minFPS": 20,
+    "maxFPS": 120,
+    "minFPS": 40,
     "verticalSync": false,
     "platformSpecificAssets": {
       "android-icon-144": "",
@@ -8264,6 +8264,53 @@
         "name": "mobHealthBar_bg2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Bitmap texts/GDevelop/15c1797cbcb41c3a753b6bbb21cfa60284cfaf81c9891c3abf78a8e0e1cacf59_8BitOperatorPlus8Regular_Edited.png",
+          "name": "8BitOperatorPlus8Regular_Edited.png"
+        }
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Bitmap texts/GDevelop/6b410f07a3a02e721a49d41795e84b56707ef28ac4d095d55f1fd1093760e134_8BitOperatorPlus8Regular_Edited.fnt",
+          "name": "8BitOperatorPlus8Regular_Edited.fnt"
+        }
+      },
+      {
+        "file": "assets/Copper Bar Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Copper Bar Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/1310fa26ab130bebfe59cdfa310836bfed3ca8d190cfed17a7dd3bdfe0a2a87f_Copper Bar Border.png",
+          "name": "Copper Bar Border.png"
+        }
+      },
+      {
+        "file": "assets/Framed Pixel Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Framed Pixel Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/ed31faa46e5c04883605d72470e0f3bfe1c2e679dc6a4a632ab03e105866ff8b_Framed Pixel Red Fill Bar.png",
+          "name": "Framed Pixel Red Fill Bar.png"
+        }
       }
     ]
   },
@@ -15301,14 +15348,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
+                    "x": 160,
                     "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 85,
+                    "y": 52
                   },
                   "customCollisionMask": [
                     [
@@ -15460,7 +15507,8 @@
         "BarRightPadding": 10,
         "BarBottomPadding": 8,
         "BarLeftPadding": 10,
-        "PreviousHighValueDuration": 0
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true
       }
     },
     {
@@ -20746,6 +20794,25 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "4823f168c941818ff4e0396fc6a3ccec2dc18ade7d350364d57d4f8f096cc9b9",
+      "name": "mobname",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Text",
+        "opacity": 255,
+        "scale": 0.4,
+        "fontSize": 20,
+        "tint": "0;0;0",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -20834,6 +20901,9 @@
       },
       {
         "objectName": "items"
+      },
+      {
+        "objectName": "mobname"
       }
     ]
   },
@@ -21340,7 +21410,7 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": true,
+        "grid": false,
         "gridType": "rectangular",
         "gridWidth": 16,
         "gridHeight": 16,
@@ -21350,8 +21420,8 @@
         "gridOffsetZ": 0,
         "gridColor": 1263086,
         "gridAlpha": 0.2,
-        "snap": true,
-        "zoomFactor": 2.060679135269847,
+        "snap": false,
+        "zoomFactor": 0.9934433498261189,
         "windowMask": true,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -22371,15 +22441,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 93.0232558139535,
+          "depth": 1,
+          "height": 115,
           "keepRatio": true,
           "layer": "HUB_game",
           "name": "Life_Mana_Stamina",
           "persistentUuid": "985bc41b-c9cb-42c8-8ef9-1443b5143cec",
-          "width": 250,
+          "width": 306,
           "x": 0,
-          "y": 1,
+          "y": 20,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -22405,15 +22475,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 10.704225352112687,
+          "depth": 1,
+          "height": 14,
           "keepRatio": true,
           "layer": "HUB_game",
           "name": "Life_bar",
           "persistentUuid": "4ce9756c-68e0-434a-b1e3-d6b02493a858",
-          "width": 190,
-          "x": 90,
-          "y": 33,
+          "width": 246,
+          "x": 110,
+          "y": 60,
           "zOrder": 310,
           "numberProperties": [],
           "stringProperties": [],
@@ -22422,15 +22492,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 11.549295774647872,
+          "depth": 1,
+          "height": 14,
           "keepRatio": true,
           "layer": "HUB_game",
           "name": "mana_bar",
           "persistentUuid": "31e8c4fb-0859-4299-815c-0edc697836fd",
-          "width": 205,
-          "x": 53,
-          "y": 42,
+          "width": 251,
+          "x": 64,
+          "y": 70,
           "zOrder": 311,
           "numberProperties": [],
           "stringProperties": [],
@@ -22439,15 +22509,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 11.43661971830986,
+          "depth": 1,
+          "height": 14,
           "keepRatio": true,
           "layer": "HUB_game",
           "name": "stamina_bar",
           "persistentUuid": "7c096aa4-67d4-4315-9030-dd96cf926631",
-          "width": 203,
-          "x": 50,
-          "y": 56,
+          "width": 249,
+          "x": 61,
+          "y": 87,
           "zOrder": 312,
           "numberProperties": [],
           "stringProperties": [],
@@ -22682,9 +22752,9 @@
           "layer": "HUB_game",
           "name": "XP_HUD",
           "persistentUuid": "5458aac1-e93a-470b-9dd3-4402f5f76f9a",
-          "width": 520,
-          "x": 288,
-          "y": 1,
+          "width": 1369,
+          "x": -1,
+          "y": -21,
           "zOrder": 324,
           "numberProperties": [],
           "stringProperties": [],
@@ -22693,15 +22763,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 126.47058823529423,
+          "depth": 1,
+          "height": 149,
           "keepRatio": true,
           "layer": "HUB_game",
           "name": "hub_level_background",
           "persistentUuid": "d7d4db90-d85c-449d-b920-689f8fdb5d83",
-          "width": 150,
-          "x": 47,
-          "y": 52,
+          "width": 174,
+          "x": 61,
+          "y": 87,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -22710,15 +22780,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 70,
+          "depth": 1,
+          "height": 86,
           "keepRatio": true,
           "layer": "HUB_game",
           "name": "levels_numbers",
           "persistentUuid": "33523bb8-0203-47f7-b9ca-03e61d762554",
-          "width": 70,
-          "x": 22,
-          "y": 3,
+          "width": 86,
+          "x": 27,
+          "y": 22,
           "zOrder": 325,
           "numberProperties": [],
           "stringProperties": [],
@@ -23754,8 +23824,8 @@
           "name": "UI_inventory",
           "persistentUuid": "3d653da7-ab17-4035-b0fd-10e41468b37a",
           "width": 500,
-          "x": 277,
-          "y": 208,
+          "x": 1254,
+          "y": 158,
           "zOrder": 340,
           "numberProperties": [],
           "stringProperties": [],
@@ -23771,8 +23841,8 @@
           "name": "button_inventory",
           "persistentUuid": "c3047eed-1f55-4110-87c7-1f947cb7ca11",
           "width": 32,
-          "x": 739,
-          "y": 214,
+          "x": 1216,
+          "y": 164,
           "zOrder": 341,
           "numberProperties": [],
           "stringProperties": [],
@@ -23788,8 +23858,8 @@
           "name": "slot_item_display",
           "persistentUuid": "7e104547-f697-4a27-b3b4-cfd2913d5e54",
           "width": 44,
-          "x": 500,
-          "y": 260,
+          "x": 977,
+          "y": 210,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -23805,8 +23875,8 @@
           "name": "slot_item_display",
           "persistentUuid": "26e746d4-1b39-4e37-a5d9-86b67798ae4b",
           "width": 44,
-          "x": 552,
-          "y": 261,
+          "x": 1029,
+          "y": 211,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -23828,8 +23898,8 @@
           "name": "slot_item_display",
           "persistentUuid": "572fefbf-2843-4bf4-ab0d-1b64546bcb7d",
           "width": 44,
-          "x": 602,
-          "y": 261,
+          "x": 1079,
+          "y": 211,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -23851,8 +23921,8 @@
           "name": "slot_item_display",
           "persistentUuid": "625d43b6-ca7e-4e0f-93f0-d2bbca5a9397",
           "width": 44,
-          "x": 652,
-          "y": 261,
+          "x": 1129,
+          "y": 211,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -23874,8 +23944,8 @@
           "name": "slot_item_display",
           "persistentUuid": "c240618b-df9d-413f-9434-bc1d4ecc8888",
           "width": 44,
-          "x": 702,
-          "y": 261,
+          "x": 1179,
+          "y": 211,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -23897,8 +23967,8 @@
           "name": "slot_item_display",
           "persistentUuid": "d58f84b9-496b-43f7-a642-c0e006ee970d",
           "width": 44,
-          "x": 502,
-          "y": 311,
+          "x": 979,
+          "y": 261,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -23920,8 +23990,8 @@
           "name": "slot_item_display",
           "persistentUuid": "811166b7-cf64-47b8-a5b1-f511385585cc",
           "width": 44,
-          "x": 552,
-          "y": 311,
+          "x": 1029,
+          "y": 261,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -23943,8 +24013,8 @@
           "name": "slot_item_display",
           "persistentUuid": "6d5640e1-7a64-419b-946c-090c56db93aa",
           "width": 44,
-          "x": 602,
-          "y": 311,
+          "x": 1079,
+          "y": 261,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -23966,8 +24036,8 @@
           "name": "slot_item_display",
           "persistentUuid": "9cc26cb3-0860-4a06-b500-705739777ee6",
           "width": 44,
-          "x": 652,
-          "y": 311,
+          "x": 1129,
+          "y": 261,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -23989,8 +24059,8 @@
           "name": "slot_item_display",
           "persistentUuid": "2ee8875c-9576-4cf5-ad9a-bc0ffac3d5e4",
           "width": 44,
-          "x": 702,
-          "y": 311,
+          "x": 1179,
+          "y": 261,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -24012,8 +24082,8 @@
           "name": "slot_item_display",
           "persistentUuid": "a508d12c-76da-4f14-8ae6-d14015ab25f9",
           "width": 44,
-          "x": 502,
-          "y": 361,
+          "x": 979,
+          "y": 311,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -24035,8 +24105,8 @@
           "name": "slot_item_display",
           "persistentUuid": "79ae15ec-5596-430c-944f-489afa94f057",
           "width": 44,
-          "x": 552,
-          "y": 361,
+          "x": 1029,
+          "y": 311,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -24058,8 +24128,8 @@
           "name": "slot_item_display",
           "persistentUuid": "46e3692f-22c3-41e8-b333-2e0778df2ade",
           "width": 44,
-          "x": 602,
-          "y": 361,
+          "x": 1079,
+          "y": 311,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -24081,8 +24151,8 @@
           "name": "slot_item_display",
           "persistentUuid": "9b9f45e3-798d-47ad-8715-1541d8414c8d",
           "width": 44,
-          "x": 652,
-          "y": 361,
+          "x": 1129,
+          "y": 311,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -24104,8 +24174,8 @@
           "name": "slot_item_display",
           "persistentUuid": "12c28ca2-a2ff-4e0b-ba66-fa6581cb8845",
           "width": 44,
-          "x": 702,
-          "y": 361,
+          "x": 1179,
+          "y": 311,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -24127,8 +24197,8 @@
           "name": "slot_item_display",
           "persistentUuid": "94acd87f-7e9f-467d-a58b-4c3db7901432",
           "width": 44,
-          "x": 502,
-          "y": 411,
+          "x": 979,
+          "y": 361,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -24150,8 +24220,8 @@
           "name": "slot_item_display",
           "persistentUuid": "9b74076a-7fea-4ef4-ac94-4fea72f3f502",
           "width": 44,
-          "x": 552,
-          "y": 411,
+          "x": 1029,
+          "y": 361,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -24173,8 +24243,8 @@
           "name": "slot_item_display",
           "persistentUuid": "cfd4c0d3-2530-4e47-b0d7-b6016f7ce477",
           "width": 44,
-          "x": 602,
-          "y": 411,
+          "x": 1079,
+          "y": 361,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -24196,8 +24266,8 @@
           "name": "slot_item_display",
           "persistentUuid": "61147feb-fcce-4d70-9929-4b4a782a9596",
           "width": 44,
-          "x": 652,
-          "y": 411,
+          "x": 1129,
+          "y": 361,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -24219,8 +24289,8 @@
           "name": "slot_item_display",
           "persistentUuid": "7b3ea568-dd96-4c0c-a5c3-f3e185a3795c",
           "width": 44,
-          "x": 702,
-          "y": 411,
+          "x": 1179,
+          "y": 361,
           "zOrder": 345,
           "numberProperties": [],
           "stringProperties": [],
@@ -24242,8 +24312,8 @@
           "name": "Window_dropItem",
           "persistentUuid": "7698d54b-74d5-47fc-809e-e096f286b095",
           "width": 144,
-          "x": 451,
-          "y": 302,
+          "x": 928,
+          "y": 252,
           "zOrder": 360,
           "numberProperties": [],
           "stringProperties": [],
@@ -24259,8 +24329,8 @@
           "name": "button_yes",
           "persistentUuid": "bcb0290e-1511-4536-9930-a89709fedda7",
           "width": 32,
-          "x": 483,
-          "y": 371,
+          "x": 960,
+          "y": 321,
           "zOrder": 361,
           "numberProperties": [],
           "stringProperties": [],
@@ -24276,8 +24346,8 @@
           "name": "button_not",
           "persistentUuid": "a335c10a-9b15-4e72-882c-88019ea650ba",
           "width": 32,
-          "x": 531,
-          "y": 371,
+          "x": 1008,
+          "y": 321,
           "zOrder": 361,
           "numberProperties": [],
           "stringProperties": [],
@@ -24293,8 +24363,8 @@
           "name": "Window_dropItem_quantity",
           "persistentUuid": "a4573f38-8818-4ae6-9969-882d9024b3d2",
           "width": 200,
-          "x": 425,
-          "y": 282,
+          "x": 902,
+          "y": 232,
           "zOrder": 349,
           "numberProperties": [],
           "stringProperties": [],
@@ -24310,8 +24380,8 @@
           "name": "button_yes_quantity",
           "persistentUuid": "3bbc3fab-0ceb-4f1f-ab6b-1f25118697d9",
           "width": 32,
-          "x": 475,
-          "y": 395,
+          "x": 952,
+          "y": 345,
           "zOrder": 350,
           "numberProperties": [],
           "stringProperties": [],
@@ -24327,8 +24397,8 @@
           "name": "button_not_quantity",
           "persistentUuid": "f552a8ed-fe32-4453-8e6c-059d0b21e177",
           "width": 32,
-          "x": 543,
-          "y": 395,
+          "x": 1020,
+          "y": 345,
           "zOrder": 351,
           "numberProperties": [],
           "stringProperties": [],
@@ -24344,8 +24414,8 @@
           "name": "add_button",
           "persistentUuid": "7bc8595e-fb08-4130-a073-3cee0c0c5801",
           "width": 30,
-          "x": 549,
-          "y": 354,
+          "x": 1026,
+          "y": 304,
           "zOrder": 352,
           "numberProperties": [],
           "stringProperties": [],
@@ -24361,8 +24431,8 @@
           "name": "subtract_button",
           "persistentUuid": "79cddcdb-951a-40b0-938d-e0e0577be0e6",
           "width": 30,
-          "x": 470,
-          "y": 354,
+          "x": 947,
+          "y": 304,
           "zOrder": 353,
           "numberProperties": [],
           "stringProperties": [],
@@ -24378,8 +24448,8 @@
           "name": "quantityOf_items_forDrop",
           "persistentUuid": "96cc74fd-08b9-4d18-9601-4a8f8b473dac",
           "width": 55,
-          "x": 497,
-          "y": 369,
+          "x": 974,
+          "y": 319,
           "zOrder": 354,
           "numberProperties": [],
           "stringProperties": [],
@@ -24394,8 +24464,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "54fc4645-b815-4609-beb7-519095ff8a6a",
           "width": 0,
-          "x": 534,
-          "y": 261,
+          "x": 1011,
+          "y": 211,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24410,8 +24480,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "7960f669-eaa2-45db-b2c1-000d0ab57a17",
           "width": 0,
-          "x": 584,
-          "y": 261,
+          "x": 1061,
+          "y": 211,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24432,8 +24502,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "6f5b2f0a-4149-4f25-892a-fa010c4cdb29",
           "width": 0,
-          "x": 634,
-          "y": 261,
+          "x": 1111,
+          "y": 211,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24454,8 +24524,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "e09b1760-4368-48b3-9bed-38d3a5bb3503",
           "width": 0,
-          "x": 684,
-          "y": 261,
+          "x": 1161,
+          "y": 211,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24476,8 +24546,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "73466d09-0ce7-4011-8a7e-a680aadfd079",
           "width": 0,
-          "x": 734,
-          "y": 261,
+          "x": 1211,
+          "y": 211,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24498,8 +24568,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "15337f5f-a0fa-4620-9a6f-1883fb37fa15",
           "width": 0,
-          "x": 534,
-          "y": 311,
+          "x": 1011,
+          "y": 261,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24520,8 +24590,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "2758abce-2885-4728-8f1d-5976fff5c5d9",
           "width": 0,
-          "x": 584,
-          "y": 311,
+          "x": 1061,
+          "y": 261,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24542,8 +24612,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "59a1a0e2-4d5f-4f26-8180-2647ab170c65",
           "width": 0,
-          "x": 634,
-          "y": 311,
+          "x": 1111,
+          "y": 261,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24564,8 +24634,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "6bb2df0a-0236-4e59-9cbc-11981e97c10b",
           "width": 0,
-          "x": 683,
-          "y": 311,
+          "x": 1160,
+          "y": 261,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24586,8 +24656,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "057a540b-d324-494f-b522-347b0292613a",
           "width": 0,
-          "x": 734,
-          "y": 311,
+          "x": 1211,
+          "y": 261,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24608,8 +24678,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "e9b3d833-50ca-48bc-9cb7-1acac7ff5211",
           "width": 0,
-          "x": 534,
-          "y": 361,
+          "x": 1011,
+          "y": 311,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24630,8 +24700,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "ecbbe66d-c5d1-4006-b814-8dc7360c1073",
           "width": 0,
-          "x": 584,
-          "y": 361,
+          "x": 1061,
+          "y": 311,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24652,8 +24722,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "cffd411e-96db-4ad4-b784-ab4667a001b3",
           "width": 0,
-          "x": 634,
-          "y": 361,
+          "x": 1111,
+          "y": 311,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24674,8 +24744,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "e76ae436-b9a8-41aa-a8d6-e386120284d0",
           "width": 0,
-          "x": 684,
-          "y": 361,
+          "x": 1161,
+          "y": 311,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24696,8 +24766,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "1d3d75c9-6923-4f2d-aa37-09350bfb47f0",
           "width": 0,
-          "x": 734,
-          "y": 361,
+          "x": 1211,
+          "y": 311,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24718,8 +24788,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "5d5d5a74-13c3-492c-b710-206c9c2c8db8",
           "width": 0,
-          "x": 534,
-          "y": 411,
+          "x": 1011,
+          "y": 361,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24740,8 +24810,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "c4695e5b-852b-4d49-9aab-d51defacb395",
           "width": 0,
-          "x": 584,
-          "y": 411,
+          "x": 1061,
+          "y": 361,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24762,8 +24832,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "eedfc1ab-8653-4c73-af80-77c8992f94f4",
           "width": 0,
-          "x": 634,
-          "y": 411,
+          "x": 1111,
+          "y": 361,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24784,8 +24854,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "06a25ac8-8b77-41c9-a53e-50019e711e6a",
           "width": 0,
-          "x": 683,
-          "y": 411,
+          "x": 1160,
+          "y": 361,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -24806,8 +24876,8 @@
           "name": "txt_item_slot_quantity",
           "persistentUuid": "3b32fdae-b579-4013-a4f2-3a078441a9b2",
           "width": 0,
-          "x": 734,
-          "y": 411,
+          "x": 1211,
+          "y": 361,
           "zOrder": 355,
           "numberProperties": [],
           "stringProperties": [],
@@ -25065,101 +25135,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "0ee9a6c7-aab8-4f7c-b7df-f479545e3333",
-          "width": 0,
-          "x": 304,
-          "y": 1072,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "b8ffa02d-663e-4472-ad13-4293a95a985b",
-          "width": 0,
-          "x": 352,
-          "y": 992,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "7af13605-330c-4e91-8c77-93a39fecb53a",
-          "width": 0,
-          "x": 272,
-          "y": 1024,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "a0ab6c5d-aa4e-47ac-a2c0-0addebf36492",
-          "width": 0,
-          "x": 336,
-          "y": 1040,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "a58eef3e-4edd-4691-80d4-3e5de197a0b0",
-          "width": 0,
-          "x": 224,
-          "y": 992,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "depth": 0.878048780487805,
           "height": 36.87804878048781,
@@ -25168,89 +25143,9 @@
           "name": "drag_item_display",
           "persistentUuid": "8f9c3d1c-7717-4b0c-b93a-0eda641d70fe",
           "width": 36,
-          "x": 773,
-          "y": 357,
+          "x": 1295,
+          "y": 288,
           "zOrder": 10000,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "17d91634-c0fa-4c1b-9af9-71ead1aeaede",
-          "width": 0,
-          "x": 368,
-          "y": 1024,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "5bf7be70-8b43-4c18-a46b-8d1d675fdbe7",
-          "width": 0,
-          "x": 304,
-          "y": 992,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "5fb9b8a6-420e-43da-b881-0d683eaaf064",
-          "width": 0,
-          "x": 352,
-          "y": 928,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "f15cfdd9-734e-44f6-9669-99f5ee3d5e81",
-          "width": 0,
-          "x": 336,
-          "y": 880,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "e2188a5b-61eb-4baa-8ac2-8b30166da5dd",
-          "width": 0,
-          "x": 368,
-          "y": 912,
-          "zOrder": 371,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -25266,86 +25161,6 @@
           "width": 0,
           "x": 288,
           "y": 896,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "83f9056b-adcf-4ed0-bad3-fb8d87f44862",
-          "width": 0,
-          "x": 320,
-          "y": 848,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "010429bb-76ae-408d-9b93-fe37031a882b",
-          "width": 0,
-          "x": 368,
-          "y": 832,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "cebcd28a-4f79-4907-b772-d050e3d2f446",
-          "width": 0,
-          "x": 368,
-          "y": 864,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "4da9e483-1a0e-4611-819e-b3c1ee0f97b8",
-          "width": 0,
-          "x": 432,
-          "y": 976,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "f50a6857-6eeb-468e-b2a9-10b6eeda6591",
-          "width": 0,
-          "x": 416,
-          "y": 1024,
           "zOrder": 371,
           "numberProperties": [],
           "stringProperties": [],
@@ -25383,195 +25198,6 @@
           "width": 0,
           "x": 272,
           "y": 960,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "8b7034ce-78ca-41b8-abdb-260eec398142",
-          "width": 0,
-          "x": 240,
-          "y": 912,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "a27f8029-a52c-4577-9cdb-fd3b6f245d4d",
-          "width": 0,
-          "x": 272,
-          "y": 848,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "aece156c-7ec9-4eb9-bbcc-0b707b73514b",
-          "width": 0,
-          "x": 224,
-          "y": 848,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "3975cd1e-43e1-4e95-8168-dc41c7cab1ff",
-          "width": 0,
-          "x": 208,
-          "y": 864,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "42cc88af-6955-4ae3-9404-19d019826c1e",
-          "width": 0,
-          "x": 256,
-          "y": 880,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "9f9758ad-b6c3-408f-9b23-1d21ef38a812",
-          "width": 0,
-          "x": 256,
-          "y": 832,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "4c195027-6da5-4736-b69b-40756cf32d15",
-          "width": 0,
-          "x": 288,
-          "y": 800,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "c7c0118d-5f8e-43c7-a2cb-24a2dcf26a98",
-          "width": 0,
-          "x": 304,
-          "y": 832,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "c0dff106-72a8-49ff-8f4c-133909f3b1af",
-          "width": 0,
-          "x": 208,
-          "y": 896,
           "zOrder": 371,
           "numberProperties": [
             {
@@ -31810,6 +31436,21 @@
               "name": "mob_instance_id",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "show_name",
+              "type": "string",
+              "value": "Hare"
+            },
+            {
+              "name": "name_is_show",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "mob_mark",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -35699,17 +35340,12 @@
             {
               "name": "HP",
               "type": "number",
-              "value": 5
+              "value": 999
             },
             {
               "name": "max_hp",
               "type": "number",
-              "value": 5
-            },
-            {
-              "name": "life_bar_time",
-              "type": "number",
-              "value": 40
+              "value": 999
             },
             {
               "name": "last_direction",
@@ -35840,6 +35476,21 @@
               "name": "mob_instance_id",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "show_name",
+              "type": "string",
+              "value": "Boar"
+            },
+            {
+              "name": "name_is_show",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "mob_mark",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -40681,17 +40332,6 @@
           ]
         },
         {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "NewTiledSprite",
-          "texture": "",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "mobHealthBar_fill",
@@ -40727,7 +40367,7 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 24,
+                        "x": 25,
                         "y": 29
                       },
                       "centerPoint": {
@@ -40829,6 +40469,69 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "6a16d25e5a4b7e16b72187c4cab1164e2e8fba46d78b9af0132f10301b4224e9",
+          "name": "mob_marked_life",
+          "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+          "variant": "Copper Red Bar",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "MaxValue": 0,
+            "InitialValue": 0,
+            "BarLeftPadding": 9,
+            "BarRightPadding": 9,
+            "BarBottomPadding": 3,
+            "BarTopPadding": 3,
+            "EasingDuration": 0.25,
+            "PreviousHighValueDuration": 10,
+            "ShowLabel": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "mob_marked_life_txt",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "100",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 14,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "100",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 14,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -40955,7 +40658,10 @@
             "objectName": "floor2_Map1"
           },
           {
-            "objectName": "NewTiledSprite"
+            "objectName": "mob_marked_life"
+          },
+          {
+            "objectName": "mob_marked_life_txt"
           }
         ]
       },
@@ -41018,373 +40724,549 @@
           "target": "inventory"
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "centralizando as cameras"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "center camera",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "CentreCamera"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "",
-                "character",
-                "",
-                "\"Ground\"",
-                ""
+              "comment": "centralizando as cameras"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "character",
+                    "",
+                    "\"Ground\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "character",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "character",
+                    "",
+                    "\"floor_1\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "character",
+                    "",
+                    "\"floor_2\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "character",
+                    "",
+                    "\"spawn_mobs\"",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "CentreCamera"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "",
-                "character",
-                "",
-                "",
-                ""
-              ]
+              "comment": "HUD"
             },
             {
-              "type": {
-                "value": "CentreCamera"
-              },
-              "parameters": [
-                "",
-                "character",
-                "",
-                "\"floor_1\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CentreCamera"
-              },
-              "parameters": [
-                "",
-                "character",
-                "",
-                "\"floor_2\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CentreCamera"
-              },
-              "parameters": [
-                "",
-                "character",
-                "",
-                "\"spawn_mobs\"",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "XP_HUD",
+                    "=",
+                    "CameraX(\"HUB_game\", ) - XP_HUD.Width() / 2\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "XP_HUD",
+                    "=",
+                    "CameraY(\"HUB_game\", )\n- CameraHeight(\"HUB_game\", ) / 2\n+ floor(CameraHeight(\"HUB_game\", ) * 0.0001)\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "skill_bar",
+                    "=",
+                    "CameraX(\"HUB_game\", ) - skill_bar.Width() / 2\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "skill_bar",
+                    "=",
+                    "CameraY(\"HUB_game\", )\n+ CameraHeight(\"HUB_game\", ) / 2\n- skill_bar.Height()\n- CameraHeight(\"HUB_game\", ) * 0.0001\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "potion_Life_hub",
+                    "=",
+                    "skill_bar.X()\n- 8\n- potion_mana_hub.Width()\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "potion_Life_hub",
+                    "=",
+                    "CameraY(\"HUB_game\", )\n+ CameraHeight(\"HUB_game\", ) / 2\n- potion_mana_hub.Height()\n- CameraHeight(\"HUB_game\", ) * 0.0001\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "potion_mana_hub",
+                    "=",
+                    "skill_bar.X()\n+ skill_bar.Width()\n+ 8\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "potion_mana_hub",
+                    "=",
+                    "CameraY(\"HUB_game\", )\n+ CameraHeight(\"HUB_game\", ) / 2\n- potion_Life_hub.Height()\n- CameraHeight(\"HUB_game\", ) * 0.0001\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "mob_marked_life",
+                    "=",
+                    "CameraX(\"HUB_game\", ) - mob_marked_life.Width() / 2\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "mob_marked_life",
+                    "=",
+                    "CameraY(\"HUB_game\", )\n- CameraHeight(\"HUB_game\", ) / 2\n+ floor(CameraHeight(\"HUB_game\", ) * 0.09)\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "mob_marked_life_txt",
+                    "=",
+                    "CameraX(\"HUB_game\", ) - mob_marked_life.Width() / 2 + 120\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "mob_marked_life_txt",
+                    "=",
+                    "CameraY(\"HUB_game\", )\n- CameraHeight(\"HUB_game\", ) / 2\n+ floor(CameraHeight(\"HUB_game\", ) * 0.091)\n"
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Zoom"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "zoom",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "ZoomCamera"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "",
-                "2",
-                "\"Ground\"",
-                ""
-              ]
+              "comment": "layers"
             },
             {
-              "type": {
-                "value": "ZoomCamera"
-              },
-              "parameters": [
-                "",
-                "2",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ZoomCamera"
-              },
-              "parameters": [
-                "",
-                "2",
-                "\"floor_1\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ZoomCamera"
-              },
-              "parameters": [
-                "",
-                "2",
-                "\"floor_2\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ZoomCamera"
-              },
-              "parameters": [
-                "",
-                "2",
-                "\"spawn_mobs\"",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ZoomCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "\"Ground\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ZoomCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ZoomCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "\"floor_1\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ZoomCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "\"floor_2\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ZoomCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "\"spawn_mobs\"",
+                    ""
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Separando objetos - colisão "
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "separate object",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "SeparateFromObjects"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "character",
-                "Blacksmith_table",
-                ""
-              ]
+              "comment": "Separando objetos - colisão "
             },
             {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "Marceneiro_table",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "Alquimia_table",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "cabana1",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "fogueira1",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "MagicTreevillage",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "RIP",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "caixao1",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "estatua",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "caixao2",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "cruz",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "spawn",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "shortLapide",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "npc_tasks",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "npc_marceneiro",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "npc_ferreiro",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "character",
-                "npc_alquimista",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "MOBS_random_direction",
-                "fogueira1",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "MOBS_random_direction",
-                "MagicTreevillage",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "MOBS_random_direction",
-                "cabana1",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "Blacksmith_table",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "Marceneiro_table",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "Alquimia_table",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "cabana1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "fogueira1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "MagicTreevillage",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "RIP",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "caixao1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "estatua",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "caixao2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "cruz",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "spawn",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "shortLapide",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "npc_tasks",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "npc_marceneiro",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "npc_ferreiro",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "character",
+                    "npc_alquimista",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "MOBS_random_direction",
+                    "fogueira1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "MOBS_random_direction",
+                    "MagicTreevillage",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "MOBS_random_direction",
+                    "cabana1",
+                    ""
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "parameters": []
         },
         {
           "colorB": 228,
@@ -41494,31 +41376,44 @@
           "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Level - pausando animação para nao ficar mudando o level sem parar"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "LVL",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "levels_numbers",
-                "Animation"
+              "comment": "Level - pausando animação para nao ficar mudando o level sem parar"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                  },
+                  "parameters": [
+                    "levels_numbers",
+                    "Animation"
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "parameters": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -41724,7 +41619,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
+          "isLocked": true,
           "name": "",
           "renderingType": "2d",
           "visibility": true,
@@ -41826,7 +41721,7 @@
           "isLocked": true,
           "name": "HUB_information",
           "renderingType": "2d",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
@@ -41860,7 +41755,7 @@
           "isLocked": true,
           "name": "HUB_game",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -42093,7 +41988,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Moviment",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -43162,18 +43056,6 @@
                     "=",
                     "\"Attack_down_1\""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "sounds\\attacks\\sword\\sword-sound-260274.mp3",
-                    "",
-                    "",
-                    ""
-                  ]
                 }
               ]
             },
@@ -43709,7 +43591,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "HUD - life bar - mana bar - stamina bar",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -43738,7 +43619,7 @@
                     "Life_bar",
                     "Resizable",
                     "=",
-                    "min(max((character.HP/character.max_HP)*200,0),200)\n"
+                    "min(max((character.HP/character.max_HP)*246,0),246)\n"
                   ]
                 }
               ]
@@ -45261,6 +45142,633 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "mob name / marked mob "
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "name_is_show",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "mob_marked_life",
+                        "XP_HUD.X()",
+                        "XP_HUD.Y()",
+                        "\"HUB_game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "mob_marked_life_txt",
+                        "XP_HUD.X()",
+                        "XP_HUD.Y()",
+                        "\"HUB_game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                      },
+                      "parameters": [
+                        "mob_marked_life",
+                        "Resizable",
+                        "=",
+                        "256"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetHeight"
+                      },
+                      "parameters": [
+                        "mob_marked_life",
+                        "Resizable",
+                        "=",
+                        "18"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "mob_marked_life",
+                        "MOBS_random_direction"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "mob_marked_life_txt",
+                        "MOBS_random_direction"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "mob_marked_life"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "mob_marked_life_txt"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "name_is_show",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "mobname",
+                        "MOBS_random_direction.X()-7",
+                        "MOBS_random_direction.Y() - 40",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "mobname",
+                        "Text",
+                        "=",
+                        "MOBS_random_direction.show_name"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "mobname",
+                        "MOBS_random_direction"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "mobname"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mobname",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetXY"
+                      },
+                      "parameters": [
+                        "mobname",
+                        "=",
+                        "MOBS_random_direction.X()-9",
+                        "=",
+                        "MOBS_random_direction.Y() -40"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "IsCursorOnObject"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "\"Left\"",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mobname",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "mob_mark",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "name_is_show",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "mobname"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonFromTextPressed"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "\"Left\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "IsCursorOnObject"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mob_marked_life",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mob_marked_life_txt",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "UI_inventory"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "mob_mark",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "mob_marked_life_txt"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "mob_marked_life"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "IsCursorOnObject"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "\"Left\"",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "mob_mark",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "name_is_show",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mobname",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PickRandomInstance"
+                      },
+                      "parameters": [
+                        "",
+                        "MOBS_random_direction"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Show"
+                      },
+                      "parameters": [
+                        "mobname",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BitmapText::SetTint"
+                      },
+                      "parameters": [
+                        "mobname",
+                        "\"0;0;0\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MouseButtonFromTextPressed"
+                          },
+                          "parameters": [
+                            "MOBS_random_direction",
+                            "\"Left\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "mob_marked_life",
+                            "MOBS_random_direction",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "mob_marked_life_txt",
+                            "MOBS_random_direction",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "UI_inventory"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "MOBS_random_direction",
+                            "mob_mark",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Show"
+                          },
+                          "parameters": [
+                            "mob_marked_life",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Show"
+                          },
+                          "parameters": [
+                            "mob_marked_life_txt",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "MOBS_random_direction",
+                            "mob_mark",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "mobname",
+                            "MOBS_random_direction",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "mob_marked_life_txt",
+                            "MOBS_random_direction",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "mob_marked_life",
+                            "MOBS_random_direction",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Show"
+                          },
+                          "parameters": [
+                            "mobname",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BitmapText::SetTint"
+                          },
+                          "parameters": [
+                            "mobname",
+                            "\"255;0;0\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mob_marked_life",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mob_marked_life_txt",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+                      },
+                      "parameters": [
+                        "mob_marked_life",
+                        "=",
+                        "MOBS_random_direction.max_hp",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "mob_marked_life",
+                        "=",
+                        "MOBS_random_direction.HP",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "mob_marked_life_txt",
+                        "Text",
+                        "=",
+                        "MOBS_random_direction.HP"
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -45349,7 +45857,7 @@
                         "mobHealthBar_fill",
                         "Resizable",
                         "=",
-                        "mobHealthBar_fill.initial_width * (MOBS_random_direction.HP / MOBS_random_direction.max_hp)"
+                        "mobHealthBar_fill.initial_width *\nclamp(MOBS_random_direction.HP/MOBS_random_direction.max_hp,0,1)\n"
                       ]
                     }
                   ]
@@ -45371,7 +45879,19 @@
             {
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "MOBS_random_direction",
-              "conditions": [],
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "MOBS_random_direction",
+                    "mob_mark",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
               "actions": [],
               "events": [
                 {
@@ -45432,12 +45952,53 @@
                     },
                     {
                       "type": {
-                        "value": "Wait"
+                        "value": "ResetTimer"
                       },
                       "parameters": [
-                        "MOBS_random_direction.life_bar_time"
+                        "40",
+                        "\"show_lifeBar_timer\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mobHealthBar_fill",
+                        "MOBS_random_direction",
+                        ""
                       ]
                     },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mobHealthBar_bg",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"show_lifeBar_timer\"",
+                        ">",
+                        "10"
+                      ]
+                    }
+                  ],
+                  "actions": [
                     {
                       "type": {
                         "value": "Hide"
@@ -47143,7 +47704,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "taking damage animation",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -47161,7 +47721,6 @@
               "comment": "agressigve mobs"
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "MOBS_random_direction",
               "conditions": [
@@ -47214,17 +47773,6 @@
                         "",
                         "",
                         ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::Name"
-                      },
-                      "parameters": [
-                        "Collision_attack_sword",
-                        "Animation",
-                        "!=",
-                        "\"idle\""
                       ]
                     },
                     {
@@ -47467,17 +48015,6 @@
                         "",
                         "",
                         ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::Name"
-                      },
-                      "parameters": [
-                        "Collision_attack_sword",
-                        "Animation",
-                        "!=",
-                        "\"idle\""
                       ]
                     },
                     {
@@ -48229,7 +48766,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "MOBS_random_direction",
               "conditions": [
@@ -48298,17 +48834,6 @@
                             "MOBS_random_direction",
                             "is_chasing",
                             "True",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BooleanObjectVariable"
-                          },
-                          "parameters": [
-                            "MOBS_random_direction",
-                            "is_hurt",
-                            "False",
                             ""
                           ]
                         },
@@ -48578,17 +49103,6 @@
                       },
                       "parameters": [
                         "MOBS_random_direction",
-                        "is_hurt",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "MOBS_random_direction",
                         "did_damage",
                         "False",
                         ""
@@ -48697,17 +49211,6 @@
                             "attack_cooldown",
                             ">",
                             "0"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BooleanObjectVariable"
-                          },
-                          "parameters": [
-                            "MOBS_random_direction",
-                            "is_hurt",
-                            "False",
-                            ""
                           ]
                         }
                       ]
@@ -49040,7 +49543,6 @@
                           "comment": "position run and animation"
                         },
                         {
-                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -49171,7 +49673,6 @@
                           ]
                         },
                         {
-                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -50191,240 +50692,300 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Delet mob com HP <= 0"
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "MOBS_random_direction",
+              "conditions": [],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "HP",
+                        "<=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mobHealthBar_fill",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mobHealthBar_bg",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mobname",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mob_marked_life",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "mob_marked_life_txt",
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "is_attacking",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "is_fleeing",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "is_chasing",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "is_hurt",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "TopDownMovement",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        "Animation",
+                        "=",
+                        "\"death_\"+MOBS_random_direction.last_direction"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "mobHealthBar_bg",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "mobHealthBar_fill",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "mobname",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "mob_marked_life",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "mob_marked_life_txt",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "10"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "MOBS_random_direction",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "text",
+                    "Text",
+                    "=",
+                    "\"CurrentMobs hare: \"+regionSpawn_grassland_hare.CurrentMobs + NewLine()+NewLine() + \"CurrentMobs boar: \"+regionSpawn_grassland_boar.CurrentMobs"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "item drop - delete "
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "items",
+              "conditions": [],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Layer"
+                      },
+                      "parameters": [
+                        "items",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "10"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "items",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Delet mob com HP <= 0"
-        },
-        {
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "MOBS_random_direction",
-          "conditions": [],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberObjectVariable"
-                  },
-                  "parameters": [
-                    "MOBS_random_direction",
-                    "HP",
-                    "<=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "mobHealthBar_fill",
-                    "MOBS_random_direction",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "mobHealthBar_bg",
-                    "MOBS_random_direction",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "MOBS_random_direction",
-                    "is_attacking",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "MOBS_random_direction",
-                    "is_fleeing",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "MOBS_random_direction",
-                    "is_chasing",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "MOBS_random_direction",
-                    "is_hurt",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ActivateBehavior"
-                  },
-                  "parameters": [
-                    "MOBS_random_direction",
-                    "TopDownMovement",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "MOBS_random_direction",
-                    "Animation",
-                    "=",
-                    "\"death_\"+MOBS_random_direction.last_direction"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "mobHealthBar_bg",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "mobHealthBar_fill",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "20"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "MOBS_random_direction",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "text",
-                "Text",
-                "=",
-                "\"CurrentMobs hare: \"+regionSpawn_grassland_hare.CurrentMobs + NewLine()+NewLine() + \"CurrentMobs boar: \"+regionSpawn_grassland_boar.CurrentMobs"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "item drop - delete "
-        },
-        {
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "items",
-          "conditions": [],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Layer"
-                  },
-                  "parameters": [
-                    "items",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "120"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "items",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -50641,6 +51202,16 @@
                     "True",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "slot_item_display",
+                    "=",
+                    "341"
+                  ]
                 }
               ]
             },
@@ -50829,7 +51400,7 @@
           "creationTime": 0,
           "disabled": true,
           "folded": true,
-          "name": "collecting items and insert in inventory - data",
+          "name": "collecting items and insert in inventory - data - old",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -57174,6 +57745,22 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "txt_item_slot_quantity",
+                    "=",
+                    "342"
+                  ]
+                }
+              ]
+            },
+            {
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "txt_item_slot_quantity",
               "conditions": [
@@ -57280,6 +57867,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "dragg items - inventory",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -63208,6 +63796,255 @@
                   "x": 4,
                   "y": 16,
                   "zOrder": 3,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                }
+              ],
+              "editionSettings": []
+            },
+            {
+              "areaMaxX": 96,
+              "areaMaxY": 15,
+              "areaMaxZ": 64,
+              "areaMinX": 0,
+              "areaMinY": 0,
+              "areaMinZ": 0,
+              "assetStoreAssetId": "6a16d25e5a4b7e16b72187c4cab1164e2e8fba46d78b9af0132f10301b4224e9",
+              "assetStoreOriginalName": "Copper Red Bar",
+              "name": "Copper Red Bar",
+              "objects": [
+                {
+                  "assetStoreId": "",
+                  "bold": false,
+                  "italic": false,
+                  "name": "Label",
+                  "smoothed": true,
+                  "type": "TextObject::Text",
+                  "underlined": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ],
+                  "string": "8 / 16",
+                  "font": "",
+                  "textAlignment": "center",
+                  "characterSize": 8,
+                  "color": {
+                    "b": 255,
+                    "g": 255,
+                    "r": 255
+                  },
+                  "content": {
+                    "bold": false,
+                    "isOutlineEnabled": false,
+                    "isShadowEnabled": false,
+                    "italic": false,
+                    "outlineColor": "255;255;255",
+                    "outlineThickness": 2,
+                    "shadowAngle": 90,
+                    "shadowBlurRadius": 2,
+                    "shadowColor": "0;0;0",
+                    "shadowDistance": 4,
+                    "shadowOpacity": 127,
+                    "smoothed": true,
+                    "underlined": false,
+                    "text": "8 / 16",
+                    "font": "",
+                    "textAlignment": "center",
+                    "verticalTextAlignment": "center",
+                    "characterSize": 8,
+                    "lineHeight": 0,
+                    "color": "255;255;255"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 3,
+                  "height": 8,
+                  "leftMargin": 4,
+                  "name": "FillBar",
+                  "rightMargin": 4,
+                  "texture": "Framed Pixel Red Fill Bar.png",
+                  "tiled": false,
+                  "topMargin": 3,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 32,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "ResourceBar",
+                      "type": "PanelSpriteContinuousBar::ResourceBar",
+                      "Value": 1,
+                      "MaxValue": 3,
+                      "PreviousValue": 0,
+                      "CurrentValue": 1
+                    },
+                    {
+                      "name": "Tween",
+                      "type": "Tween::TweenBehavior"
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 3,
+                  "height": 8,
+                  "leftMargin": 4,
+                  "name": "Buffer",
+                  "rightMargin": 4,
+                  "texture": "Framed Pixel Red Fill Bar.png",
+                  "tiled": false,
+                  "topMargin": 3,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 32,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "Tween",
+                      "type": "Tween::TweenBehavior"
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 6,
+                  "height": 15,
+                  "leftMargin": 11,
+                  "name": "Background",
+                  "rightMargin": 11,
+                  "texture": "Copper Bar Border.png",
+                  "tiled": false,
+                  "topMargin": 6,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 96,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ]
+                }
+              ],
+              "objectsFolderStructure": {
+                "folderName": "__ROOT",
+                "children": [
+                  {
+                    "objectName": "Label"
+                  },
+                  {
+                    "objectName": "FillBar"
+                  },
+                  {
+                    "objectName": "Buffer"
+                  },
+                  {
+                    "objectName": "Background"
+                  }
+                ]
+              },
+              "objectsGroups": [],
+              "layers": [
+                {
+                  "ambientLightColorB": 200,
+                  "ambientLightColorG": 200,
+                  "ambientLightColorR": 200,
+                  "camera2DPlaneMaxDrawingDistance": 5000,
+                  "camera3DFarPlaneDistance": 10000,
+                  "camera3DFieldOfView": 45,
+                  "camera3DNearPlaneDistance": 3,
+                  "cameraType": "",
+                  "followBaseLayerCamera": false,
+                  "isLightingLayer": false,
+                  "isLocked": false,
+                  "name": "",
+                  "renderingType": "",
+                  "visibility": true,
+                  "cameras": [
+                    {
+                      "defaultSize": true,
+                      "defaultViewport": true,
+                      "height": 0,
+                      "viewportBottom": 1,
+                      "viewportLeft": 0,
+                      "viewportRight": 1,
+                      "viewportTop": 0,
+                      "width": 0
+                    }
+                  ],
+                  "effects": []
+                }
+              ],
+              "instances": [
+                {
+                  "angle": 0,
+                  "customSize": false,
+                  "depth": 1,
+                  "height": 64,
+                  "layer": "",
+                  "name": "Background",
+                  "persistentUuid": "24882334-eec8-403e-8bf1-70fc928a46e6",
+                  "width": 64,
+                  "x": 0,
+                  "y": 0,
+                  "zOrder": 1,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 9,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "FillBar",
+                  "persistentUuid": "9a7458c3-c936-41b2-b65a-9bc0e30e29f1",
+                  "width": 78,
+                  "x": 9,
+                  "y": 3,
+                  "zOrder": 2,
                   "numberProperties": [],
                   "stringProperties": [],
                   "initialVariables": []
