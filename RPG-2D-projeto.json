@@ -19513,6 +19513,16 @@
           "name": "item_quantity",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "value": "0"
+        },
+        {
+          "name": "sub_type",
+          "type": "string",
+          "value": "0"
         }
       ],
       "effects": [],
@@ -20692,6 +20702,16 @@
           "name": "claimed",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "value": "0"
+        },
+        {
+          "name": "sub_type",
+          "type": "string",
+          "value": "0"
         }
       ],
       "effects": [],
@@ -20957,7 +20977,6 @@
       "type": "array",
       "children": [
         {
-          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -20969,6 +20988,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -20985,6 +21014,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21001,6 +21040,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21017,6 +21066,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21033,6 +21092,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21049,6 +21118,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21065,6 +21144,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21081,6 +21170,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21097,6 +21196,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21113,6 +21222,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21129,6 +21248,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21145,6 +21274,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21161,6 +21300,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21177,6 +21326,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21193,6 +21352,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21209,6 +21378,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21225,6 +21404,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21241,6 +21430,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21257,6 +21456,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         },
@@ -21273,6 +21482,16 @@
               "name": "quantity",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "sub_type",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "type",
+              "type": "string",
+              "value": "0"
             }
           ]
         }
@@ -21285,75 +21504,125 @@
       "children": [
         {
           "folded": true,
-          "name": "rabbit_foot",
+          "name": "Equipment",
           "type": "structure",
           "children": [
             {
-              "name": "icon_index",
-              "type": "number",
-              "value": 1
+              "name": "amulet",
+              "type": "structure",
+              "children": []
             },
             {
-              "name": "max_stack",
-              "type": "number",
-              "value": 4
+              "name": "armor",
+              "type": "structure",
+              "children": []
             },
             {
-              "name": "name",
-              "type": "string",
-              "value": "rabbit_foot"
+              "name": "boots",
+              "type": "structure",
+              "children": []
             },
             {
-              "name": "rarity",
-              "type": "string",
-              "value": "02_common"
+              "name": "helmet",
+              "type": "structure",
+              "children": []
             },
             {
-              "name": "sell_price",
-              "type": "number",
-              "value": 3
+              "name": "pants",
+              "type": "structure",
+              "children": []
             },
             {
-              "name": "type",
-              "type": "string",
-              "value": "material"
+              "name": "ring",
+              "type": "structure",
+              "children": []
             }
           ]
         },
         {
-          "folded": true,
-          "name": "rabbit_skin",
+          "name": "Materials",
           "type": "structure",
           "children": [
             {
-              "name": "icon_index",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "max_stack",
-              "type": "number",
-              "value": 10
-            },
-            {
-              "name": "name",
-              "type": "string",
-              "value": "rabbit_skin"
-            },
-            {
-              "name": "rarity",
-              "type": "string",
-              "value": "02_common"
-            },
-            {
-              "name": "sell_price",
-              "type": "number",
-              "value": 5
-            },
-            {
-              "name": "type",
-              "type": "string",
-              "value": "material"
+              "folded": true,
+              "name": "Monster Parts",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "rabbit_foot",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "icon_index",
+                      "type": "number",
+                      "value": 1
+                    },
+                    {
+                      "name": "max_stack",
+                      "type": "number",
+                      "value": 4
+                    },
+                    {
+                      "name": "name",
+                      "type": "string",
+                      "value": "rabbit_foot"
+                    },
+                    {
+                      "name": "rarity",
+                      "type": "string",
+                      "value": "02_common"
+                    },
+                    {
+                      "name": "sell_price",
+                      "type": "number",
+                      "value": 3
+                    },
+                    {
+                      "name": "type",
+                      "type": "string",
+                      "value": "material"
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "name": "rabbit_skin",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "icon_index",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "max_stack",
+                      "type": "number",
+                      "value": 10
+                    },
+                    {
+                      "name": "name",
+                      "type": "string",
+                      "value": "rabbit_skin"
+                    },
+                    {
+                      "name": "rarity",
+                      "type": "string",
+                      "value": "02_common"
+                    },
+                    {
+                      "name": "sell_price",
+                      "type": "number",
+                      "value": 5
+                    },
+                    {
+                      "name": "type",
+                      "type": "string",
+                      "value": "material"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -21421,7 +21690,7 @@
         "gridColor": 1263086,
         "gridAlpha": 0.2,
         "snap": false,
-        "zoomFactor": 0.9934433498261189,
+        "zoomFactor": 0.6672773998331063,
         "windowMask": true,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -21469,7 +21738,6 @@
           "value": 0
         },
         {
-          "folded": true,
           "name": "mobs_drop_table",
           "type": "structure",
           "children": [
@@ -21514,33 +21782,43 @@
                             {
                               "name": "01_uncommon",
                               "type": "structure",
-                              "children": [
-                                {
-                                  "name": "rabbit_foot",
-                                  "type": "number",
-                                  "value": 0
-                                },
-                                {
-                                  "name": "rabbit_skin",
-                                  "type": "number",
-                                  "value": 0
-                                }
-                              ]
+                              "children": []
                             },
                             {
-                              "folded": true,
                               "name": "02_common",
                               "type": "structure",
                               "children": [
                                 {
                                   "name": "rabbit_foot",
-                                  "type": "number",
-                                  "value": 0
+                                  "type": "structure",
+                                  "children": [
+                                    {
+                                      "name": "sub_type",
+                                      "type": "string",
+                                      "value": "Monster Parts"
+                                    },
+                                    {
+                                      "name": "type",
+                                      "type": "string",
+                                      "value": "Materials"
+                                    }
+                                  ]
                                 },
                                 {
                                   "name": "rabbit_skin",
-                                  "type": "number",
-                                  "value": 0
+                                  "type": "structure",
+                                  "children": [
+                                    {
+                                      "name": "sub_type",
+                                      "type": "string",
+                                      "value": "Monster Parts"
+                                    },
+                                    {
+                                      "name": "type",
+                                      "type": "string",
+                                      "value": "Materials"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -21563,6 +21841,16 @@
           "name": "temp_quantity_item_slot",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "temp_type_item_slot",
+          "type": "string",
+          "value": "0"
+        },
+        {
+          "name": "temp_sub_type_item_slot",
+          "type": "string",
+          "value": "0"
         }
       ],
       "instances": [
@@ -21570,14 +21858,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 667,
+          "height": 791,
           "keepRatio": true,
           "layer": "HUB_information",
           "name": "text",
           "persistentUuid": "d8689247-25f3-44cb-aacd-47afc5315ee9",
-          "width": 1033,
-          "x": 7,
-          "y": 5,
+          "width": 1087,
+          "x": 0,
+          "y": -66,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -25147,64 +25435,6 @@
           "y": 288,
           "zOrder": 10000,
           "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "9ff541d9-a5e8-4bff-a8c8-2caebc6b9c4f",
-          "width": 0,
-          "x": 288,
-          "y": 896,
-          "zOrder": 371,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "39aa48c5-e71e-4e7e-8050-a67ef86f97a0",
-          "width": 0,
-          "x": 224,
-          "y": 960,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "items",
-          "persistentUuid": "3ec481bb-8002-417e-b197-4f70ff17cc0f",
-          "width": 0,
-          "x": 272,
-          "y": 960,
-          "zOrder": 371,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
           "stringProperties": [],
           "initialVariables": []
         }
@@ -41718,7 +41948,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": true,
+          "isLocked": false,
           "name": "HUB_information",
           "renderingType": "2d",
           "visibility": false,
@@ -41806,7 +42036,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
+          "isLocked": true,
           "name": "Inventory",
           "renderingType": "",
           "visibility": true,
@@ -44940,6 +45170,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "life_bar and name of de mob",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -47704,6 +47935,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "taking damage animation",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -50489,6 +50721,50 @@
                                     "=",
                                     "child_name"
                                   ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetStringObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "items",
+                                    "type",
+                                    "=",
+                                    "mobs_drop_table[MOBS_random_direction.biome][MOBS_random_direction.enemy_type][MOBS_random_direction.mob_id][\"items\"][choosen_rarity][child_name].type"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetStringObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "items",
+                                    "sub_type",
+                                    "=",
+                                    "mobs_drop_table[MOBS_random_direction.biome][MOBS_random_direction.enemy_type][MOBS_random_direction.mob_id][\"items\"][choosen_rarity][child_name].sub_type"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "text",
+                                    "Text",
+                                    "+",
+                                    "NewLine() +NewLine() + \"Item choosen type: \" + items.type"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "text",
+                                    "Text",
+                                    "+",
+                                    "NewLine() +NewLine() + \"Item choosen sub_type: \" +items.sub_type"
+                                  ]
                                 }
                               ]
                             }
@@ -50968,7 +51244,7 @@
                         "value": "Wait"
                       },
                       "parameters": [
-                        "10"
+                        "30"
                       ]
                     },
                     {
@@ -51028,6 +51304,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "hid/show inventory",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -55559,6 +55836,18 @@
                   "actions": [],
                   "events": [
                     {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "adiciona aonde ja tem o item"
+                    },
+                    {
                       "type": "BuiltinCommonInstructions::ForEachChildVariable",
                       "iterableVariableName": "inventory",
                       "valueIteratorVariableName": "",
@@ -55592,7 +55881,7 @@
                           "parameters": [
                             "inventory[A].quantity",
                             "<",
-                            "Item_data[inventory[A].id].max_stack"
+                            "Item_data[items.type][items.sub_type][inventory[A].id].max_stack"
                           ]
                         }
                       ],
@@ -55628,6 +55917,18 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "adiciona aonde nao tem o item"
                     },
                     {
                       "type": "BuiltinCommonInstructions::ForEachChildVariable",
@@ -55666,6 +55967,26 @@
                             "inventory[A].id",
                             "=",
                             "item_group.Animation::Name()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetStringVariable"
+                          },
+                          "parameters": [
+                            "inventory[A].type",
+                            "=",
+                            "items.VariableString(type)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetStringVariable"
+                          },
+                          "parameters": [
+                            "inventory[A].sub_type",
+                            "=",
+                            "items.VariableString(sub_type)"
                           ]
                         },
                         {
@@ -56318,7 +56639,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "show items inventory - easier ",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -56349,7 +56669,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "cleaning inventory ",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -56428,9 +56747,46 @@
                     "=",
                     "slot_item_display.slot_index"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "temp_type_item_slot",
+                    "=",
+                    "inventory[slot_item_display.slot_index].type"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "temp_sub_type_item_slot",
+                    "=",
+                    "inventory[slot_item_display.slot_index].sub_type"
+                  ]
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "text",
+                        "Text",
+                        "+",
+                        "NewLine()+ NewLine()+ \"type: \" + temp_type_item_slot+ NewLine() + \"sub_type: \" + temp_sub_type_item_slot"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -56664,6 +57020,28 @@
                 },
                 {
                   "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "items",
+                    "type",
+                    "=",
+                    "inventory[selected_slot].type"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "items",
+                    "sub_type",
+                    "=",
+                    "inventory[selected_slot].sub_type"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
@@ -56731,7 +57109,7 @@
                   "parameters": [
                     "inventory[selected_slot].id",
                     "=",
-                    "\"0\""
+                    "\"empty\""
                   ]
                 },
                 {
@@ -56742,6 +57120,26 @@
                     "inventory[selected_slot].quantity",
                     "-",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "inventory[selected_slot].type",
+                    "=",
+                    "\"0\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "inventory[selected_slot].sub_type",
+                    "=",
+                    "\"0\""
                   ]
                 },
                 {
@@ -57155,6 +57553,28 @@
                 },
                 {
                   "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "items",
+                    "type",
+                    "=",
+                    "inventory[selected_slot].type"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "items",
+                    "sub_type",
+                    "=",
+                    "inventory[selected_slot].sub_type"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -57266,6 +57686,26 @@
                       },
                       "parameters": [
                         "inventory[selected_slot].id",
+                        "=",
+                        "\"empty\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "inventory[selected_slot].sub_type",
+                        "=",
+                        "\"0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "inventory[selected_slot].type",
                         "=",
                         "\"0\""
                       ]
@@ -57867,7 +58307,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "dragg items - inventory",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -57882,7 +58321,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "drag begin - identify slot"
+              "comment": "drag begin - identify slot - identify if dragging is true and save temp variables"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -57984,6 +58423,26 @@
                     "=",
                     "inventory[dragging_slot_index_begin].quantity"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "temp_type_item_slot",
+                    "=",
+                    "inventory[dragging_slot_index_begin].type"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "temp_sub_type_item_slot",
+                    "=",
+                    "inventory[dragging_slot_index_begin].sub_type"
+                  ]
                 }
               ]
             },
@@ -57997,7 +58456,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "slot change"
+              "comment": "slot change - change the variables values oh each slot"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -58049,6 +58508,26 @@
                     "value": "SetStringVariable"
                   },
                   "parameters": [
+                    "inventory[dragging_slot_index_begin].type",
+                    "=",
+                    "inventory[slot_item_display.slot_index].type"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "inventory[dragging_slot_index_begin].sub_type",
+                    "=",
+                    "inventory[slot_item_display.slot_index].sub_type"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
                     "inventory[dragging_slot_index_begin].id",
                     "=",
                     "inventory[slot_item_display.slot_index].id"
@@ -58082,6 +58561,26 @@
                     "inventory[slot_item_display.slot_index].quantity",
                     "=",
                     "temp_quantity_item_slot"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "inventory[slot_item_display.slot_index].type",
+                    "=",
+                    "temp_type_item_slot"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "inventory[slot_item_display.slot_index].sub_type",
+                    "=",
+                    "temp_sub_type_item_slot"
                   ]
                 },
                 {
@@ -58280,6 +58779,23 @@
                     "Text",
                     "+",
                     "NewLine()+ NewLine()+ \"temp_id_item_slot: \" + temp_id_item_slot+ NewLine() + \"temp_quantity_item_slot: \" + temp_quantity_item_slot"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "text",
+                    "Text",
+                    "+",
+                    "NewLine()+ NewLine()+ \"type: \" + temp_type_item_slot+ NewLine() + \"sub_type: \" + temp_sub_type_item_slot"
                   ]
                 }
               ]
