@@ -16005,6 +16005,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "subtract_button",
+      "persistentUuid": "a89ca345-384e-4d12-badf-05a6ad7f076a",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -33149,6 +33150,22 @@
       ]
     },
     {
+      "name": "ProgressionConfig",
+      "type": "structure",
+      "children": [
+        {
+          "name": "AttributePointsPerLevel ",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "MaxLevel ",
+          "type": "number",
+          "value": 30
+        }
+      ]
+    },
+    {
       "name": "playerEmail",
       "type": "string",
       "value": ""
@@ -34410,7 +34427,7 @@
         "gridColor": 1263086,
         "gridAlpha": 0.2,
         "snap": false,
-        "zoomFactor": 0.36732575450595967,
+        "zoomFactor": 0.433577430470329,
         "windowMask": true,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -34419,123 +34436,148 @@
       "variables": [
         {
           "name": "sell_selected_quantity_MERCHANT",
+          "persistentUuid": "aec1a928-76a0-45b5-9a60-ab2348bd3da5",
           "type": "number",
           "value": 1
         },
         {
           "name": "sell_selected_max_MERCHANT",
+          "persistentUuid": "a0ae7168-aae8-40a6-8bbf-4877f0d40d87",
           "type": "number",
           "value": 1
         },
         {
           "name": "sell_selected_slot_MERCHANT",
+          "persistentUuid": "4c1e3d50-442d-4301-8682-152da5945692",
           "type": "number",
           "value": 1
         },
         {
           "name": "selected_slot_market_item_id",
+          "persistentUuid": "8ac8de47-b87d-4469-8181-cd987aecd6b8",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "item_type_market",
+          "persistentUuid": "d83ae48b-0a81-4293-ace6-691c6d29620b",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "item_Sub_type_market",
+          "persistentUuid": "0e044d67-a1bd-4aa5-b3b7-1d79125840cd",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "drop_pending",
+          "persistentUuid": "b2de3e24-956c-44dc-bb8c-b64a979a2088",
           "type": "number",
           "value": 0
         },
         {
           "name": "selected_slot",
+          "persistentUuid": "9f496677-a5bb-47a3-8bcd-6db7fc805f9e",
           "type": "number",
           "value": -1
         },
         {
           "name": "temp_id_slot_inventory",
+          "persistentUuid": "def609f8-5996-4b67-b149-475f473771a7",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_slot_index",
+          "persistentUuid": "2b80ac8a-1878-4eca-a032-1b01cc164462",
           "type": "number",
           "value": 0
         },
         {
           "name": "temp_drop_quantity",
+          "persistentUuid": "16577f19-7075-44f7-9f37-1a9b7538db49",
           "type": "number",
           "value": 0
         },
         {
           "name": "drop_loop",
+          "persistentUuid": "fd34fb81-5880-45c3-875d-d971f768d713",
           "type": "number",
           "value": 0
         },
         {
           "name": "can_collect",
+          "persistentUuid": "69733712-3f9f-4645-a770-280da91df07a",
           "type": "boolean",
           "value": true
         },
         {
           "name": "spawRoll",
+          "persistentUuid": "6ad64227-000f-4034-9d3d-361f5decdd0d",
           "type": "number",
           "value": 0
         },
         {
           "name": "temp_quantity_item_slot",
+          "persistentUuid": "3edfb8ab-fa29-4f6c-be26-c2bd266a3d2b",
           "type": "number",
           "value": 0
         },
         {
           "name": "temp_type_item_slot",
+          "persistentUuid": "354ecfcf-7059-42a1-bc33-3b3b7666ef40",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_id_item_slot",
+          "persistentUuid": "1c153aed-e1d9-426b-90f5-ac941f30f333",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_sub_type_item_slot",
+          "persistentUuid": "083b9e64-2e8b-4ad6-b8c7-23e567a348bb",
           "type": "string",
           "value": "0"
         },
         {
           "folded": true,
           "name": "drop_table",
+          "persistentUuid": "f5fff73e-8107-4e62-b56d-cd403658dee2",
           "type": "structure",
           "children": [
             {
               "name": "grassland",
+              "persistentUuid": "1f8df5c4-6ea5-4d73-baa9-3c47cf8865b5",
               "type": "structure",
               "children": [
                 {
                   "name": "normal_enemies",
+                  "persistentUuid": "d51132df-5d92-4119-8ec3-96cc05312e51",
                   "type": "structure",
                   "children": [
                     {
                       "name": "mob_hare",
+                      "persistentUuid": "ad91fd03-bdae-4815-adbb-ca3653ad543f",
                       "type": "structure",
                       "children": [
                         {
                           "folded": true,
                           "name": "allowed_rarities",
+                          "persistentUuid": "f8f3218a-321d-47d8-9e04-7a4949115693",
                           "type": "structure",
                           "children": [
                             {
                               "name": "common",
+                              "persistentUuid": "2e82bba9-c45d-4ac8-ba3e-8198df692a6f",
                               "type": "number",
                               "value": 70
                             },
                             {
                               "name": "uncommon",
+                              "persistentUuid": "c27f0ef3-790e-40bc-892c-cdd1d39b1b4c",
                               "type": "number",
                               "value": 30
                             }
@@ -34543,26 +34585,31 @@
                         },
                         {
                           "name": "drop_chance",
+                          "persistentUuid": "669a4584-65d3-4c1c-96b0-ecb9bc54966c",
                           "type": "number",
                           "value": 80
                         },
                         {
                           "name": "items",
+                          "persistentUuid": "54742025-48d0-4837-a0d0-7fa801ab2dd3",
                           "type": "structure",
                           "children": [
                             {
                               "name": "common",
+                              "persistentUuid": "b5a0ee1d-2b5d-45da-84e6-9437f5f520cb",
                               "type": "structure",
                               "children": [
                                 {
                                   "folded": true,
                                   "name": "item_01",
+                                  "persistentUuid": "83f81592-6f3f-459e-96bb-eb4a744c0180",
                                   "type": "string",
                                   "value": "rabbit_foot"
                                 },
                                 {
                                   "folded": true,
                                   "name": "item_02",
+                                  "persistentUuid": "ea43243c-629b-4be0-b60e-7686ab7940f5",
                                   "type": "string",
                                   "value": "rabbit_skin"
                                 }
@@ -34570,6 +34617,7 @@
                             },
                             {
                               "name": "uncommon",
+                              "persistentUuid": "d93af167-a092-428e-ab69-1e984a6807f1",
                               "type": "structure",
                               "children": []
                             }
@@ -34585,56 +34633,67 @@
         },
         {
           "name": "temp_old_equip_id",
+          "persistentUuid": "dc1e5736-17ad-4cb0-a750-ceb92af492e0",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "temp_old_equip_type",
+          "persistentUuid": "7006a296-a27b-4b82-abd4-45a3b31368e0",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "temp_old_equip_sub_type",
+          "persistentUuid": "c0bb66a3-f7c1-43a8-9e1b-9f861312cf8a",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "temp_old_inventory_id",
+          "persistentUuid": "688e3180-308d-4252-9c1c-069fe558b28e",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "temp_old_inventory_type",
+          "persistentUuid": "fa6576c3-324c-49d5-bf86-86a67e0c3529",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "temp_old_inventory_sub_type",
+          "persistentUuid": "28d55bed-30b1-4401-896e-ec3e80cefc03",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_old_inventory_quantity",
+          "persistentUuid": "071476f8-9e17-4e92-bc4e-d01709742058",
           "type": "number",
           "value": 0
         },
         {
           "name": "temp_item",
+          "persistentUuid": "426c3a91-6704-4eb8-8793-394e13ddf13a",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_type_slot_equipped",
+          "persistentUuid": "76ee7037-ba5d-460a-9b06-f3b49d238df1",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_subtype",
+          "persistentUuid": "b61d7a8e-b008-45ad-9244-58e6ce86d821",
           "type": "string",
           "value": "0"
         },
         {
           "name": "touch_slot_inventory",
+          "persistentUuid": "5c44b94b-6669-47fc-9600-e1a484cf2996",
           "type": "boolean",
           "value": false
         }
@@ -61650,13 +61709,13 @@
       "variables": [
         {
           "name": "AuthStatus",
-          "persistentUuid": "04e40f7d-e5fa-49fd-b5b9-7fcd64476c76",
+          "persistentUuid": "9bd06a3c-adff-42c0-9702-31cb006a7de6",
           "type": "string",
           "value": "IDLE"
         },
         {
           "name": "AuthMessage",
-          "persistentUuid": "42603479-d921-412c-9596-a69f2d9298f5",
+          "persistentUuid": "0b47006b-7256-43e1-a6fb-3eeba6e61e07",
           "type": "string",
           "value": " "
         }
@@ -62783,68 +62842,136 @@
       "variables": [
         {
           "name": "CreatePanelOpen",
+          "persistentUuid": "e0d64908-1e67-42f4-8843-96453d3016c1",
           "type": "boolean",
           "value": false
         },
         {
           "name": "SelectedClass",
+          "persistentUuid": "79987e7d-769e-4c47-8057-3ff7cf56298d",
           "type": "string",
           "value": "Warrior"
         },
         {
           "name": "ClassIndex",
+          "persistentUuid": "26e19303-50bd-4a53-999e-74725958a7bf",
           "type": "number",
           "value": 0
         },
         {
           "name": "SelectedSex",
+          "persistentUuid": "482f17d8-0061-47fc-8e51-614c395681dc",
           "type": "string",
           "value": "Male"
         },
         {
           "name": "SexIndex",
+          "persistentUuid": "680cc6fe-e59c-40c9-bc2c-d7025fa10f1e",
           "type": "number",
           "value": 0
         },
         {
           "name": "SkinToneIndex",
+          "persistentUuid": "50223c2d-ecf2-4166-b2cb-84580a606122",
           "type": "number",
           "value": 0
         },
         {
           "name": "SelectedSkinTone",
+          "persistentUuid": "08a6461f-3eda-41a5-ac93-a0d8ec5aabd9",
           "type": "string",
           "value": "Tone_01"
         },
         {
           "name": "EyeColorIndex",
+          "persistentUuid": "ede72895-7dc0-48b4-807f-f7f83899e896",
           "type": "number",
           "value": 0
         },
         {
           "name": "SelectedEyeColor",
+          "persistentUuid": "7d796a6d-fcab-4463-9107-d51148973399",
           "type": "string",
           "value": "EyeColor_01"
         },
         {
           "name": "HairStyleIndex",
+          "persistentUuid": "74f88166-7952-4632-b6f8-252595ae8eab",
           "type": "number",
           "value": 0
         },
         {
           "name": "SelectedHairStyle",
+          "persistentUuid": "6e67284b-1cf1-4d32-a552-b4a3ec9e6b87",
           "type": "string",
           "value": "HairStyle_01"
         },
         {
           "name": "HairColorIndex",
+          "persistentUuid": "3a9982f9-8696-4dbc-b8a1-97fa463eeb34",
           "type": "number",
           "value": 0
         },
         {
           "name": "SelectedHairColor",
+          "persistentUuid": "125ce008-1602-4140-8ca0-db4d67d291df",
           "type": "string",
           "value": "HairColor_01"
+        },
+        {
+          "name": "PreviewClassAttributes",
+          "persistentUuid": "878da05d-8fe9-4bea-ac68-46b548f34626",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Agility",
+              "persistentUuid": "f6ca28c0-0e84-41de-9e9e-79ee9694371c",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Armor",
+              "persistentUuid": "c34efe60-0d94-450e-a23c-a588535cca6c",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AttackPower",
+              "persistentUuid": "d6026605-d9ed-4036-bd5d-40e364ffc955",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "CriticalChance",
+              "persistentUuid": "c5fadc9d-c557-4e46-85a0-41976dd921e1",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "HealingPower",
+              "persistentUuid": "e894256c-86dc-4c17-a140-da94c46fd860",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "MagicPower",
+              "persistentUuid": "80a0e905-b3bb-4668-9f99-d97a0e416177",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Regeneration",
+              "persistentUuid": "b6691819-a2f5-4b6b-9eb5-46a29ee23f26",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Vitality",
+              "persistentUuid": "10e0134c-ca72-47ba-ba3d-ab826fca1f51",
+              "type": "number",
+              "value": 0
+            }
+          ]
         }
       ],
       "instances": [
@@ -62924,8 +63051,8 @@
           "name": "Input_CharacterName",
           "persistentUuid": "56ad954d-2080-41f4-ac0c-f44316cee011",
           "width": 209,
-          "x": 537,
-          "y": 495,
+          "x": 534,
+          "y": 499,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -63094,8 +63221,8 @@
           "name": "Txt_SelectedSex",
           "persistentUuid": "ac023a28-a14a-452c-bbc0-e69ffbdec05f",
           "width": 145,
-          "x": 568,
-          "y": 458,
+          "x": 565,
+          "y": 462,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -63111,8 +63238,8 @@
           "name": "Arrow_SexLeft",
           "persistentUuid": "ede84f09-8e6e-477c-9cd1-c88bdf32b71b",
           "width": 40,
-          "x": 540,
-          "y": 439,
+          "x": 537,
+          "y": 443,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -63128,8 +63255,8 @@
           "name": "Arrow_SexRight",
           "persistentUuid": "3e5f48d0-7f4f-4419-bf65-633e7256dad6",
           "width": 40,
-          "x": 701,
-          "y": 439,
+          "x": 698,
+          "y": 443,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -63145,8 +63272,8 @@
           "name": "Txt_SelectedSkinTone",
           "persistentUuid": "a5314f2a-508a-435c-8d82-ad69a33d7df7",
           "width": 81,
-          "x": 391,
-          "y": 269,
+          "x": 819,
+          "y": 237,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -63162,8 +63289,8 @@
           "name": "Arrow_SkinLeft",
           "persistentUuid": "80883339-a57c-4cec-bf20-b1acc52c4d5f",
           "width": 35,
-          "x": 366,
-          "y": 253,
+          "x": 794,
+          "y": 221,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -63179,8 +63306,8 @@
           "name": "Arrow_SkinRight",
           "persistentUuid": "7d307226-93c1-46f8-be59-765a6fc15ab9",
           "width": 35,
-          "x": 462,
-          "y": 253,
+          "x": 890,
+          "y": 221,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -63196,8 +63323,8 @@
           "name": "Txt_SelectedEyeColor",
           "persistentUuid": "58f36eac-f629-4d5f-994e-f674ac2367aa",
           "width": 92,
-          "x": 386,
-          "y": 350,
+          "x": 815,
+          "y": 318,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -63213,8 +63340,8 @@
           "name": "Arrow_EyeColorLeft",
           "persistentUuid": "3ccaee55-18a1-4f2c-be35-2faae461cc75",
           "width": 35,
-          "x": 361,
-          "y": 334,
+          "x": 790,
+          "y": 302,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -63230,8 +63357,8 @@
           "name": "Arrow_EyeColorRight",
           "persistentUuid": "eded0228-6212-4b41-bf15-d5fe2145f674",
           "width": 35,
-          "x": 467,
-          "y": 334,
+          "x": 896,
+          "y": 302,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -63247,8 +63374,8 @@
           "name": "Txt_SelectedHairStyle",
           "persistentUuid": "2342de83-ede1-4219-82e0-e3c31b6ecaa6",
           "width": 63,
-          "x": 805,
-          "y": 271,
+          "x": 834,
+          "y": 489,
           "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
@@ -63264,8 +63391,8 @@
           "name": "Arrow_HairStyleLeft",
           "persistentUuid": "18217ece-fa65-4c6f-a826-976af6936379",
           "width": 35,
-          "x": 775,
-          "y": 253,
+          "x": 804,
+          "y": 471,
           "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
@@ -63281,8 +63408,8 @@
           "name": "Arrow_HairStyleRight",
           "persistentUuid": "5d2e1191-80b6-4bb8-b1e0-aa760b9e7096",
           "width": 35,
-          "x": 858,
-          "y": 253,
+          "x": 887,
+          "y": 471,
           "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
@@ -63315,8 +63442,8 @@
           "name": "txt_SelectedHairColor",
           "persistentUuid": "262cd20a-7da4-4517-ab1e-11322863894c",
           "width": 94,
-          "x": 384,
-          "y": 431,
+          "x": 815,
+          "y": 399,
           "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
@@ -63332,8 +63459,8 @@
           "name": "Arrow_HairColorLeft",
           "persistentUuid": "4e99f350-72d3-463e-a6ae-48b9b2764e07",
           "width": 35,
-          "x": 360,
-          "y": 415,
+          "x": 791,
+          "y": 383,
           "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
@@ -63349,8 +63476,8 @@
           "name": "Arrow_HairColorRight",
           "persistentUuid": "82c1db54-7791-473b-b862-af7f908fed88",
           "width": 35,
-          "x": 467,
-          "y": 415,
+          "x": 898,
+          "y": 383,
           "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
@@ -63366,8 +63493,8 @@
           "name": "Txt_SelectedSkinToneTitle",
           "persistentUuid": "4e19e9d2-a1a7-4a48-b502-ad18333e07a4",
           "width": 68,
-          "x": 397,
-          "y": 231,
+          "x": 822,
+          "y": 199,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -63382,8 +63509,8 @@
           "name": "Txt_SelectedEyeColorTitle",
           "persistentUuid": "d63ff67c-298d-4f6b-a556-3b28e0980da8",
           "width": 0,
-          "x": 403,
-          "y": 315,
+          "x": 828,
+          "y": 283,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -63398,8 +63525,8 @@
           "name": "Txt_SelectedHairStyleTitle",
           "persistentUuid": "ff2d00fd-5b69-494b-b83a-33f070a4905b",
           "width": 0,
-          "x": 747,
-          "y": 227,
+          "x": 775,
+          "y": 445,
           "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
@@ -63414,9 +63541,26 @@
           "name": "txt_SelectedHairColorTitle",
           "persistentUuid": "0254dbd1-9759-4446-8261-62201eb28cf5",
           "width": 0,
-          "x": 359,
-          "y": 396,
+          "x": 784,
+          "y": 364,
           "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 363,
+          "keepRatio": true,
+          "layer": "CreatePanelLayer",
+          "name": "Atributos",
+          "persistentUuid": "563a5b43-e10c-4d47-a7c2-17709637bfac",
+          "width": 204,
+          "x": 330,
+          "y": 211,
+          "zOrder": 34,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -65458,6 +65602,50 @@
             "lineHeight": 0,
             "color": "0;0;0"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Atributos",
+          "persistentUuid": "373406d8-3502-4f4c-86a7-6acc3070f920",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Atributos",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Atributos",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -65546,6 +65734,9 @@
           },
           {
             "objectName": "Arrow_HairColorRight"
+          },
+          {
+            "objectName": "Atributos"
           }
         ]
       },
@@ -65758,6 +65949,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Character Creation"
         },
         {
           "colorB": 228,
@@ -67349,6 +67552,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "HairStyle change",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -67753,6 +67957,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "HairColor change",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -68145,6 +68350,392 @@
                     "Text",
                     "=",
                     "\"LOIRO\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Attributes",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "warrior"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "SelectedClass",
+                    "=",
+                    "\"Warrior\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.AttackPower",
+                    "=",
+                    "6"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.MagicPower",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.HealingPower",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Agility",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Vitality",
+                    "=",
+                    "6"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Regeneration",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Armor",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.CriticalChance",
+                    "=",
+                    "2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Mage"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "SelectedClass",
+                    "=",
+                    "\"Mage\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.AttackPower",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.MagicPower",
+                    "=",
+                    "7"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.HealingPower",
+                    "=",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Agility",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Vitality",
+                    "=",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Regeneration",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Armor",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.CriticalChance",
+                    "=",
+                    "2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Archer"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "SelectedClass",
+                    "=",
+                    "\"Archer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.AttackPower",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.MagicPower",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.HealingPower",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Agility",
+                    "=",
+                    "7"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Vitality",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Regeneration",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.Armor",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PreviewClassAttributes.CriticalChance",
+                    "=",
+                    "5"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "txt"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Atributos",
+                    "Text",
+                    "=",
+                    "\"Attack Power: \" +PreviewClassAttributes.AttackPower+NewLine()\n+\"Magic Power: \" +PreviewClassAttributes.MagicPower  +NewLine()\n+\"Healing Power: \"+ PreviewClassAttributes.HealingPower +NewLine()\n+\"Agility: \"+        \nPreviewClassAttributes.Agility +NewLine()\n+\"Vitality: \"+      PreviewClassAttributes.Vitality +NewLine()\n+\"Regeneration: \" +PreviewClassAttributes.Regeneration +NewLine()\n+\"Armor: \"+            PreviewClassAttributes.Armor +NewLine()\n+\"Critical Chance: \"+ PreviewClassAttributes.CriticalChance + NewLine()"
                   ]
                 }
               ]
