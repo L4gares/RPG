@@ -33150,6 +33150,17 @@
       ]
     },
     {
+      "name": "CurrentCharacterData",
+      "type": "structure",
+      "children": []
+    },
+    {
+      "name": "CurrentCharacterStatus",
+      "type": "string",
+      "value": "NONE"
+    },
+    {
+      "folded": true,
       "name": "ProgressionConfig",
       "type": "structure",
       "children": [
@@ -34436,123 +34447,148 @@
       "variables": [
         {
           "name": "sell_selected_quantity_MERCHANT",
+          "persistentUuid": "5bc9f124-c2a7-4808-b54a-b3663f781d24",
           "type": "number",
           "value": 1
         },
         {
           "name": "sell_selected_max_MERCHANT",
+          "persistentUuid": "24786198-25cf-4887-957c-0bc48ede31cc",
           "type": "number",
           "value": 1
         },
         {
           "name": "sell_selected_slot_MERCHANT",
+          "persistentUuid": "ea0088b9-6c24-40eb-b2bd-156c8b2414be",
           "type": "number",
           "value": 1
         },
         {
           "name": "selected_slot_market_item_id",
+          "persistentUuid": "f8d033a7-fcb0-439a-a607-da2031bd7950",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "item_type_market",
+          "persistentUuid": "8ed3b819-458c-4b4e-89a8-b23d59978736",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "item_Sub_type_market",
+          "persistentUuid": "c1a41693-2631-4c1e-8f28-718269b32cf4",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "drop_pending",
+          "persistentUuid": "090777c1-3208-49c2-b354-4cc9e7bbd852",
           "type": "number",
           "value": 0
         },
         {
           "name": "selected_slot",
+          "persistentUuid": "cc386422-0811-4f7c-87bf-95168b4ecd90",
           "type": "number",
           "value": -1
         },
         {
           "name": "temp_id_slot_inventory",
+          "persistentUuid": "e57bbe6d-3c96-446c-a24c-eac849ccc379",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_slot_index",
+          "persistentUuid": "54d23809-adac-40af-bce5-e6639d0654c0",
           "type": "number",
           "value": 0
         },
         {
           "name": "temp_drop_quantity",
+          "persistentUuid": "9232267c-946f-48ce-b08f-71e9e0d76142",
           "type": "number",
           "value": 0
         },
         {
           "name": "drop_loop",
+          "persistentUuid": "174ba481-c7ca-4423-ba5f-da8ea5bdbb3a",
           "type": "number",
           "value": 0
         },
         {
           "name": "can_collect",
+          "persistentUuid": "9ab724d5-9973-4d8d-973d-f619df142858",
           "type": "boolean",
           "value": true
         },
         {
           "name": "spawRoll",
+          "persistentUuid": "677adb48-271b-47a9-9872-e30bcebc2e29",
           "type": "number",
           "value": 0
         },
         {
           "name": "temp_quantity_item_slot",
+          "persistentUuid": "4c88d0e7-ea33-4144-8130-67f99f92ea45",
           "type": "number",
           "value": 0
         },
         {
           "name": "temp_type_item_slot",
+          "persistentUuid": "9fa036af-676a-4cb7-815e-f37c5a54f39e",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_id_item_slot",
+          "persistentUuid": "48ba0f6e-3643-4491-817e-10b8ed2faf75",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_sub_type_item_slot",
+          "persistentUuid": "acfc833f-8d05-41f4-b620-b9d7bcb2271c",
           "type": "string",
           "value": "0"
         },
         {
           "folded": true,
           "name": "drop_table",
+          "persistentUuid": "15258efc-f184-4b46-8f8e-4f345aefc921",
           "type": "structure",
           "children": [
             {
               "name": "grassland",
+              "persistentUuid": "08d7d70b-e4fd-47b0-83e5-8d2c86cd2416",
               "type": "structure",
               "children": [
                 {
                   "name": "normal_enemies",
+                  "persistentUuid": "275aae02-f91c-408e-ba00-e00e52b40a97",
                   "type": "structure",
                   "children": [
                     {
                       "name": "mob_hare",
+                      "persistentUuid": "a04fbac3-c52e-445d-aea9-55f401c51606",
                       "type": "structure",
                       "children": [
                         {
                           "folded": true,
                           "name": "allowed_rarities",
+                          "persistentUuid": "60b23264-f59a-4890-a3bd-1e2fc63fac5c",
                           "type": "structure",
                           "children": [
                             {
                               "name": "common",
+                              "persistentUuid": "53570f4c-5aaa-432e-8b61-fedbb7f5045b",
                               "type": "number",
                               "value": 70
                             },
                             {
                               "name": "uncommon",
+                              "persistentUuid": "c7e6deaf-05fe-4ccf-b0f5-0304c9538c36",
                               "type": "number",
                               "value": 30
                             }
@@ -34560,26 +34596,31 @@
                         },
                         {
                           "name": "drop_chance",
+                          "persistentUuid": "ae374020-9e08-45f1-b687-6a47d0dd2968",
                           "type": "number",
                           "value": 80
                         },
                         {
                           "name": "items",
+                          "persistentUuid": "59e855f8-e2ac-45c5-b28c-cce4aaa3bb2c",
                           "type": "structure",
                           "children": [
                             {
                               "name": "common",
+                              "persistentUuid": "cb59f79f-5885-4769-b331-5f161b327da0",
                               "type": "structure",
                               "children": [
                                 {
                                   "folded": true,
                                   "name": "item_01",
+                                  "persistentUuid": "561e3a05-7aba-4429-b508-a0a159c83c92",
                                   "type": "string",
                                   "value": "rabbit_foot"
                                 },
                                 {
                                   "folded": true,
                                   "name": "item_02",
+                                  "persistentUuid": "8f2e558a-185f-4dc1-8e41-79df852d9ba8",
                                   "type": "string",
                                   "value": "rabbit_skin"
                                 }
@@ -34587,6 +34628,7 @@
                             },
                             {
                               "name": "uncommon",
+                              "persistentUuid": "ce7abed1-eaac-4070-87a0-f4feff8709d1",
                               "type": "structure",
                               "children": []
                             }
@@ -34602,56 +34644,67 @@
         },
         {
           "name": "temp_old_equip_id",
+          "persistentUuid": "247e93a9-e313-4151-9d2a-4c88420ee22d",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "temp_old_equip_type",
+          "persistentUuid": "e4316405-72d9-448d-9c9e-fa845cbbc321",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "temp_old_equip_sub_type",
+          "persistentUuid": "f4f05a66-5837-4aab-99b6-a8b96c582017",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "temp_old_inventory_id",
+          "persistentUuid": "f332b69c-2732-44d0-8705-d0e6de6e30dd",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "temp_old_inventory_type",
+          "persistentUuid": "cd71b474-4bb9-4267-8e52-1f395f889c80",
           "type": "string",
           "value": "\"\""
         },
         {
           "name": "temp_old_inventory_sub_type",
+          "persistentUuid": "7269017a-27b1-49cd-ab6c-5a29c2992e77",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_old_inventory_quantity",
+          "persistentUuid": "ed1c87ca-94f5-41b4-933a-cec14ecd9978",
           "type": "number",
           "value": 0
         },
         {
           "name": "temp_item",
+          "persistentUuid": "de6dd104-eeb6-4418-b479-b52ce4d4344d",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_type_slot_equipped",
+          "persistentUuid": "7c529800-ec03-4cec-873b-f502c940e697",
           "type": "string",
           "value": "0"
         },
         {
           "name": "temp_subtype",
+          "persistentUuid": "ff007d30-191e-4619-9a4e-28c4d202d35d",
           "type": "string",
           "value": "0"
         },
         {
           "name": "touch_slot_inventory",
+          "persistentUuid": "a6d3f10f-b297-4fe4-93f9-18a3e8b38bd8",
           "type": "boolean",
           "value": false
         }
@@ -61667,13 +61720,13 @@
       "variables": [
         {
           "name": "AuthStatus",
-          "persistentUuid": "9bd06a3c-adff-42c0-9702-31cb006a7de6",
+          "persistentUuid": "4f2dbf16-2e43-4758-8c03-3eb82fe16f34",
           "type": "string",
           "value": "IDLE"
         },
         {
           "name": "AuthMessage",
-          "persistentUuid": "0b47006b-7256-43e1-a6fb-3eeba6e61e07",
+          "persistentUuid": "2cd5689b-7f2e-499a-a5cc-4c6793f3f895",
           "type": "string",
           "value": " "
         }
@@ -62678,7 +62731,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.3,
         "snap": false,
-        "zoomFactor": 0.993443349825959,
+        "zoomFactor": 0.8141881203709929,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -62797,6 +62850,9 @@
             },
             {
               "name": "Text_test_attributes"
+            },
+            {
+              "name": "txt_CharacterSaveResult"
             }
           ]
         },
@@ -62815,133 +62871,133 @@
       "variables": [
         {
           "name": "CreatePanelOpen",
-          "persistentUuid": "c395bbac-b08f-470f-9d6d-8c2b1527de97",
+          "persistentUuid": "285139f8-0ca0-4f0f-9a9b-e93652234612",
           "type": "boolean",
           "value": false
         },
         {
           "name": "SelectedClass",
-          "persistentUuid": "87b8166c-13d2-4224-96d4-d8885e502b63",
+          "persistentUuid": "950fea7e-1d4c-44fa-8029-4a50a2d4bf46",
           "type": "string",
           "value": "Warrior"
         },
         {
           "name": "ClassIndex",
-          "persistentUuid": "8a777733-0c93-477e-a481-b5dd7b5a3f06",
+          "persistentUuid": "92a7dd22-d087-4b8a-80c6-1070f315fb57",
           "type": "number",
           "value": 0
         },
         {
           "name": "SelectedSex",
-          "persistentUuid": "5cef4ed0-54be-42ea-82c9-9aba8261a690",
+          "persistentUuid": "8e989415-6f98-4525-a67b-2a0365ed5596",
           "type": "string",
           "value": "Male"
         },
         {
           "name": "SexIndex",
-          "persistentUuid": "55851398-e43e-483d-a46a-7d3903308b3f",
+          "persistentUuid": "82bba455-8ce2-4b1b-84ca-4a8c5cd16e28",
           "type": "number",
           "value": 0
         },
         {
           "name": "SkinToneIndex",
-          "persistentUuid": "13bca93f-dfbd-4bf7-9908-8b0544f53c1d",
+          "persistentUuid": "477b946d-81da-4f26-be6c-7eba81caf122",
           "type": "number",
           "value": 0
         },
         {
           "name": "SelectedSkinTone",
-          "persistentUuid": "8bd0dd2b-b894-4bf3-93a3-27583fe0967a",
+          "persistentUuid": "773fcb91-376d-4f97-bb6f-48b0c0d96cee",
           "type": "string",
           "value": "Tone_01"
         },
         {
           "name": "EyeColorIndex",
-          "persistentUuid": "1187edae-5ee5-4454-923d-df386ed90aba",
+          "persistentUuid": "8d444ac9-d697-4afb-bdf4-60a8d58353c4",
           "type": "number",
           "value": 0
         },
         {
           "name": "SelectedEyeColor",
-          "persistentUuid": "de2ba93e-99ae-422e-b937-3c288fc1e93a",
+          "persistentUuid": "a1e9991a-b3b9-4cf1-b073-d64e5016f17a",
           "type": "string",
           "value": "EyeColor_01"
         },
         {
           "name": "HairStyleIndex",
-          "persistentUuid": "c62d71b2-dce1-40d6-aa35-9d5ff7b69835",
+          "persistentUuid": "ea4fcf36-9029-4e6e-b000-29e9a8d1b79a",
           "type": "number",
           "value": 0
         },
         {
           "name": "SelectedHairStyle",
-          "persistentUuid": "90eeb46f-d6c6-4c16-9083-f6aa644c1bca",
+          "persistentUuid": "db73ac8e-5090-4cfd-adc7-adbf1f160e8d",
           "type": "string",
           "value": "HairStyle_01"
         },
         {
           "name": "HairColorIndex",
-          "persistentUuid": "9e149971-1979-4481-980d-b1904fdbfc46",
+          "persistentUuid": "9ca448ea-230b-4bb7-9cbe-799359bea5f8",
           "type": "number",
           "value": 0
         },
         {
           "name": "SelectedHairColor",
-          "persistentUuid": "f0725791-a7c8-4907-b66c-d05f52e43f13",
+          "persistentUuid": "1fe350f7-0fb9-4df4-b007-bd92e5fc60bf",
           "type": "string",
           "value": "HairColor_01"
         },
         {
           "folded": true,
           "name": "PreviewClassAttributes",
-          "persistentUuid": "adee42b9-4c52-4752-9b74-1e115899c242",
+          "persistentUuid": "4681fc5d-a160-4d5b-876f-8fcc7b9af26f",
           "type": "structure",
           "children": [
             {
               "name": "Agility",
-              "persistentUuid": "40b9c934-ba86-4e3d-99ba-5d0eb6d3a22e",
+              "persistentUuid": "37ea0b99-efdd-4ccb-8a94-bcc82480742b",
               "type": "number",
               "value": 0
             },
             {
               "name": "Armor",
-              "persistentUuid": "08f61f60-48fd-49af-80d2-c9b721f619b1",
+              "persistentUuid": "a88bc21d-79c2-4baf-9191-208996e241b4",
               "type": "number",
               "value": 0
             },
             {
               "name": "AttackPower",
-              "persistentUuid": "83e9ef44-b498-4e14-ad70-0fd80bcf1294",
+              "persistentUuid": "01cd644d-0e1c-485b-a6d9-e2f8732642b1",
               "type": "number",
               "value": 0
             },
             {
               "name": "CriticalChance",
-              "persistentUuid": "0df4fbe4-fe62-4773-a582-2a74f1bb87df",
+              "persistentUuid": "4ef6656c-b778-4a0a-b01d-7da4a3680812",
               "type": "number",
               "value": 0
             },
             {
               "name": "HealingPower",
-              "persistentUuid": "f606017d-76f2-4590-8b00-12880697616a",
+              "persistentUuid": "4bc16b9b-6a2a-46e5-ae1d-7884548cf3c3",
               "type": "number",
               "value": 0
             },
             {
               "name": "MagicPower",
-              "persistentUuid": "86f8b687-937d-47eb-bd41-004f76a8046a",
+              "persistentUuid": "08c6eb85-f068-49a2-a413-52db307ab20b",
               "type": "number",
               "value": 0
             },
             {
               "name": "Regeneration",
-              "persistentUuid": "bd7faa5f-7275-4527-aec5-6624bed42c28",
+              "persistentUuid": "efec530a-ad43-4c0b-8f96-536042a53a9d",
               "type": "number",
               "value": 0
             },
             {
               "name": "Vitality",
-              "persistentUuid": "8a97851f-c8d8-4d08-89b5-4b20e30b9805",
+              "persistentUuid": "d08839d2-4705-43b2-8cd9-0af5bb28e3ff",
               "type": "number",
               "value": 0
             }
@@ -62949,166 +63005,163 @@
         },
         {
           "name": "CharacterCreationStatus",
-          "persistentUuid": "4e7912bc-599c-4e46-8366-425944f7d94b",
+          "persistentUuid": "b95232d0-72ed-4ed5-89df-5ddc7119fc8f",
           "type": "string",
           "value": "IDLE"
         },
         {
+          "folded": true,
           "name": "NewCharacterData",
-          "persistentUuid": "491298ac-088e-498c-89c1-86c8f1f1127c",
+          "persistentUuid": "2de27d23-1d0a-41ea-9dfe-26399d8116d6",
           "type": "structure",
           "children": [
             {
-              "folded": true,
               "name": "Appearance",
-              "persistentUuid": "d5528117-9cd2-4341-8ac4-d26950e5b14b",
+              "persistentUuid": "e4f11897-ea53-4ff0-aeef-ea47076de49b",
               "type": "structure",
               "children": [
                 {
                   "name": "EyeColor",
-                  "persistentUuid": "00efd99e-61f9-478a-bd7b-cbbbf70c369e",
+                  "persistentUuid": "231bb25b-09c0-4bc8-9e61-579ed66b0b67",
                   "type": "string",
                   "value": ""
                 },
                 {
                   "name": "HairColor",
-                  "persistentUuid": "31486393-1c7f-414a-a6c3-0de7afd4cab0",
+                  "persistentUuid": "05aa7353-4413-4b9f-b867-66734a4e9f91",
                   "type": "string",
                   "value": ""
                 },
                 {
                   "name": "HairStyle",
-                  "persistentUuid": "57e7799b-2400-42a5-9cdd-c1f0815a7957",
+                  "persistentUuid": "bd125de2-fc27-4801-8047-8e21a9e57477",
                   "type": "string",
                   "value": ""
                 },
                 {
                   "name": "Sex",
-                  "persistentUuid": "f95fdcd7-26ec-4df5-9b78-ff4c4ba13d05",
+                  "persistentUuid": "244909d8-4e63-49b2-ae0f-9405aeaef156",
                   "type": "string",
                   "value": ""
                 },
                 {
                   "name": "SkinTone",
-                  "persistentUuid": "41591d32-96da-4eb2-8183-a3b58affbf38",
+                  "persistentUuid": "912a1119-695d-48e6-b894-6028ce05b3a3",
                   "type": "string",
                   "value": ""
                 }
               ]
             },
             {
-              "folded": true,
               "name": "Attributes",
-              "persistentUuid": "6934bc93-cf6a-4437-91be-84d5b6c33641",
+              "persistentUuid": "8b1f8b80-32fb-4e26-9270-298e44d3227c",
               "type": "structure",
               "children": [
                 {
-                  "folded": true,
                   "name": "Allocated",
-                  "persistentUuid": "0ba4dcf2-9283-4b43-8daf-24b609d01dbc",
+                  "persistentUuid": "cfcc9e79-4885-4710-b470-8a0b09e38b2b",
                   "type": "structure",
                   "children": [
                     {
                       "name": "Agility",
-                      "persistentUuid": "49dfdeeb-8726-4313-8f48-b355a7c7b893",
+                      "persistentUuid": "7b3316d0-04ba-438f-892c-de4afaf2d988",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "Armor",
-                      "persistentUuid": "da4d2b43-155e-409a-8f81-e6a6d1009358",
+                      "persistentUuid": "161eadd4-fca3-42f3-9bee-354e38b3e5ce",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "AttackPower",
-                      "persistentUuid": "5f3834c2-e756-45ef-a71e-208b7618a1b4",
+                      "persistentUuid": "ee4903c1-b0eb-461a-9340-fdbeb4734ffc",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "CriticalChance",
-                      "persistentUuid": "8d64a23b-f916-4c71-95f8-8db415d79f61",
+                      "persistentUuid": "7efe7fe9-f6eb-49ec-ac2f-f89f99542516",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "HealingPower",
-                      "persistentUuid": "1405cab7-37ef-4543-9c6b-995ee4130671",
+                      "persistentUuid": "9fbd7f50-2fbb-45a4-9f85-d8a3ae595342",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "MagicPower",
-                      "persistentUuid": "1e7e719d-6b7c-4b73-b871-7a9aeb01eee8",
+                      "persistentUuid": "a42b28f1-d99d-4111-b376-519078e4bf5d",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "Regeneration",
-                      "persistentUuid": "16db09c8-9fd7-4540-93eb-82fc0b944a16",
+                      "persistentUuid": "b56bfd01-bfc4-4bde-9671-517c782607eb",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "Vitality",
-                      "persistentUuid": "9f47ac3f-2d86-41a9-9527-a241240fe79e",
+                      "persistentUuid": "c2789758-7bed-407e-a042-01879ee9c6f0",
                       "type": "number",
                       "value": 0
                     }
                   ]
                 },
                 {
-                  "folded": true,
                   "name": "Base",
-                  "persistentUuid": "ea7c9ec4-9019-4f3f-9762-b1b9b815f294",
+                  "persistentUuid": "949201ce-249b-401d-b7c7-5c3d5c0b2476",
                   "type": "structure",
                   "children": [
                     {
                       "name": "Agility",
-                      "persistentUuid": "118898d2-d41f-4f6d-be2e-1bf29315b885",
+                      "persistentUuid": "bc720c67-773a-4996-9983-aa2268861353",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "Armor",
-                      "persistentUuid": "a2f3b84d-7b1a-41e4-b5f6-7594a179732a",
+                      "persistentUuid": "73b4305b-639f-45d1-a10d-354850e46e25",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "AttackPower",
-                      "persistentUuid": "9236947e-b69c-4a58-814e-895cf90da36d",
+                      "persistentUuid": "71f89885-ed0a-4817-9c42-b670c7899464",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "CriticalChance",
-                      "persistentUuid": "706d59c6-5436-488d-b827-63d23f5faef2",
+                      "persistentUuid": "dd223ac3-cd60-4847-b3a2-8f4d82da7e5c",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "HealingPower",
-                      "persistentUuid": "f06a2346-86c2-4006-b29e-4ef232ae24bb",
+                      "persistentUuid": "45ca248e-4000-4ca7-9ec1-a2466239e814",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "MagicPower",
-                      "persistentUuid": "ac44b2b3-2335-4687-b38b-323715fc1f43",
+                      "persistentUuid": "f7635bac-7190-47fd-8bc3-e039f3ad3067",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "Regeneration",
-                      "persistentUuid": "ba288858-6782-4c75-b82c-d618886cd02e",
+                      "persistentUuid": "f7343149-4086-454d-bf08-6653d1152c60",
                       "type": "number",
                       "value": 0
                     },
                     {
                       "name": "Vitality",
-                      "persistentUuid": "95493619-7937-475a-8871-e1603cfb7683",
+                      "persistentUuid": "9c5cd428-1e99-4ea8-a5b9-12c29a02a2c2",
                       "type": "number",
                       "value": 0
                     }
@@ -63117,36 +63170,104 @@
               ]
             },
             {
+              "name": "CharacterID",
+              "persistentUuid": "cba83797-2a4f-4ca2-a0dd-a9b1c4e1aa6b",
+              "type": "string",
+              "value": ""
+            },
+            {
               "name": "Class",
-              "persistentUuid": "0b66089f-3697-4ea8-bed5-caf2ddd0cc87",
+              "persistentUuid": "075f7bc2-bc31-4e23-b98c-cb42c7e4d721",
               "type": "string",
               "value": ""
             },
             {
               "name": "Experience",
-              "persistentUuid": "50a1bd27-0331-4147-ae9d-d2774476397d",
+              "persistentUuid": "82f09efa-28ad-45a5-9d22-2d9f542d30c7",
               "type": "number",
               "value": 0
             },
             {
               "name": "Level",
-              "persistentUuid": "d68146e9-5b41-416a-aa86-77afb4ad60c0",
+              "persistentUuid": "8d80b7ea-5911-4da6-a41a-5d4dae60c10d",
               "type": "number",
               "value": 1
             },
             {
               "name": "Name",
-              "persistentUuid": "e5097232-77c9-41b9-8fa9-25347ff67124",
+              "persistentUuid": "29beb93e-61fe-47e3-a8c6-9d22ee71b590",
               "type": "string",
               "value": ""
             },
             {
               "name": "UnspentAttributePoints",
-              "persistentUuid": "cf29c35f-f4ae-45a0-a264-20423466be17",
+              "persistentUuid": "82b6c820-6638-4049-83a5-b00daf00b3a5",
               "type": "number",
               "value": 0
             }
           ]
+        },
+        {
+          "name": "CharacterSaveResult",
+          "persistentUuid": "3ca7f6fe-6c2a-4623-a181-8735eb4d29bf",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "folded": true,
+          "name": "SavedCharacters",
+          "persistentUuid": "c0bd6fa6-4c45-41e2-84b6-6e7d747bbaa0",
+          "type": "structure",
+          "children": [
+            {
+              "name": "docs",
+              "persistentUuid": "bfb233e4-e2ac-44a4-9611-d9b57f0dbe96",
+              "type": "array",
+              "children": []
+            },
+            {
+              "name": "empty",
+              "persistentUuid": "51f5466f-7027-4d1f-a4ef-e220cd6d28d2",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "name": "size",
+              "persistentUuid": "b8eca8e0-e7a8-45d7-b110-1c8c3feab3d7",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "name": "CharactersLoadResult",
+          "persistentUuid": "566e1d6e-b9d5-403f-b384-d8962b57d10f",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "CharactersLoadStatus",
+          "persistentUuid": "21f302e8-620e-4950-ba78-f977f9bb66c2",
+          "type": "string",
+          "value": "IDLE"
+        },
+        {
+          "name": "SelectedCharacterIndex",
+          "persistentUuid": "1dc4f448-80f0-438c-949c-9581e206ef33",
+          "type": "number",
+          "value": -1
+        },
+        {
+          "name": "SelectedCharacterID",
+          "persistentUuid": "2572799a-b73f-46db-a026-12f629329fc9",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "CharacterSelectionStatus",
+          "persistentUuid": "7fc6a887-b8c8-418c-8291-d051d57a455f",
+          "type": "string",
+          "value": "\"NONE\""
         }
       ],
       "instances": [
@@ -63803,6 +63924,107 @@
           "x": 1094,
           "y": 2,
           "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 23,
+          "keepRatio": true,
+          "layer": "CreatePanelLayer",
+          "name": "txt_CharacterSaveResult",
+          "persistentUuid": "bdb150b3-6f88-41e4-b603-eb44ac249db0",
+          "width": 426,
+          "x": 569,
+          "y": 668,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 23,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Txt_LoadDebug",
+          "persistentUuid": "211f6ece-7652-4872-839c-8ddc7530ff2e",
+          "width": 233,
+          "x": 5,
+          "y": 505,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 71,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Txt_LoadDebug2",
+          "persistentUuid": "c7b35105-1087-4b7a-8d45-161b941d85c8",
+          "width": 392,
+          "x": 8,
+          "y": 599,
+          "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 100,
+          "keepRatio": true,
+          "layer": "",
+          "name": "txt_loadedCharacters",
+          "persistentUuid": "f7663704-68ce-4ac4-b27d-81f21f45acb6",
+          "width": 165,
+          "x": 248,
+          "y": 178,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 159,
+          "keepRatio": true,
+          "layer": "",
+          "name": "txt_selectedcharacter",
+          "persistentUuid": "c6782839-30fd-4276-88ba-afdc549dc281",
+          "width": 440,
+          "x": 838,
+          "y": 2,
+          "zOrder": 43,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Btn_PlayCharacter",
+          "persistentUuid": "b228fa16-108b-4a54-b7a8-208228ab94c1",
+          "width": 0,
+          "x": 973,
+          "y": 636,
+          "zOrder": 44,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -66039,6 +66261,245 @@
             "lineHeight": 0,
             "color": "0;0;0"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "txt_CharacterSaveResult",
+          "persistentUuid": "9fb196fd-5ccf-4de6-ae53-b69660dbf2d6",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Txt_LoadDebug",
+          "persistentUuid": "5a9e83f3-0c54-41cf-988c-2d9eb15c5f3f",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Txt_LoadDebug2",
+          "persistentUuid": "4f5b456b-4373-43e5-8669-687313357690",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "txt",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "txt",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "txt_loadedCharacters",
+          "persistentUuid": "0e404658-d3d4-4fff-8f03-0080010ea04c",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "txt_selectedcharacter",
+          "persistentUuid": "a6651b95-701c-4e45-ba77-a68b73652981",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "1d520e09dda1f2a1eae840a3133286acfff11151176c0eb2718d9f6a186d13c3",
+          "name": "Btn_PlayCharacter",
+          "persistentUuid": "bac4dfc6-0e37-435f-836d-4ef182a5cc38",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variant": "Red Button With Gold Frame",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 0,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0.2,
+            "LabelText": "JOGAR"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -66142,6 +66603,24 @@
           },
           {
             "objectName": "Text_test_attributes"
+          },
+          {
+            "objectName": "txt_CharacterSaveResult"
+          },
+          {
+            "objectName": "Txt_LoadDebug"
+          },
+          {
+            "objectName": "Txt_LoadDebug2"
+          },
+          {
+            "objectName": "txt_loadedCharacters"
+          },
+          {
+            "objectName": "txt_selectedcharacter"
+          },
+          {
+            "objectName": "Btn_PlayCharacter"
           }
         ]
       },
@@ -66181,7 +66660,40 @@
                 "Text_test_attributes",
                 "Text",
                 "=",
-                "\"//SAVED ATTRIBUTES//\"\n+NewLine()+NewLine() +\n\n\"Attack Power: \" \n+ NewCharacterData.Attributes.Base.AttackPower     \n+NewLine()+NewLine() +\n\n\"Magic Power: \" \n+ NewCharacterData.Attributes.Base.MagicPower     \n+NewLine()+NewLine() +\n\n\"Healing Power: \" \n+ NewCharacterData.Attributes.Base.HealingPower     \n+NewLine()+NewLine() +\n\n\"Agility: \" \n+ NewCharacterData.Attributes.Base.Agility     \n+NewLine()+NewLine() +\n\n\"Vitality: \" \n+ NewCharacterData.Attributes.Base.Vitality\n+NewLine()+NewLine() +\n\n\"Regeneration : \" \n+NewCharacterData.Attributes.Base.Regeneration \n+NewLine()+NewLine() +\n\n\"Armor: \" \n+NewCharacterData.Attributes.Base.Armor\n+NewLine()+NewLine() +\n\n\"CriticalChance : \" \n+NewCharacterData.Attributes.Base.Agility           \n                           \n                           \n                           \n                           \n                           \n                           \n                           \n                           \n                           \n                           \n                           +NewLine()+NewLine() +\n\"//START GAME//\"\n+NewLine()+NewLine() +\n\n\"Level: \" \n+ NewCharacterData.Level     \n+NewLine()+NewLine() +\n\n\"Experience: \" \n+ NewCharacterData.Experience     \n+NewLine()+NewLine() +\n\n\"Unspent Attribute Points : \" \n+ NewCharacterData.UnspentAttributePoints     \n+NewLine()+NewLine() +\n\n\"Attack Power: \" \n+ NewCharacterData.Allocated.Base.AttackPower     \n+NewLine()+NewLine() +\n\n\"Magic Power: \" \n+ NewCharacterData.Allocated.Base.MagicPower     \n+NewLine()+NewLine() +\n\n\"Healing Power: \" \n+ NewCharacterData.Allocated.Base.HealingPower     \n+NewLine()+NewLine() +\n\n\"Agility: \" \n+ NewCharacterData.Allocated.Base.Agility     \n+NewLine()+NewLine() +\n\n\"Vitality: \" \n+ NewCharacterData.Allocated.Base.Vitality\n+NewLine()+NewLine() +\n\n\"Regeneration : \" \n+NewCharacterData.Allocated.Base.Regeneration \n+NewLine()+NewLine() +\n\n\"Armor: \" \n+NewCharacterData.Allocated.Base.Armor\n+NewLine()+NewLine() +\n\n\"CriticalChance : \" \n+NewCharacterData.Allocated.Base.CriticalChance \n"
+                "\"//BASE ATTRIBUTES//\"\n+ NewLine() + NewLine() +\n\n\"Attack Power: \"\n+ NewCharacterData.Attributes.Base.AttackPower\n+ NewLine() + NewLine() +\n\n\"Magic Power: \"\n+ NewCharacterData.Attributes.Base.MagicPower\n+ NewLine() + NewLine() +\n\n\"Healing Power: \"\n+ NewCharacterData.Attributes.Base.HealingPower\n+ NewLine() + NewLine() +\n\n\"Agility: \"\n+ NewCharacterData.Attributes.Base.Agility\n+ NewLine() + NewLine() +\n\n\"Vitality: \"\n+ NewCharacterData.Attributes.Base.Vitality\n+ NewLine() + NewLine() +\n\n\"Regeneration: \"\n+ NewCharacterData.Attributes.Base.Regeneration\n+ NewLine() + NewLine() +\n\n\"Armor: \"\n+ NewCharacterData.Attributes.Base.Armor\n+ NewLine() + NewLine() +\n\n\"Critical Chance: \"\n+ NewCharacterData.Attributes.Base.CriticalChance\n+ NewLine() + NewLine() +\n\n\"//START GAME//\"\n+ NewLine() + NewLine() +\n\n\"Level: \"\n+ NewCharacterData.Level\n+ NewLine() + NewLine() +\n\n\"Experience: \"\n+ NewCharacterData.Experience\n+ NewLine() + NewLine() +\n\n\"Unspent Attribute Points: \"\n+ NewCharacterData.UnspentAttributePoints\n+ NewLine() + NewLine() +\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\"//ALLOCATED ATTRIBUTES//\"\n+ NewLine() + NewLine() +\n\n\"Attack Power: \"\n+ NewCharacterData.Attributes.Allocated.AttackPower\n+ NewLine() + NewLine() +\n\n\"Magic Power: \"\n+ NewCharacterData.Attributes.Allocated.MagicPower\n+ NewLine() + NewLine() +\n\n\"Healing Power: \"\n+ NewCharacterData.Attributes.Allocated.HealingPower\n+ NewLine() + NewLine() +\n\n\"Agility: \"\n+ NewCharacterData.Attributes.Allocated.Agility\n+ NewLine() + NewLine() +\n\n\"Vitality: \"\n+ NewCharacterData.Attributes.Allocated.Vitality\n+ NewLine() + NewLine() +\n\n\"Regeneration: \"\n+ NewCharacterData.Attributes.Allocated.Regeneration\n+ NewLine() + NewLine() +\n\n\"Armor: \"\n+ NewCharacterData.Attributes.Allocated.Armor\n+ NewLine() + NewLine() +\n\n\"Critical Chance: \"\n+ NewCharacterData.Attributes.Allocated.CriticalChance"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "txt_CharacterSaveResult",
+                "Text",
+                "=",
+                "\"Character Save Result: \"+CharacterSaveResult"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Txt_LoadDebug",
+                "Text",
+                "=",
+                "\"Load Status: \" + CharactersLoadStatus\n+ NewLine()\n+ \"Load Result: \" + CharactersLoadResult"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "txt_selectedcharacter",
+                "Text",
+                "=",
+                "\"Status global: \"\n+ GlobalVariableString(CurrentCharacterStatus)\n+ NewLine()\n+ \"Nome global: \"\n+ GlobalVariableString(CurrentCharacterData.Name)\n+ NewLine()\n+ \"Classe global: \"\n+ GlobalVariableString(CurrentCharacterData.Class)\n+ NewLine()\n+ \"ID global: \"\n+ GlobalVariableString(CurrentCharacterData.CharacterID)"
               ]
             }
           ]
@@ -68778,6 +69290,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Attributes/descrition",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -69197,6 +69710,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "button for character creation",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -69878,6 +70392,699 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "character ID create"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharacterCreationStatus",
+                    "=",
+                    "\"DATA_READY\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "NewCharacterData.CharacterID",
+                    "=",
+                    "\"char_\"+ToString(Time(\"timestamp\"))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CharacterCreationStatus",
+                    "=",
+                    "\"ID_READY\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 35,
+                "g": 166,
+                "r": 245,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "saving character in firestore"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharacterCreationStatus",
+                    "=",
+                    "\"ID_READY\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CharacterSaveResult",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CharacterCreationStatus",
+                    "=",
+                    "\"SAVING\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Txt_CreateCharacterMessage",
+                    "Text",
+                    "=",
+                    "\"SALVANDO...\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Firebase::FirestoreWriteDocument"
+                  },
+                  "parameters": [
+                    "\"users/\" + GlobalVariableString(PlayerUID) + \"/characters\"",
+                    "NewCharacterData.CharacterID",
+                    "NewCharacterData",
+                    "CharacterSaveResult"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "save character confirm"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharacterCreationStatus",
+                    "=",
+                    "\"SAVING\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharacterSaveResult",
+                    "=",
+                    "\"ok\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CharacterCreationStatus",
+                    "=",
+                    "\"SUCCESS\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Txt_CreateCharacterMessage",
+                    "Text",
+                    "=",
+                    "\"PERSONAGEM CRIADO.\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Load and show characters of the user",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "search characters of user and loading all"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharactersLoadStatus",
+                    "=",
+                    "\"IDLE\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "PlayerUID",
+                    "!=",
+                    "\"\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CharactersLoadResult",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CharactersLoadStatus",
+                    "=",
+                    "\"LOADING\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Firebase::FirestoreStartQuery"
+                  },
+                  "parameters": [
+                    "\"LoadCharacters\"",
+                    "\"users/\" + GlobalVariableString(PlayerUID) + \"/characters\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Firebase::FirestoreExecuteQuery"
+                  },
+                  "parameters": [
+                    "\"LoadCharacters\"",
+                    "SavedCharacters",
+                    "CharactersLoadResult"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "confirm finish of the loading"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharactersLoadStatus",
+                    "=",
+                    "\"LOADING\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharactersLoadResult",
+                    "=",
+                    "\"ok\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CharactersLoadStatus",
+                    "=",
+                    "\"LOADED\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Txt_LoadDebug2",
+                    "Text",
+                    "=",
+                    "\"PERSONAGENS CARREGADOS.\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharactersLoadStatus",
+                    "=",
+                    "\"LOADED\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedCharacters.size",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "txt_loadedCharacters",
+                    "Text",
+                    "=",
+                    "\"Nome: \"\n+ SavedCharacters.docs[0].data.Name\n+ NewLine()\n+ \"Classe: \"\n+ SavedCharacters.docs[0].data.Class\n+ NewLine()\n+ \"Nível: \"\n+ ToString(SavedCharacters.docs[0].data.Level)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "select character"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharactersLoadStatus",
+                    "=",
+                    "\"LOADED\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedCharacters.size",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "txt_loadedCharacters",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SelectedCharacterIndex",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "SelectedCharacterID",
+                    "=",
+                    "SavedCharacters.docs[0].data.CharacterID"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CharacterSelectionStatus",
+                    "=",
+                    "\"SELECTED\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "const sceneVariables = runtimeScene.getVariables();",
+                    "const globalVariables = runtimeScene.getGame().getVariables();",
+                    "",
+                    "const selectedIndex = sceneVariables",
+                    "  .get(\"SelectedCharacterIndex\")",
+                    "  .getAsNumber();",
+                    "",
+                    "const savedCharacters = sceneVariables",
+                    "  .get(\"SavedCharacters\");",
+                    "",
+                    "const documents = savedCharacters",
+                    "  .getChild(\"docs\");",
+                    "",
+                    "const selectedCharacterData = documents",
+                    "  .getChildAt(selectedIndex)",
+                    "  .getChild(\"data\");",
+                    "",
+                    "const currentCharacterData = globalVariables",
+                    "  .get(\"CurrentCharacterData\");",
+                    "",
+                    "// Copia toda a estrutura, incluindo Appearance e Attributes.",
+                    "// gdjs.Variable.copy faz uma cópia completa da estrutura, incluindo todos os campos internos, sem criar ligação entre a variável carregada e a variável global.",
+                    "gdjs.Variable.copy(",
+                    "  selectedCharacterData,",
+                    "  currentCharacterData,",
+                    "  false",
+                    ");",
+                    "",
+                    "globalVariables",
+                    "  .get(\"CurrentCharacterStatus\")",
+                    "  .setString(\"SELECTED\");"
+                  ],
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": false
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "desmarcar character"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharacterSelectionStatus",
+                    "=",
+                    "\"SELECTED\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "txt_loadedCharacters",
+                    "",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "Btn_PlayCharacter",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CharacterSelectionStatus",
+                    "=",
+                    "\"NONE\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SelectedCharacterIndex",
+                    "=",
+                    "-1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "SelectedCharacterID",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CurrentCharacterStatus",
+                    "=",
+                    "\"NONE\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ClearVariableChildren"
+                  },
+                  "parameters": [
+                    "CurrentCharacterData"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "JOGAR",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharacterSelectionStatus",
+                    "=",
+                    "\"SELECTED\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CurrentCharacterStatus",
+                    "=",
+                    "\"SELECTED\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "SelectedCharacterID",
+                    "!=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "Btn_PlayCharacter",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MAP_1\"",
+                    "yes"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -69960,10 +71167,10 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
+          "isLocked": true,
           "name": "CreatePanelLayer",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
