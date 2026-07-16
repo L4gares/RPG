@@ -1,0 +1,11 @@
+ARQUIVOS DO LADO DIREITO — IDLE E RUN
+
+Fonte: assets_character_personalization_master(2).ase
+Canvas: 64x64
+
+- Player_Hair/idle_right: 1 frame(s)
+- Player_Hair/run_right: 8 frame(s)
+- Player_Eyes/idle_right: 1 frame(s)
+- Player_Eyes/run_right: 8 frame(s)
+- Player_BaseClothes/idle_right: 1 frame(s)
+- Player_BaseClothes/run_right: 8 frame(s)

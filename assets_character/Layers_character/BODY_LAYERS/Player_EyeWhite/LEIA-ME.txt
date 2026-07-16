@@ -1,0 +1,36 @@
+EXPORTAÇÃO DA CAMADA BRANCA DOS OLHOS — MASTER 7
+
+Arquivo-fonte: assets_character_personalization_master(7).ase
+Camada-fonte: Eye_White
+Objeto recomendado no GDevelop: Player_EyeWhite
+Canvas: 64x64
+Frames totais: 52
+Tags de animação: 12
+
+Todos os PNGs mantêm o canvas completo de 64x64 e o alinhamento original.
+Os frames das animações voltadas para cima são transparentes intencionalmente.
+Esta camada não deve receber a ação Change color usada nos tons de pele.
+
+Animações exportadas:
+- idle_down: frames 0 a 0 (1 frame(s))
+- idle_left: frames 1 a 1 (1 frame(s))
+- idle_right: frames 2 a 2 (1 frame(s))
+- idle_up: frames 3 a 3 (1 frame(s))
+- run_down: frames 4 a 11 (8 frame(s))
+- run_left: frames 12 a 19 (8 frame(s))
+- run_right: frames 20 a 27 (8 frame(s))
+- run_up: frames 28 a 35 (8 frame(s))
+- attack_down: frames 36 a 39 (4 frame(s))
+- attack_left: frames 40 a 43 (4 frame(s))
+- attack_right: frames 44 a 47 (4 frame(s))
+- attack_up: frames 48 a 51 (4 frame(s))
+
+Total de PNGs: 52
+Frames com pixels: 39
+Frames transparentes: 13
+
+Ordem recomendada das camadas no personagem:
+- Player_Head
+- Player_EyeWhite
+- Player_Eyes
+- Player_Hair

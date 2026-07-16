@@ -1,0 +1,26 @@
+EXPORTAÇÃO DAS CAMADAS DE PERSONALIZAÇÃO
+
+Arquivo-fonte: assets_character_personalization_master(1).ase
+Tamanho de cada frame: 64x64
+Total de frames: 44
+
+Pastas:
+- Player_Hair: cabelo em escala de cinza para receber tonalidade.
+- Player_Eyes: cor dos olhos em escala de cinza para receber tonalidade.
+- Player_BaseClothes: roupa básica separada.
+
+As imagens mantêm o canvas completo de 64x64 e a posição original.
+Os frames vazios de Player_Eyes nas animações voltadas para cima são intencionais.
+
+Tags exportadas:
+- idle_down: frames 0 a 0 (1 frame(s))
+- idle_left: frames 1 a 1 (1 frame(s))
+- idle_right: frames 2 a 2 (1 frame(s))
+- idle_up: frames 3 a 3 (1 frame(s))
+- run_down: frames 4 a 11 (8 frame(s))
+- run_left: frames 12 a 19 (8 frame(s))
+- run_up: frames 20 a 27 (8 frame(s))
+- attack_down: frames 28 a 31 (4 frame(s))
+- attack_left: frames 32 a 35 (4 frame(s))
+- attack_right: frames 36 a 39 (4 frame(s))
+- attack_up: frames 40 a 43 (4 frame(s))
