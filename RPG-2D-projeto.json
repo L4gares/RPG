@@ -72431,6 +72431,29 @@
               "value": 0
             }
           ]
+        },
+        {
+          "name": "CharacterProgressLastError",
+          "persistentUuid": "4489c0e7-1db1-4a54-b756-f4c9a85b7b31",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "CharacterProgressSaveRetryCount",
+          "persistentUuid": "bf5dea8e-d6b9-4c6b-9933-cf9a8d001558",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "CharacterPersistentDataSnapshot",
+          "persistentUuid": "1590d8e4-af5b-4d26-a376-0cfb5e3422d0",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "MultiplayerEquipmentSnapshot",
+          "type": "string",
+          "value": ""
         }
       ],
       "instances": [
@@ -100551,7 +100574,6 @@
           "comment": "Character created global data > local variable"
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -100600,22 +100622,71 @@
                 "const activeCharacterStatus =",
                 "  sceneVariables.get(\"ActiveCharacterStatus\");",
                 "",
-                "// Limpa qualquer dado local anterior.",
+                "const inventory =",
+                "  globalVariables.get(\"inventory\");",
+                "",
+                "const equipment =",
+                "  globalVariables.get(\"equip_slots\");",
+                "",
+                "const playerGold =",
+                "  globalVariables.get(\"player_Gold\");",
+                "",
+                "const playerGem =",
+                "  globalVariables.get(\"player_Gem\");",
+                "",
+                "// Limpa qualquer personagem carregado anteriormente.",
                 "activeCharacterData.clearChildren();",
                 "",
-                "// Copia toda a estrutura global para a variável local da MAP_1.",
+                "// Copia todos os dados do personagem selecionado",
+                "// para a variável da cena MAP_1.",
                 "gdjs.Variable.copy(",
                 "  currentCharacterData,",
                 "  activeCharacterData,",
                 "  false",
                 ");",
                 "",
-                "// Confirma se foi copiado um personagem válido.",
+                "// Confirma se existe um personagem válido.",
                 "const characterID = activeCharacterData",
                 "  .getChild(\"CharacterID\")",
                 "  .getAsString();",
                 "",
                 "if (characterID !== \"\") {",
+                "  // Carrega o inventário salvo.",
+                "  if (activeCharacterData.hasChild(\"Inventory\")) {",
+                "    gdjs.Variable.copy(",
+                "      activeCharacterData.getChild(\"Inventory\"),",
+                "      inventory,",
+                "      false",
+                "    );",
+                "  }",
+                "",
+                "  // Carrega os equipamentos salvos.",
+                "  if (activeCharacterData.hasChild(\"Equipment\")) {",
+                "    gdjs.Variable.copy(",
+                "      activeCharacterData.getChild(\"Equipment\"),",
+                "      equipment,",
+                "      false",
+                "    );",
+                "  }",
+                "",
+                "  // Carrega ouro e gemas.",
+                "  if (activeCharacterData.hasChild(\"Currencies\")) {",
+                "    const currencies =",
+                "      activeCharacterData.getChild(\"Currencies\");",
+                "",
+                "    if (currencies.hasChild(\"Gold\")) {",
+                "      playerGold.setNumber(",
+                "        currencies.getChild(\"Gold\").getAsNumber()",
+                "      );",
+                "    }",
+                "",
+                "    if (currencies.hasChild(\"Gem\")) {",
+                "      playerGem.setNumber(",
+                "        currencies.getChild(\"Gem\").getAsNumber()",
+                "      );",
+                "    }",
+                "  }",
+                "",
                 "  activeCharacterStatus.setString(\"READY\");",
                 "} else {",
                 "  activeCharacterData.clearChildren();",
@@ -100636,9 +100707,9 @@
                 "value": "StringVariable"
               },
               "parameters": [
-                "ActiveCharacterStatus",
+                "FinalAttributesStatus",
                 "=",
-                "\"READY\""
+                "\"IDLE\""
               ]
             },
             {
@@ -100646,9 +100717,9 @@
                 "value": "StringVariable"
               },
               "parameters": [
-                "FinalAttributesStatus",
+                "ActiveCharacterStatus",
                 "=",
-                "\"IDLE\""
+                "\"READY\""
               ]
             }
           ],
@@ -100741,6 +100812,129 @@
                 "FinalAttributesStatus",
                 "=",
                 "\"READY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "LOAD EQUIPMENT SLOT SPRITES"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "ActiveCharacterStatus",
+                "=",
+                "\"READY\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "UI_slot_equip",
+                    "slot_type",
+                    "=",
+                    "\"Weapons\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "UI_slot_equip",
+                    "Animation",
+                    "=",
+                    "GlobalVariableString(equip_slots.Weapons.id)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "UI_slot_equip",
+                    "slot_type",
+                    "=",
+                    "\"Head\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "UI_slot_equip",
+                    "Animation",
+                    "=",
+                    "GlobalVariableString(equip_slots.Head.id)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "UI_slot_equip",
+                    "slot_type",
+                    "=",
+                    "\"Tronco\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "UI_slot_equip",
+                    "Animation",
+                    "=",
+                    "GlobalVariableString(equip_slots.Tronco.id)"
+                  ]
+                }
               ]
             }
           ]
@@ -101137,7 +101331,204 @@
             "textG": 0,
             "textR": 0
           },
+          "comment": "PERSISTENT DATA - INVENTORY EQUIPMENT CURRENCIES"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "ActiveCharacterStatus",
+                "=",
+                "\"READY\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"CharacterPersistentDataCheck\"",
+                ">",
+                "1"
+              ]
+            }
+          ],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const sceneVariables = runtimeScene.getVariables();",
+            "const globalVariables = runtimeScene.getGame().getVariables();",
+            "",
+            "const activeCharacterData =",
+            "  sceneVariables.get(\"ActiveCharacterData\");",
+            "",
+            "const snapshotVariable =",
+            "  sceneVariables.get(\"CharacterPersistentDataSnapshot\");",
+            "",
+            "const dirtyVariable =",
+            "  sceneVariables.get(\"CharacterProgressDirty\");",
+            "",
+            "const currentSnapshot = JSON.stringify({",
+            "  inventory: globalVariables",
+            "    .get(\"inventory\")",
+            "    .toJSObject(),",
+            "",
+            "  equipment: globalVariables",
+            "    .get(\"equip_slots\")",
+            "    .toJSObject(),",
+            "",
+            "  gold: globalVariables",
+            "    .get(\"player_Gold\")",
+            "    .getAsNumber(),",
+            "",
+            "  gem: globalVariables",
+            "    .get(\"player_Gem\")",
+            "    .getAsNumber()",
+            "});",
+            "",
+            "const previousSnapshot =",
+            "  snapshotVariable.getAsString();",
+            "",
+            "const missingPersistentFields =",
+            "  !activeCharacterData.hasChild(\"Inventory\") ||",
+            "  !activeCharacterData.hasChild(\"Equipment\") ||",
+            "  !activeCharacterData.hasChild(\"Currencies\");",
+            "",
+            "if (previousSnapshot === \"\") {",
+            "  snapshotVariable.setString(currentSnapshot);",
+            "",
+            "  // Personagem antigo ainda não possui esses campos.",
+            "  // Marca para salvar uma primeira vez.",
+            "  if (missingPersistentFields) {",
+            "    dirtyVariable.setBoolean(true);",
+            "  }",
+            "} else if (previousSnapshot !== currentSnapshot) {",
+            "  snapshotVariable.setString(currentSnapshot);",
+            "  dirtyVariable.setBoolean(true);",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"CharacterPersistentDataCheck\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
           "comment": "save progress in firestone"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "CharacterProgressSaveStatus",
+                "=",
+                "\"REQUESTED\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "PlayerUID",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "ActiveCharacterData.CharacterID",
+                "!=",
+                "\"\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const sceneVariables = runtimeScene.getVariables();",
+                "const globalVariables = runtimeScene.getGame().getVariables();",
+                "",
+                "const activeCharacterData =",
+                "  sceneVariables.get(\"ActiveCharacterData\");",
+                "",
+                "// Copia o inventário global para dentro dos dados do personagem.",
+                "gdjs.Variable.copy(",
+                "  globalVariables.get(\"inventory\"),",
+                "  activeCharacterData.getChild(\"Inventory\"),",
+                "  false",
+                ");",
+                "",
+                "// Copia os equipamentos globais.",
+                "gdjs.Variable.copy(",
+                "  globalVariables.get(\"equip_slots\"),",
+                "  activeCharacterData.getChild(\"Equipment\"),",
+                "  false",
+                ");",
+                "",
+                "// Copia ouro e gemas.",
+                "const currencies =",
+                "  activeCharacterData.getChild(\"Currencies\");",
+                "",
+                "currencies",
+                "  .getChild(\"Gold\")",
+                "  .setNumber(",
+                "    globalVariables",
+                "      .get(\"player_Gold\")",
+                "      .getAsNumber()",
+                "  );",
+                "",
+                "currencies",
+                "  .getChild(\"Gem\")",
+                "  .setNumber(",
+                "    globalVariables",
+                "      .get(\"player_Gem\")",
+                "      .getAsNumber()",
+                "  );"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -101231,6 +101622,26 @@
                 "=",
                 "\"SAVED\""
               ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "CharacterProgressLastError",
+                "=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CharacterProgressSaveRetryCount",
+                "=",
+                "0"
+              ]
             }
           ]
         },
@@ -101239,7 +101650,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Appearance",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -104157,6 +104567,114 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "BACKEND - RECUPERAR ERRO DO SAVE AUTOMÁTICO"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharacterProgressSaveStatus",
+                    "=",
+                    "\"SAVING\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharacterProgressSaveResult",
+                    "!=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "CharacterProgressSaveResult",
+                    "!=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "AttributeAllocationStatus",
+                    "!=",
+                    "\"SAVING\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CharacterProgressLastError",
+                    "=",
+                    "CharacterProgressSaveResult"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CharacterProgressSaveRetryCount",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CharacterProgressDirty",
+                    "True",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "CharacterProgressSaveStatus",
+                    "=",
+                    "\"IDLE\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"CharacterProgressAutoSave\""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -104494,6 +105012,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -104836,6 +105355,210 @@
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": false
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "SYNC EQUIPMENT TO REALTIME DATABASE"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "MultiplayerPresenceStatus",
+                    "=",
+                    "\"ONLINE\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MultiplayerEquipmentSync\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "MultiplayerPresenceStatus",
+                    "=",
+                    "\"ONLINE\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MultiplayerEquipmentSync\"",
+                    ">",
+                    "0.5"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "const sceneVariables =",
+                    "  runtimeScene.getVariables();",
+                    "",
+                    "const globalVariables =",
+                    "  runtimeScene",
+                    "    .getGame()",
+                    "    .getVariables();",
+                    "",
+                    "const equipmentSnapshot =",
+                    "  sceneVariables.get(",
+                    "    \"MultiplayerEquipmentSnapshot\"",
+                    "  );",
+                    "",
+                    "const presenceResult =",
+                    "  sceneVariables.get(",
+                    "    \"MultiplayerPresenceResult\"",
+                    "  );",
+                    "",
+                    "const firebaseExtensionUser =",
+                    "  gdjs.evtTools.firebaseTools &&",
+                    "  gdjs.evtTools.firebaseTools.auth",
+                    "    ? gdjs.evtTools.firebaseTools",
+                    "        .auth.currentUser",
+                    "    : null;",
+                    "",
+                    "const firebaseCompatUser =",
+                    "  typeof firebase !== \"undefined\" &&",
+                    "  typeof firebase.auth === \"function\"",
+                    "    ? firebase.auth().currentUser",
+                    "    : null;",
+                    "",
+                    "const currentUser =",
+                    "  firebaseExtensionUser ||",
+                    "  firebaseCompatUser;",
+                    "",
+                    "if (!currentUser) {",
+                    "  presenceResult.setString(",
+                    "    \"EQUIPMENT_SYNC_USER_NOT_FOUND\"",
+                    "  );",
+                    "",
+                    "  return;",
+                    "}",
+                    "",
+                    "if (",
+                    "  typeof firebase === \"undefined\" ||",
+                    "  typeof firebase.database !==",
+                    "    \"function\"",
+                    ") {",
+                    "  presenceResult.setString(",
+                    "    \"EQUIPMENT_SYNC_RTDB_NOT_FOUND\"",
+                    "  );",
+                    "",
+                    "  return;",
+                    "}",
+                    "",
+                    "const equipmentData =",
+                    "  globalVariables",
+                    "    .get(\"equip_slots\")",
+                    "    .toJSObject();",
+                    "",
+                    "const currentSnapshot =",
+                    "  JSON.stringify(equipmentData);",
+                    "",
+                    "const previousSnapshot =",
+                    "  equipmentSnapshot.getAsString();",
+                    "",
+                    "// Nada mudou desde a última sincronização.",
+                    "if (",
+                    "  currentSnapshot ===",
+                    "  previousSnapshot",
+                    ") {",
+                    "  return;",
+                    "}",
+                    "",
+                    "// Guarda a nova fotografia dos equipamentos.",
+                    "equipmentSnapshot.setString(",
+                    "  currentSnapshot",
+                    ");",
+                    "",
+                    "const equipmentReference =",
+                    "  firebase",
+                    "    .database()",
+                    "    .ref(",
+                    "      \"worlds/MAP_1/players/\" +",
+                    "      currentUser.uid +",
+                    "      \"/equipment\"",
+                    "    );",
+                    "",
+                    "equipmentReference",
+                    "  .set(equipmentData)",
+                    "",
+                    "  .catch(error => {",
+                    "    // Limpa a fotografia para tentar novamente",
+                    "    // na próxima verificação.",
+                    "    equipmentSnapshot.setString(\"\");",
+                    "",
+                    "    presenceResult.setString(",
+                    "      error && error.message",
+                    "        ? \"EQUIPMENT_SYNC_ERROR: \" +",
+                    "          error.message",
+                    "        : \"EQUIPMENT_SYNC_UNKNOWN_ERROR\"",
+                    "    );",
+                    "",
+                    "    console.error(",
+                    "      \"Erro ao sincronizar equipamentos:\",",
+                    "      error",
+                    "    );",
+                    "  });"
+                  ],
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": false
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MultiplayerEquipmentSync\""
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -105354,9 +106077,9 @@
           "parameters": []
         },
         {
-          "colorB": 134,
-          "colorG": 233,
-          "colorR": 184,
+          "colorB": 194,
+          "colorG": 227,
+          "colorR": 80,
           "creationTime": 0,
           "name": "Remote - Visual Instances",
           "source": "",
@@ -106545,19 +107268,279 @@
                   "eventsSheetExpanded": true
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "REMOTE EQUIPMENT VISUALS"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "RemotePlayersStatus",
+                    "=",
+                    "\"LISTENING\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "const network =",
+                    "  runtimeScene.__rpgRemoteNetwork;",
+                    "",
+                    "const remoteVisuals =",
+                    "  runtimeScene.__rpgRemoteVisuals;",
+                    "",
+                    "if (",
+                    "  !network ||",
+                    "  !network.players ||",
+                    "  !remoteVisuals",
+                    ") {",
+                    "  return;",
+                    "}",
+                    "",
+                    "const createEquipmentPart = (",
+                    "  visual,",
+                    "  partName,",
+                    "  objectName",
+                    ") => {",
+                    "  if (visual.parts[partName]) {",
+                    "    return visual.parts[partName];",
+                    "  }",
+                    "",
+                    "  const part =",
+                    "    runtimeScene.createObject(",
+                    "      objectName",
+                    "    );",
+                    "",
+                    "  if (!part) {",
+                    "    console.error(",
+                    "      \"Não foi possível criar \" +",
+                    "      objectName",
+                    "    );",
+                    "",
+                    "    return null;",
+                    "  }",
+                    "",
+                    "  part.setPosition(",
+                    "    visual.root.getX(),",
+                    "    visual.root.getY()",
+                    "  );",
+                    "",
+                    "  part.hide(true);",
+                    "",
+                    "  visual.parts[partName] = part;",
+                    "",
+                    "  return part;",
+                    "};",
+                    "",
+                    "const updateEquipmentPart = (",
+                    "  part,",
+                    "  itemID,",
+                    "  animationName,",
+                    "  frame,",
+                    "  zOrder,",
+                    "  useFrameLoop",
+                    ") => {",
+                    "  if (!part) {",
+                    "    return;",
+                    "  }",
+                    "",
+                    "  if (",
+                    "    !itemID ||",
+                    "    itemID === \"empty\"",
+                    "  ) {",
+                    "    part.hide(true);",
+                    "    return;",
+                    "  }",
+                    "",
+                    "  part.hide(false);",
+                    "",
+                    "  if (",
+                    "    part.getAnimationName() !==",
+                    "    animationName",
+                    "  ) {",
+                    "    part.setAnimationName(",
+                    "      animationName",
+                    "    );",
+                    "  }",
+                    "",
+                    "  part.setZOrder(zOrder);",
+                    "",
+                    "  const frameCount =",
+                    "    part.getAnimationFrameCount();",
+                    "",
+                    "  if (frameCount <= 0) {",
+                    "    return;",
+                    "  }",
+                    "",
+                    "  const selectedFrame =",
+                    "    useFrameLoop",
+                    "      ? frame % frameCount",
+                    "      : Math.min(",
+                    "          frame,",
+                    "          frameCount - 1",
+                    "        );",
+                    "",
+                    "  part.setAnimationFrame(",
+                    "    selectedFrame",
+                    "  );",
+                    "};",
+                    "",
+                    "for (",
+                    "  const [",
+                    "    remoteUID,",
+                    "    playerData",
+                    "  ]",
+                    "  of Object.entries(",
+                    "    network.players",
+                    "  )",
+                    ") {",
+                    "  const visual =",
+                    "    remoteVisuals[remoteUID];",
+                    "",
+                    "  if (",
+                    "    !visual ||",
+                    "    !visual.root ||",
+                    "    !visual.parts ||",
+                    "    !visual.parts.tronco",
+                    "  ) {",
+                    "    continue;",
+                    "  }",
+                    "",
+                    "  const helmet =",
+                    "    createEquipmentPart(",
+                    "      visual,",
+                    "      \"helmet\",",
+                    "      \"Remote_Player_Helmet\"",
+                    "    );",
+                    "",
+                    "  const chest =",
+                    "    createEquipmentPart(",
+                    "      visual,",
+                    "      \"chest\",",
+                    "      \"Remote_Player_Chest\"",
+                    "    );",
+                    "",
+                    "  const equipment =",
+                    "    playerData.equipment &&",
+                    "    typeof playerData.equipment ===",
+                    "      \"object\"",
+                    "      ? playerData.equipment",
+                    "      : {};",
+                    "",
+                    "  const headSlot =",
+                    "    equipment.Head &&",
+                    "    typeof equipment.Head ===",
+                    "      \"object\"",
+                    "      ? equipment.Head",
+                    "      : {};",
+                    "",
+                    "  const chestSlot =",
+                    "    equipment.Tronco &&",
+                    "    typeof equipment.Tronco ===",
+                    "      \"object\"",
+                    "      ? equipment.Tronco",
+                    "      : {};",
+                    "",
+                    "  const helmetID =",
+                    "    typeof headSlot.id === \"string\"",
+                    "      ? headSlot.id",
+                    "      : \"empty\";",
+                    "",
+                    "  const chestID =",
+                    "    typeof chestSlot.id === \"string\"",
+                    "      ? chestSlot.id",
+                    "      : \"empty\";",
+                    "",
+                    "  const rootVariables =",
+                    "    visual.root.getVariables();",
+                    "",
+                    "  const currentAnimation =",
+                    "    rootVariables",
+                    "      .get(\"RemoteAnimation\")",
+                    "      .getAsString() ||",
+                    "    \"idle_down\";",
+                    "",
+                    "  const currentDirection =",
+                    "    rootVariables",
+                    "      .get(\"RemoteDirection\")",
+                    "      .getAsString() ||",
+                    "    \"down\";",
+                    "",
+                    "  const currentFrame =",
+                    "    visual.parts.tronco",
+                    "      .getAnimationFrame();",
+                    "",
+                    "  const x =",
+                    "    visual.root.getX();",
+                    "",
+                    "  const y =",
+                    "    visual.root.getY();",
+                    "",
+                    "  const baseZOrder =",
+                    "    Math.round(y);",
+                    "",
+                    "  if (helmet) {",
+                    "    helmet.setPosition(x, y);",
+                    "  }",
+                    "",
+                    "  if (chest) {",
+                    "    chest.setPosition(x, y);",
+                    "  }",
+                    "",
+                    "  updateEquipmentPart(",
+                    "    helmet,",
+                    "    helmetID,",
+                    "    helmetID +",
+                    "      \"_\" +",
+                    "      currentAnimation,",
+                    "    currentFrame,",
+                    "    baseZOrder + 6,",
+                    "    false",
+                    "  );",
+                    "",
+                    "  /*",
+                    "   * O peitoral atual possui somente",
+                    "   * animações idle. Por isso ele usa",
+                    "   * a direção correta mesmo quando",
+                    "   * o jogador está correndo.",
+                    "   */",
+                    "  updateEquipmentPart(",
+                    "    chest,",
+                    "    chestID,",
+                    "    chestID +",
+                    "      \"_idle_\" +",
+                    "      currentDirection,",
+                    "    currentFrame,",
+                    "    baseZOrder + 2,",
+                    "    true",
+                    "  );",
+                    "}"
+                  ],
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": false
+                }
+              ]
             }
           ],
           "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -119102,6 +120085,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "set position - body parts - equipment parts",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -120690,6 +121674,7 @@
           "colorG": 99,
           "colorR": 94,
           "creationTime": 0,
+          "folded": true,
           "name": "death",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -127084,6 +128069,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "hid/show inventory",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -127828,6 +128814,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "show value of gold and Gem",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -127868,6 +128855,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "new - collecting items - data",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -128179,6 +129167,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "show items inventory - easier ",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -128209,6 +129198,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "cleaning inventory ",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -129819,6 +130809,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "txt_item_quantity in each slot inventory",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -129946,6 +130937,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "dragg items - inventory",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -131549,6 +132541,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Identfy item's propriety ",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
