@@ -16323,7 +16323,7 @@
   },
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": false,
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "character",
       "persistentUuid": "d91d6bd9-fe92-4341-a88f-9d2796fa5d10",
@@ -16507,36 +16507,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 25.5,
-                        "y": 33.5
+                        "x": 25,
+                        "y": 20
                       },
                       {
-                        "x": 37.5,
-                        "y": 33.5
+                        "x": 38,
+                        "y": 20
                       },
                       {
-                        "x": 37.5,
-                        "y": 38.5
+                        "x": 38,
+                        "y": 49
                       },
                       {
-                        "x": 35,
-                        "y": 39.5
-                      },
-                      {
-                        "x": 35,
-                        "y": 41.5
-                      },
-                      {
-                        "x": 28,
-                        "y": 42
-                      },
-                      {
-                        "x": 28,
-                        "y": 39.5
-                      },
-                      {
-                        "x": 25.5,
-                        "y": 39
+                        "x": 25,
+                        "y": 49
                       }
                     ]
                   ]
@@ -16645,8 +16629,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -16694,8 +16678,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -16730,8 +16714,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -16766,8 +16750,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -16799,17 +16783,23 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "wapons_collisions\\sword_1_hand\\full_attack48.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Point",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
                     "x": 0,
                     "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 43.5,
+                    "y": 18.5
                   },
                   "customCollisionMask": [
                     [
@@ -16851,8 +16841,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -16887,8 +16877,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -16923,8 +16913,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -16959,8 +16949,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -17008,8 +16998,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -17044,8 +17034,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -17080,8 +17070,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -17116,8 +17106,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -17165,8 +17155,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -17201,8 +17191,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -17237,8 +17227,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -17273,8 +17263,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.5,
-                    "y": 44.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -119102,6 +119092,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "set position - body parts - equipment parts",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -119356,174 +119347,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Y-SORT DAS PARTES VISUAIS DO PERSONAGEM"
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Shadow",
-                    "=",
-                    "character.Y() - 0.06"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Tronco",
-                    "=",
-                    "character.Y()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Legs",
-                    "=",
-                    "character.Y()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Foots",
-                    "=",
-                    "character.Y()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_BaseClothes",
-                    "=",
-                    "character.Y() + 0.01"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Pants",
-                    "=",
-                    "character.Y() + 0.15"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Boots",
-                    "=",
-                    "character.Y() + 0.16"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Head",
-                    "=",
-                    "character.Y() + 0.02"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Chest",
-                    "=",
-                    "character.Y() + 0.02"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_EyesWhite",
-                    "=",
-                    "character.Y() + 0.03"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Eyes",
-                    "=",
-                    "character.Y() + 0.04"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Arms",
-                    "=",
-                    "character.Y() + 0.03"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Helmet",
-                    "=",
-                    "character.Y() + 0.06"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Hair",
-                    "=",
-                    "character.Y() + 0.05"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Player_Weapon",
-                    "=",
-                    "character.Y() + 0.07"
-                  ]
-                }
-              ]
             }
           ],
           "parameters": []
@@ -119616,7 +119439,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "HUD - potion - life",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -120109,7 +119931,6 @@
           "colorG": 166,
           "colorR": 245,
           "creationTime": 0,
-          "folded": true,
           "name": "level up",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
