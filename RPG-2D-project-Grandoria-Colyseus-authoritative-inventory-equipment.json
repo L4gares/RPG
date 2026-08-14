@@ -17007,6 +17007,14 @@
         "metadata": "",
         "name": "js/colyseus.js",
         "userAdded": false
+      },
+      {
+        "file": "Items/items_comuns/boar_tusk.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Items/items_comuns/boar_tusk.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -22296,295 +22304,6 @@
               ]
             }
           ]
-        },
-        {
-          "name": "rabbit_foot",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items\\items_comuns\\rabbit_foot.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "rabbit_skin",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items\\items_comuns\\skin_rabbit.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "iron_sword_01",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items\\weapons\\inUse\\white sword-wood handle-type2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "black_sword_01",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items\\weapons\\inUse\\white sword-wood handle-type4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "purple_helmet",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items/Armor_SETS/Armor_01/Helmet/icon/Helmet_idle_down_01.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "purple_chest",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items/Armor_SETS/Armor_01/Chest/icon/purple_chest_icon.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 1
-                      },
-                      {
-                        "x": 15,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -23488,7 +23207,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "rabbit_foot",
+          "name": "anchor",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -23497,12 +23216,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Items\\items_comuns\\rabbit_foot.png",
+                  "image": "inventory\\inventory_slot1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -23517,257 +23236,16 @@
                         "y": 1
                       },
                       {
-                        "x": 14,
+                        "x": 15,
                         "y": 1
                       },
                       {
-                        "x": 14,
-                        "y": 14
+                        "x": 15,
+                        "y": 15
                       },
                       {
                         "x": 1,
-                        "y": 14
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "rabbit_skin",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items\\items_comuns\\skin_rabbit.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 14
-                      },
-                      {
-                        "x": 1,
-                        "y": 14
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "black_sword_01",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items\\weapons\\inUse\\white sword-wood handle-type4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 14
-                      },
-                      {
-                        "x": 1,
-                        "y": 14
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "iron_sword_01",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items\\weapons\\inUse\\white sword-wood handle-type2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 14
-                      },
-                      {
-                        "x": 1,
-                        "y": 14
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "purple_helmet",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items/Armor_SETS/Armor_01/Helmet/icon/Helmet_idle_down_01.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 14
-                      },
-                      {
-                        "x": 1,
-                        "y": 14
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "purple_chest",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items/Armor_SETS/Armor_01/Chest/icon/purple_chest_icon.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 8
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 14
-                      },
-                      {
-                        "x": 1,
-                        "y": 14
+                        "y": 15
                       }
                     ]
                   ]
@@ -23812,11 +23290,13 @@
         },
         {
           "name": "shared_id",
+          "persistentUuid": "ccdbce8f-6f75-4be1-ad5c-0094a6aa23d0",
           "type": "string",
           "value": ""
         },
         {
           "name": "shared",
+          "persistentUuid": "7ffb8f7c-bb6d-497a-9c6a-c080a5dbcd6e",
           "type": "number",
           "value": 0
         }
@@ -23825,7 +23305,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "rabbit_skin",
+          "name": "legacy_disabled",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -23834,7 +23314,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Items\\items_comuns\\skin_rabbit.png",
+                  "image": "inventory\\inventory_slot1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -23854,253 +23334,11 @@
                         "y": 1
                       },
                       {
-                        "x": 14,
+                        "x": 15,
                         "y": 1
                       },
                       {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "rabbit_foot",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items\\items_comuns\\rabbit_foot.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "black_sword_01",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items\\weapons\\inUse\\white sword-wood handle-type4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "iron_sword_01",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items\\weapons\\inUse\\white sword-wood handle-type2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "purple_helmet",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items/Armor_SETS/Armor_01/Helmet/icon/Helmet_idle_down_01.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "purple_chest",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items/Armor_SETS/Armor_01/Chest/icon/purple_chest_icon.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
-                        "y": 1
-                      },
-                      {
-                        "x": 14,
+                        "x": 15,
                         "y": 15
                       },
                       {
@@ -24240,212 +23478,6 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "market_slot_item",
-      "persistentUuid": "2f23679a-14e6-4755-99cf-26d123168a59",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "iron_sword_01",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items/weapons/inUse/white sword-wood handle-type2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "black_sword_01",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items/weapons/inUse/white sword-wood handle-type4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "purple_helmet",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items/Armor_SETS/Armor_01/Helmet/icon/Helmet_idle_down_01.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "purple_chest",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Items/Armor_SETS/Armor_01/Chest/icon/purple_chest_icon.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "equipment_window",
       "persistentUuid": "e355443b-4b1c-424a-af97-d32ea6595b20",
       "type": "Sprite",
@@ -24552,198 +23584,6 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "inventory\\equipment_window\\background_inventory.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 10,
-                        "y": 3
-                      },
-                      {
-                        "x": 10,
-                        "y": 9
-                      },
-                      {
-                        "x": 4,
-                        "y": 9
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "iron_sword_01",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Items\\weapons\\inUse\\white sword-wood handle-type2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 10,
-                        "y": 3
-                      },
-                      {
-                        "x": 10,
-                        "y": 9
-                      },
-                      {
-                        "x": 4,
-                        "y": 9
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "black_sword_01",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Items\\weapons\\inUse\\white sword-wood handle-type4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 10,
-                        "y": 3
-                      },
-                      {
-                        "x": 10,
-                        "y": 9
-                      },
-                      {
-                        "x": 4,
-                        "y": 9
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "purple_helmet",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Items/Armor_SETS/Armor_01/Helmet/icon/Helmet_idle_down_01.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 10,
-                        "y": 3
-                      },
-                      {
-                        "x": 10,
-                        "y": 9
-                      },
-                      {
-                        "x": 4,
-                        "y": 9
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "purple_chest",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Items/Armor_SETS/Armor_01/Chest/icon/purple_chest_icon.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -74579,6 +73419,435 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "purple_helmet",
+      "persistentUuid": "6e2babc7-010b-45b0-85d7-92e2a1865d34",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "purple_helmet",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Items/Armor_SETS/Armor_01/Helmet/icon/Helmet_idle_down_01.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 1,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "rabbit_foot",
+      "persistentUuid": "6aeb83b3-0c3a-41a0-a928-ebf8234fb669",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "rabbit_foot",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Items\\items_comuns\\rabbit_foot.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 1,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "rabbit_skin",
+      "persistentUuid": "e4a96b27-24e2-4de7-8c47-025f6f7d3eb8",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "rabbit_skin",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Items\\items_comuns\\skin_rabbit.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 1,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "item_test",
+      "persistentUuid": "fbba4006-386d-4845-a92e-e14f6cc9964e",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "item_test",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Items/items_comuns/boar_tusk.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 1,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "purple_chest",
+      "persistentUuid": "5e2f1fc5-7278-4852-ae1e-952ba3a88915",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "purple_chest",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Items/Armor_SETS/Armor_01/Chest/icon/purple_chest_icon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 1,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "black_sword_01",
+      "persistentUuid": "da59bc25-6279-414a-a1ab-a16d303320c0",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "black_sword_01",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Items\\weapons\\inUse\\white sword-wood handle-type4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 1,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "iron_sword_01",
+      "persistentUuid": "b2a1e9d9-5d85-4f88-877d-2caff2883b96",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "iron_sword_01",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Items\\weapons\\inUse\\white sword-wood handle-type2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 1,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -74667,9 +73936,6 @@
       },
       {
         "objectName": "items"
-      },
-      {
-        "objectName": "market_slot_item"
       },
       {
         "objectName": "mobname"
@@ -74800,6 +74066,32 @@
       },
       {
         "objectName": "Button_attributes"
+      },
+      {
+        "folderName": "ITEM VISUALS",
+        "children": [
+          {
+            "objectName": "purple_helmet"
+          },
+          {
+            "objectName": "rabbit_foot"
+          },
+          {
+            "objectName": "rabbit_skin"
+          },
+          {
+            "objectName": "item_test"
+          },
+          {
+            "objectName": "purple_chest"
+          },
+          {
+            "objectName": "black_sword_01"
+          },
+          {
+            "objectName": "iron_sword_01"
+          }
+        ]
       }
     ]
   },
@@ -74934,6 +74226,7 @@
       "value": "NONE"
     },
     {
+      "folded": true,
       "name": "ProgressionConfig",
       "persistentUuid": "eae77edb-ca0c-4c3c-a5a3-0dc41ce4f56b",
       "type": "structure",
@@ -75079,17 +74372,18 @@
       "value": false
     },
     {
-      "folded": true,
       "name": "items_data",
       "persistentUuid": "318857e8-17bd-482d-8630-d9cc23113221",
       "type": "structure",
       "children": [
         {
+          "folded": true,
           "name": "Head",
           "persistentUuid": "b7568f3a-7b16-429c-aa2f-d24fbf9153ac",
           "type": "structure",
           "children": [
             {
+              "folded": true,
               "name": "Warrior Helmet",
               "persistentUuid": "674b020e-9c41-49cf-a4c6-e3f9f02947e8",
               "type": "structure",
@@ -75168,11 +74462,13 @@
           "type": "structure",
           "children": [
             {
+              "folded": true,
               "name": "Monster Parts",
               "persistentUuid": "afe5b130-d0d3-4127-a051-e44389710ee1",
               "type": "structure",
               "children": [
                 {
+                  "folded": true,
                   "name": "rabbit_foot",
                   "persistentUuid": "623e668c-fd83-476c-ab72-ce3bbe5b00a4",
                   "type": "structure",
@@ -75222,6 +74518,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "name": "rabbit_skin",
                   "persistentUuid": "9a136676-82e2-4eb6-999a-715e63ba122e",
                   "type": "structure",
@@ -75271,15 +74568,91 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Test Items",
+              "persistentUuid": "145cb831-dc83-43e6-90a4-e2bff1de4474",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "item_test",
+                  "persistentUuid": "bf3d455e-c257-4a86-9706-799e85b92f66",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Gem_price",
+                      "persistentUuid": "189e019d-bf13-4b5b-a329-cc9cb1e283c9",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "Gold_price",
+                      "persistentUuid": "0fe6481c-cc2e-4d51-a122-cb3b673c7eee",
+                      "type": "number",
+                      "value": 20
+                    },
+                    {
+                      "name": "atributes",
+                      "persistentUuid": "2d46a233-0d63-42e7-ae7e-c0f22806ceff",
+                      "type": "structure",
+                      "children": []
+                    },
+                    {
+                      "name": "id_icon",
+                      "persistentUuid": "230a7853-7595-4b72-a215-6bbd51cb6341",
+                      "type": "string",
+                      "value": "item_test"
+                    },
+                    {
+                      "name": "max_stack",
+                      "persistentUuid": "d51d2cbf-6149-43be-8054-d741f28b9611",
+                      "type": "number",
+                      "value": 7
+                    },
+                    {
+                      "name": "name_display",
+                      "persistentUuid": "50e848c1-27c7-435c-8a90-45f2ef3f6b87",
+                      "type": "string",
+                      "value": "Teste Item"
+                    },
+                    {
+                      "name": "rarity",
+                      "persistentUuid": "74ac249e-8254-4a9e-b6f0-95b466307aa8",
+                      "type": "string",
+                      "value": "Common"
+                    },
+                    {
+                      "name": "sell_price",
+                      "persistentUuid": "9ac6c547-56b6-4870-b3bd-9f2d47431c4f",
+                      "type": "number",
+                      "value": 10
+                    },
+                    {
+                      "name": "sub_type",
+                      "persistentUuid": "c485d1c9-db7b-443f-912e-5f7b8bf54b0a",
+                      "type": "string",
+                      "value": "\"\""
+                    },
+                    {
+                      "name": "type",
+                      "persistentUuid": "ebe9ada0-03ab-4ca7-9095-a2b83514345f",
+                      "type": "string",
+                      "value": "\"\""
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
         {
+          "folded": true,
           "name": "Tronco",
           "persistentUuid": "667a0a9b-9150-46b4-83f6-364a0ce9f410",
           "type": "structure",
           "children": [
             {
+              "folded": true,
               "name": "Warrior Chest",
               "persistentUuid": "a33080ca-666c-46ec-ac79-515b360cde9d",
               "type": "structure",
@@ -76343,6 +75716,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "Markets_data",
       "persistentUuid": "611d0312-5bf8-42f7-ad14-af903c4ee552",
       "type": "structure",
@@ -76406,6 +75780,7 @@
       "children": []
     },
     {
+      "folded": true,
       "name": "WorldConfig",
       "persistentUuid": "c0b091fe-54ab-42a7-8ae7-c7caccb65273",
       "type": "structure",
@@ -87840,7 +87215,7 @@
                       "name": "ChancePercent",
                       "persistentUuid": "8bb0eb77-4bb3-4677-860f-3bc7da6b8026",
                       "type": "number",
-                      "value": 80
+                      "value": 100
                     },
                     {
                       "name": "Common",
@@ -87848,7 +87223,6 @@
                       "type": "structure",
                       "children": [
                         {
-                          "folded": true,
                           "name": "Item1",
                           "persistentUuid": "c8cb1d1f-42c8-413b-9e24-f2ff3e890f17",
                           "type": "structure",
@@ -87857,19 +87231,19 @@
                               "name": "Guaranteed",
                               "persistentUuid": "4380d02c-afe3-45fd-a0c5-3e9329ff1f4a",
                               "type": "boolean",
-                              "value": true
+                              "value": false
                             },
                             {
                               "name": "ID",
                               "persistentUuid": "3a0b99a5-b03e-4e67-b123-5c1207576d1a",
                               "type": "string",
-                              "value": "rabbit_skin"
+                              "value": "item_test"
                             },
                             {
                               "name": "MaxQuantity",
                               "persistentUuid": "9333f8fe-fe5b-4919-abb7-51cb5bac5083",
                               "type": "number",
-                              "value": 1
+                              "value": 5
                             },
                             {
                               "name": "MinQuantity",
@@ -87880,44 +87254,6 @@
                             {
                               "name": "Weight",
                               "persistentUuid": "18e1e900-d22e-4983-ba00-cae3f69ba477",
-                              "type": "number",
-                              "value": 1
-                            }
-                          ]
-                        },
-                        {
-                          "folded": true,
-                          "name": "Item2",
-                          "persistentUuid": "3bebc981-cd64-494a-a719-9f803434a70f",
-                          "type": "structure",
-                          "children": [
-                            {
-                              "name": "Guaranteed",
-                              "persistentUuid": "2c493639-6aa8-41cf-beea-c724f953a616",
-                              "type": "boolean",
-                              "value": false
-                            },
-                            {
-                              "name": "ID",
-                              "persistentUuid": "24802fa1-6b4e-480f-b376-62fa2adba2d7",
-                              "type": "string",
-                              "value": "rabbit_foot"
-                            },
-                            {
-                              "name": "MaxQuantity",
-                              "persistentUuid": "1cc5f7bc-10da-45b9-83e5-375ed4b20d3f",
-                              "type": "number",
-                              "value": 1
-                            },
-                            {
-                              "name": "MinQuantity",
-                              "persistentUuid": "0d2ebf76-81f0-48fb-ae6d-b5cf94127ee4",
-                              "type": "number",
-                              "value": 1
-                            },
-                            {
-                              "name": "Weight",
-                              "persistentUuid": "1b82251f-b6bd-4ddc-bea2-3dbafc8281f3",
                               "type": "number",
                               "value": 1
                             }
@@ -101299,198 +100635,6 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "Items\\weapons\\inUse\\background.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 16
-                          },
-                          {
-                            "x": 0,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "black_sword_01",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Items\\weapons\\inUse\\white sword-wood handle-type4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 16
-                          },
-                          {
-                            "x": 0,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "iron_sword_01",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Items\\weapons\\inUse\\white sword-wood handle-type2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 16
-                          },
-                          {
-                            "x": 0,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "purple_helmet",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Items/Armor_SETS/Armor_01/Helmet/icon/Helmet_idle_down_01.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 16
-                          },
-                          {
-                            "x": 0,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "purple_chest",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Items/Armor_SETS/Armor_01/Chest/icon/purple_chest_icon.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -119989,7 +119133,7 @@
               "colorR": 121,
               "creationTime": 0,
               "folded": true,
-              "name": "CHARACTER — LOAD EQUIPMENT VISUALS",
+              "name": "CHARACTER — EQUIPMENT SLOT VISUALS (GENERIC)",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -120003,119 +119147,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "LOAD EQUIPMENT SLOT SPRITES"
-                },
-                {
-                  "folded": true,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "StringVariable"
-                      },
-                      "parameters": [
-                        "ActiveCharacterStatus",
-                        "=",
-                        "\"READY\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "StringObjectVariable"
-                          },
-                          "parameters": [
-                            "UI_slot_equip",
-                            "slot_type",
-                            "=",
-                            "\"Weapons\""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                          },
-                          "parameters": [
-                            "UI_slot_equip",
-                            "Animation",
-                            "=",
-                            "GlobalVariableString(equip_slots.Weapons.id)"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "StringObjectVariable"
-                          },
-                          "parameters": [
-                            "UI_slot_equip",
-                            "slot_type",
-                            "=",
-                            "\"Head\""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                          },
-                          "parameters": [
-                            "UI_slot_equip",
-                            "Animation",
-                            "=",
-                            "GlobalVariableString(equip_slots.Head.id)"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "StringObjectVariable"
-                          },
-                          "parameters": [
-                            "UI_slot_equip",
-                            "slot_type",
-                            "=",
-                            "\"Tronco\""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                          },
-                          "parameters": [
-                            "UI_slot_equip",
-                            "Animation",
-                            "=",
-                            "GlobalVariableString(equip_slots.Tronco.id)"
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+                  "comment": "Equipment slot item icons are rendered by INVENTORY — GENERIC ITEM VISUALS. UI_slot_equip remains only the slot/background/interaction anchor."
                 }
               ],
               "parameters": []
@@ -126357,6 +125389,7 @@
                         "    room,",
                         "    visuals:",
                         "      Object.create(null),",
+                        "    missingVisuals: new Set(),",
                         "    responseUnsubscribers: [],",
                         "    cleanup: null,",
                         "  };",
@@ -126370,12 +125403,16 @@
                         "",
                         "  const isItemAlive =",
                         "    itemObject => {",
-                        "      if (!itemObject) {",
+                        "      if (",
+                        "        !itemObject ||",
+                        "        typeof itemObject.getName !==",
+                        "          \"function\"",
+                        "      ) {",
                         "        return false;",
                         "      }",
                         "",
                         "      return runtimeScene",
-                        "        .getObjects(\"items\")",
+                        "        .getObjects(itemObject.getName())",
                         "        .includes(itemObject);",
                         "    };",
                         "",
@@ -126482,15 +125519,40 @@
                         "      sharedItemsState",
                         "        .visuals[sharedItemID];",
                         "",
+                        "    if (",
+                        "      isItemAlive(itemObject) &&",
+                        "      itemObject.getName() !== itemID",
+                        "    ) {",
+                        "      itemObject.deleteFromScene();",
+                        "      itemObject = null;",
+                        "",
+                        "      delete sharedItemsState",
+                        "        .visuals[sharedItemID];",
+                        "    }",
+                        "",
                         "    if (!isItemAlive(itemObject)) {",
                         "      itemObject =",
                         "        runtimeScene.createObject(",
-                        "          \"items\"",
+                        "          itemID",
                         "        );",
                         "",
                         "      if (!itemObject) {",
+                        "        if (",
+                        "          !sharedItemsState",
+                        "            .missingVisuals.has(itemID)",
+                        "        ) {",
+                        "          sharedItemsState",
+                        "            .missingVisuals.add(itemID);",
+                        "",
+                        "          console.warn(",
+                        "            \"[Grandoria] Missing shared item visual object:\",",
+                        "            itemID",
+                        "          );",
+                        "        }",
+                        "",
                         "        resultVariable.setString(",
-                        "          \"ITEM_OBJECT_CREATION_FAILED\"",
+                        "          \"ITEM_VISUAL_NOT_FOUND: \" +",
+                        "          itemID",
                         "        );",
                         "",
                         "        return;",
@@ -126513,15 +125575,6 @@
                         "        ? Number(itemData.zOrder)",
                         "        : 300",
                         "    );",
-                        "",
-                        "    if (",
-                        "      itemObject.getAnimationName() !==",
-                        "      itemID",
-                        "    ) {",
-                        "      itemObject.setAnimationName(",
-                        "        itemID",
-                        "      );",
-                        "    }",
                         "",
                         "    itemObject.hide(false);",
                         "",
@@ -126547,6 +125600,37 @@
                         "    objectVariables",
                         "      .get(\"sub_type\")",
                         "      .setString(itemSubType);",
+                        "",
+                        "    objectVariables",
+                        "      .get(\"item_id\")",
+                        "      .setString(itemID);",
+                        "",
+                        "    objectVariables",
+                        "      .get(\"quantity\")",
+                        "      .setNumber(",
+                        "        Math.max(",
+                        "          1,",
+                        "          Math.trunc(",
+                        "            Number(itemData.quantity) || 1",
+                        "          )",
+                        "        )",
+                        "      );",
+                        "",
+                        "    objectVariables",
+                        "      .get(\"source\")",
+                        "      .setString(",
+                        "        typeof itemData.source === \"string\"",
+                        "          ? itemData.source",
+                        "          : \"\"",
+                        "      );",
+                        "",
+                        "    objectVariables",
+                        "      .get(\"rarity\")",
+                        "      .setString(",
+                        "        typeof itemData.rarity === \"string\"",
+                        "          ? itemData.rarity",
+                        "          : \"\"",
+                        "      );",
                         "",
                         "    updateSharedItemsCount();",
                         "",
@@ -127620,10 +126704,15 @@
                         "const network =",
                         "  gdjs._grandoriaColyseus;",
                         "",
+                        "const sharedItemsState =",
+                        "  runtimeScene.__rpgSharedItems;",
+                        "",
                         "if (",
                         "  !network ||",
                         "  network.status !== \"connected\" ||",
                         "  !network.room ||",
+                        "  !sharedItemsState ||",
+                        "  !sharedItemsState.visuals ||",
                         "  runtimeScene",
                         "    .__rpgPendingSharedCollect",
                         ") {",
@@ -127674,12 +126763,26 @@
                         "let selectedDistance =",
                         "  Number.POSITIVE_INFINITY;",
                         "",
+                        "const isItemAlive = itemObject =>",
+                        "  Boolean(",
+                        "    itemObject &&",
+                        "    typeof itemObject.getName ===",
+                        "      \"function\" &&",
+                        "    runtimeScene",
+                        "      .getObjects(itemObject.getName())",
+                        "      .includes(itemObject)",
+                        "  );",
+                        "",
                         "for (",
                         "  const itemObject",
-                        "  of runtimeScene.getObjects(",
-                        "    \"items\"",
+                        "  of Object.values(",
+                        "    sharedItemsState.visuals",
                         "  )",
                         ") {",
+                        "  if (!isItemAlive(itemObject)) {",
+                        "    continue;",
+                        "  }",
+                        "",
                         "  const objectVariables =",
                         "    itemObject.getVariables();",
                         "",
@@ -127776,8 +126879,9 @@
                         "    .trim();",
                         "",
                         "const itemID =",
-                        "  selectedItem",
-                        "    .getAnimationName()",
+                        "  selectedVariables",
+                        "    .get(\"item_id\")",
+                        "    .getAsString()",
                         "    .trim();",
                         "",
                         "const itemType =",
@@ -130601,7 +129705,7 @@
                         "slot_item_display",
                         "Animation",
                         "=",
-                        "inventory[slot_item_display.slot_index].id"
+                        "\"empty\""
                       ]
                     }
                   ]
@@ -132357,11 +131461,10 @@
                         },
                         {
                           "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                            "value": "StringVariable"
                           },
                           "parameters": [
-                            "UI_slot_equip",
-                            "Animation",
+                            "equip_slots[UI_slot_equip.slot_type].id",
                             "!=",
                             "\"empty\""
                           ]
@@ -132452,17 +131555,6 @@
                             "temp_quantity_item_slot",
                             "=",
                             "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "OpacityCapability::OpacityBehavior::SetValue"
-                          },
-                          "parameters": [
-                            "UI_slot_equip",
-                            "Opacity",
-                            "=",
-                            "100"
                           ]
                         }
                       ]
@@ -132599,18 +131691,7 @@
                           "events": [
                             {
                               "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "StringVariable"
-                                  },
-                                  "parameters": [
-                                    "equip_slots[temp_type_item_slot][\"id\"]",
-                                    "=",
-                                    "\"empty\""
-                                  ]
-                                }
-                              ],
+                              "conditions": [],
                               "actions": [
                                 {
                                   "type": {
@@ -132644,52 +131725,12 @@
                                 },
                                 {
                                   "type": {
-                                    "value": "SetStringVariable"
-                                  },
-                                  "parameters": [
-                                    "inventory[dragging_slot_index_begin].id",
-                                    "=",
-                                    "\"empty\""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetStringVariable"
-                                  },
-                                  "parameters": [
-                                    "inventory[dragging_slot_index_begin].type",
-                                    "=",
-                                    "\"0\""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetStringVariable"
-                                  },
-                                  "parameters": [
-                                    "inventory[dragging_slot_index_begin].sub_type",
-                                    "=",
-                                    "\"0\""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetNumberVariable"
-                                  },
-                                  "parameters": [
-                                    "inventory[dragging_slot_index_begin].quantity",
-                                    "=",
-                                    "0"
-                                  ]
-                                },
-                                {
-                                  "type": {
                                     "value": "SetBooleanVariable"
                                   },
                                   "parameters": [
                                     "is_dragging",
                                     "False",
-                                    "slot_item_display.slot_index"
+                                    ""
                                   ]
                                 },
                                 {
@@ -132704,40 +131745,12 @@
                                 },
                                 {
                                   "type": {
-                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                                  },
-                                  "parameters": [
-                                    "UI_slot_equip",
-                                    "Animation",
-                                    "=",
-                                    "equip_slots[temp_type_item_slot][\"id\"]"
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "StringVariable"
-                                  },
-                                  "parameters": [
-                                    "equip_slots[temp_type_item_slot][\"id\"]",
-                                    "!=",
-                                    "\"empty\""
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
                                     "value": "SetStringVariable"
                                   },
                                   "parameters": [
-                                    "temp_old_equip_type",
+                                    "temp_origin_drag_type",
                                     "=",
-                                    "equip_slots[temp_type_item_slot][\"type\"]"
+                                    "\"0\""
                                   ]
                                 },
                                 {
@@ -132745,110 +131758,9 @@
                                     "value": "SetStringVariable"
                                   },
                                   "parameters": [
-                                    "temp_old_equip_id",
+                                    "temp_origin_slot_index",
                                     "=",
-                                    "equip_slots[temp_type_item_slot][\"id\"]"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetStringVariable"
-                                  },
-                                  "parameters": [
-                                    "temp_old_equip_sub_type",
-                                    "=",
-                                    "equip_slots[temp_type_item_slot][\"sub_type\"]"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetStringVariable"
-                                  },
-                                  "parameters": [
-                                    "equip_slots[temp_type_item_slot][\"id\"]",
-                                    "=",
-                                    "temp_id_item_slot"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetStringVariable"
-                                  },
-                                  "parameters": [
-                                    "equip_slots[temp_type_item_slot][\"type\"]",
-                                    "=",
-                                    "temp_type_item_slot"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetStringVariable"
-                                  },
-                                  "parameters": [
-                                    "equip_slots[temp_type_item_slot][\"sub_type\"]",
-                                    "=",
-                                    "temp_sub_type_item_slot"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetStringVariable"
-                                  },
-                                  "parameters": [
-                                    "inventory[dragging_slot_index_begin].id",
-                                    "=",
-                                    "temp_old_equip_id"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetStringVariable"
-                                  },
-                                  "parameters": [
-                                    "inventory[dragging_slot_index_begin].type",
-                                    "=",
-                                    "temp_old_equip_type"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetStringVariable"
-                                  },
-                                  "parameters": [
-                                    "inventory[dragging_slot_index_begin].sub_type",
-                                    "=",
-                                    "temp_old_equip_sub_type"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetBooleanVariable"
-                                  },
-                                  "parameters": [
-                                    "is_dragging",
-                                    "False",
-                                    "slot_item_display.slot_index"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetNumberVariable"
-                                  },
-                                  "parameters": [
-                                    "dragging_slot_index_begin",
-                                    "=",
-                                    "-1"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                                  },
-                                  "parameters": [
-                                    "UI_slot_equip",
-                                    "Animation",
-                                    "=",
-                                    "equip_slots[temp_type_item_slot][\"id\"]"
+                                    "\"0\""
                                   ]
                                 }
                               ]
@@ -133062,58 +131974,47 @@
                               "actions": [],
                               "events": [
                                 {
-                                  "type": "BuiltinCommonInstructions::Comment",
-                                  "color": {
-                                    "b": 109,
-                                    "g": 230,
-                                    "r": 255,
-                                    "textB": 0,
-                                    "textG": 0,
-                                    "textR": 0
-                                  },
-                                  "comment": "put item from slot equip in slot inventory"
-                                },
-                                {
                                   "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "value": "BuiltinCommonInstructions::Or"
-                                      },
-                                      "parameters": [],
-                                      "subInstructions": [
-                                        {
-                                          "type": {
-                                            "value": "StringVariable"
-                                          },
-                                          "parameters": [
-                                            "temp_old_inventory_id",
-                                            "=",
-                                            "temp_origin_slot_index"
-                                          ]
-                                        },
-                                        {
-                                          "type": {
-                                            "value": "StringVariable"
-                                          },
-                                          "parameters": [
-                                            "temp_old_inventory_id",
-                                            "=",
-                                            "\"empty\""
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ],
+                                  "conditions": [],
                                   "actions": [
                                     {
                                       "type": {
                                         "value": "SetStringVariable"
                                       },
                                       "parameters": [
-                                        "inventory[slot_item_display.slot_index].id",
+                                        "equip_slots[temp_origin_slot_index][\"id\"]",
                                         "=",
-                                        "temp_id_item_slot"
+                                        "\"empty\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetStringVariable"
+                                      },
+                                      "parameters": [
+                                        "equip_slots[temp_origin_slot_index][\"type\"]",
+                                        "=",
+                                        "\"0\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetStringVariable"
+                                      },
+                                      "parameters": [
+                                        "equip_slots[temp_origin_slot_index][\"sub_type\"]",
+                                        "=",
+                                        "\"0\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "is_dragging",
+                                        "False",
+                                        ""
                                       ]
                                     },
                                     {
@@ -133121,180 +132022,9 @@
                                         "value": "SetNumberVariable"
                                       },
                                       "parameters": [
-                                        "inventory[slot_item_display.slot_index].quantity",
+                                        "dragging_slot_index_begin",
                                         "=",
-                                        "temp_quantity_item_slot"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "SetStringVariable"
-                                      },
-                                      "parameters": [
-                                        "inventory[slot_item_display.slot_index].type",
-                                        "=",
-                                        "temp_type_item_slot"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "SetStringVariable"
-                                      },
-                                      "parameters": [
-                                        "inventory[slot_item_display.slot_index].sub_type",
-                                        "=",
-                                        "temp_sub_type_item_slot"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "SetStringVariable"
-                                      },
-                                      "parameters": [
-                                        "equip_slots[temp_type_item_slot][\"id\"]",
-                                        "=",
-                                        "temp_old_inventory_id"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "SetStringVariable"
-                                      },
-                                      "parameters": [
-                                        "equip_slots[temp_type_item_slot][\"type\"]",
-                                        "=",
-                                        "temp_old_inventory_type"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "SetStringVariable"
-                                      },
-                                      "parameters": [
-                                        "equip_slots[temp_type_item_slot][\"sub_type\"]",
-                                        "=",
-                                        "temp_old_inventory_sub_type"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "SetStringVariable"
-                                      },
-                                      "parameters": [
-                                        "equip_slots[temp_type_item_slot][\"sub_type\"]",
-                                        "=",
-                                        "temp_old_inventory_quantity"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                                      },
-                                      "parameters": [
-                                        "UI_slot_equip",
-                                        "Animation",
-                                        "=",
-                                        "equip_slots[temp_origin_slot_index][\"id\"]"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "SetStringVariable"
-                                      },
-                                      "parameters": [
-                                        "temp_origin_drag_type",
-                                        "=",
-                                        "\"0\""
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "SetStringVariable"
-                                      },
-                                      "parameters": [
-                                        "temp_origin_slot_index",
-                                        "=",
-                                        "\"0\""
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "BuiltinCommonInstructions::Comment",
-                                  "color": {
-                                    "b": 109,
-                                    "g": 230,
-                                    "r": 255,
-                                    "textB": 0,
-                                    "textG": 0,
-                                    "textR": 0
-                                  },
-                                  "comment": "delete item from slot equip when put in slot inventory"
-                                },
-                                {
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "value": "StringVariable"
-                                      },
-                                      "parameters": [
-                                        "temp_old_inventory_type",
-                                        "!=",
-                                        "temp_origin_slot_index"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "StringVariable"
-                                      },
-                                      "parameters": [
-                                        "temp_old_inventory_id",
-                                        "!=",
-                                        "\"empty\""
-                                      ]
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "value": "SetStringVariable"
-                                      },
-                                      "parameters": [
-                                        "equip_slots[temp_type_item_slot][\"id\"]",
-                                        "=",
-                                        "temp_id_item_slot"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "SetStringVariable"
-                                      },
-                                      "parameters": [
-                                        "equip_slots[temp_type_item_slot][\"type\"]",
-                                        "=",
-                                        "temp_type_item_slot"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "SetStringVariable"
-                                      },
-                                      "parameters": [
-                                        "equip_slots[temp_type_item_slot][\"sub_type\"]",
-                                        "=",
-                                        "temp_sub_type_item_slot"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                                      },
-                                      "parameters": [
-                                        "UI_slot_equip",
-                                        "Animation",
-                                        "=",
-                                        "equip_slots[temp_origin_slot_index][\"id\"]"
+                                        "-1"
                                       ]
                                     },
                                     {
@@ -133568,10 +132298,9 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "Show"
+                            "value": "Hide"
                           },
                           "parameters": [
-                            "drag_item_display",
                             "drag_item_display"
                           ]
                         },
@@ -133585,17 +132314,6 @@
                             "CursorX(\"Inventory\")",
                             "=",
                             "CursorY(\"Inventory\")"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                          },
-                          "parameters": [
-                            "drag_item_display",
-                            "Animation",
-                            "=",
-                            "temp_id_item_slot"
                           ]
                         }
                       ]
@@ -133705,6 +132423,352 @@
                       ]
                     }
                   ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "INVENTORY — EQUIPMENT SLOT BACKGROUNDS",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "UI_slot_equip",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "UI_slot_equip",
+                        "Animation",
+                        "=",
+                        "\"empty\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "INVENTORY — GENERIC ITEM VISUALS",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "const globalVariables = runtimeScene.getGame().getVariables();",
+                    "const sceneVariables = runtimeScene.getVariables();",
+                    "const inventory = globalVariables.get(\"inventory\");",
+                    "",
+                    "const state = runtimeScene.__rpgGenericItemVisuals || {",
+                    "  slots: Object.create(null),",
+                    "  equipmentSlots: Object.create(null),",
+                    "  marketSlots: Object.create(null),",
+                    "  drag: null,",
+                    "  dragVisualName: \"\",",
+                    "  missingVisuals: new Set(),",
+                    "};",
+                    "runtimeScene.__rpgGenericItemVisuals = state;",
+                    "state.slots ||= Object.create(null);",
+                    "state.equipmentSlots ||= Object.create(null);",
+                    "state.marketSlots ||= Object.create(null);",
+                    "state.missingVisuals ||= new Set();",
+                    "",
+                    "const isAlive = object => {",
+                    "  if (!object) return false;",
+                    "  return runtimeScene.getObjects(object.getName()).includes(object);",
+                    "};",
+                    "",
+                    "const deleteObject = object => {",
+                    "  if (isAlive(object)) object.deleteFromScene();",
+                    "};",
+                    "",
+                    "const normalizeItemID = itemID => {",
+                    "  const normalized = String(itemID || \"\").trim();",
+                    "  if (normalized === \"\" || normalized === \"0\" || normalized === \"empty\") return \"\";",
+                    "  return normalized;",
+                    "};",
+                    "",
+                    "const createVisual = (itemID, context = \"ui\") => {",
+                    "  const visual = runtimeScene.createObject(itemID);",
+                    "  if (!visual) {",
+                    "    if (!state.missingVisuals.has(itemID)) {",
+                    "      state.missingVisuals.add(itemID);",
+                    "      console.warn(\"[Grandoria] Missing GDevelop item visual object:\", itemID);",
+                    "    }",
+                    "    return null;",
+                    "  }",
+                    "",
+                    "  const visualVariables = visual.getVariables();",
+                    "  visualVariables.get(\"item_id\").setString(itemID);",
+                    "  visualVariables.get(\"visual_context\").setString(context);",
+                    "  visualVariables.get(\"shared\").setNumber(-1);",
+                    "  visual.hide(false);",
+                    "  return visual;",
+                    "};",
+                    "",
+                    "const inventoryOpen = runtimeScene.getObjects(\"UI_inventory\").some(",
+                    "  object => object.getVariables().get(\"open\").getAsBoolean()",
+                    ");",
+                    "",
+                    "const slotObjects = runtimeScene.getObjects(\"slot_item_display\");",
+                    "const activeSlotKeys = new Set();",
+                    "",
+                    "if (inventoryOpen) {",
+                    "  for (const slotObject of slotObjects) {",
+                    "    const slotIndex = Math.trunc(",
+                    "      slotObject.getVariables().get(\"slot_index\").getAsNumber()",
+                    "    );",
+                    "",
+                    "    if (slotIndex < 0 || slotIndex >= inventory.getChildrenCount()) continue;",
+                    "",
+                    "    const slot = inventory.getChildAt(slotIndex);",
+                    "    const itemID = normalizeItemID(slot.getChild(\"id\").getAsString());",
+                    "    const slotKey = String(slotIndex);",
+                    "",
+                    "    if (!itemID) {",
+                    "      const oldEntry = state.slots[slotKey];",
+                    "      if (oldEntry) {",
+                    "        deleteObject(oldEntry.object);",
+                    "        delete state.slots[slotKey];",
+                    "      }",
+                    "      continue;",
+                    "    }",
+                    "",
+                    "    activeSlotKeys.add(slotKey);",
+                    "    let entry = state.slots[slotKey];",
+                    "",
+                    "    if (!entry || entry.itemID !== itemID || !isAlive(entry.object)) {",
+                    "      if (entry) deleteObject(entry.object);",
+                    "      const visual = createVisual(itemID);",
+                    "      if (!visual) {",
+                    "        delete state.slots[slotKey];",
+                    "        continue;",
+                    "      }",
+                    "      entry = { object: visual, itemID };",
+                    "      state.slots[slotKey] = entry;",
+                    "    }",
+                    "",
+                    "    const visual = entry.object;",
+                    "    visual.setLayer(slotObject.getLayer());",
+                    "    visual.setPosition(slotObject.getX(), slotObject.getY());",
+                    "    visual.setWidth(slotObject.getWidth());",
+                    "    visual.setHeight(slotObject.getHeight());",
+                    "    visual.setZOrder(slotObject.getZOrder() + 1);",
+                    "",
+                    "    const dragging = globalVariables.get(\"is_dragging\").getAsBoolean();",
+                    "    const draggingIndex = Math.trunc(",
+                    "      globalVariables.get(\"dragging_slot_index_begin\").getAsNumber()",
+                    "    );",
+                    "    const dragOrigin = globalVariables.get(\"temp_origin_drag_type\").getAsString();",
+                    "",
+                    "    visual.setOpacity(",
+                    "      dragging && dragOrigin === \"inventory\" && draggingIndex === slotIndex ? 100 : 255",
+                    "    );",
+                    "    visual.hide(false);",
+                    "  }",
+                    "}",
+                    "",
+                    "for (const [slotKey, entry] of Object.entries(state.slots)) {",
+                    "  if (!inventoryOpen || !activeSlotKeys.has(slotKey)) {",
+                    "    deleteObject(entry.object);",
+                    "    delete state.slots[slotKey];",
+                    "  }",
+                    "}",
+                    "",
+                    "// Equipment slots use the same per-item visual objects as the normal inventory.",
+                    "// UI_slot_equip is now only the slot/background/interaction anchor.",
+                    "const equipSlots = globalVariables.get(\"equip_slots\");",
+                    "const equipmentSlotObjects = runtimeScene.getObjects(\"UI_slot_equip\");",
+                    "const activeEquipmentSlotKeys = new Set();",
+                    "",
+                    "if (inventoryOpen) {",
+                    "  for (const slotObject of equipmentSlotObjects) {",
+                    "    const slotType = String(",
+                    "      slotObject.getVariables().get(\"slot_type\").getAsString() || \"\"",
+                    "    ).trim();",
+                    "    if (!slotType) continue;",
+                    "",
+                    "    const slotData = equipSlots.getChild(slotType);",
+                    "    const itemID = normalizeItemID(slotData.getChild(\"id\").getAsString());",
+                    "    const slotKey = slotType;",
+                    "",
+                    "    if (!itemID) {",
+                    "      const oldEntry = state.equipmentSlots[slotKey];",
+                    "      if (oldEntry) {",
+                    "        deleteObject(oldEntry.object);",
+                    "        delete state.equipmentSlots[slotKey];",
+                    "      }",
+                    "      continue;",
+                    "    }",
+                    "",
+                    "    activeEquipmentSlotKeys.add(slotKey);",
+                    "    let entry = state.equipmentSlots[slotKey];",
+                    "",
+                    "    if (!entry || entry.itemID !== itemID || !isAlive(entry.object)) {",
+                    "      if (entry) deleteObject(entry.object);",
+                    "      const visual = createVisual(itemID);",
+                    "      if (!visual) {",
+                    "        delete state.equipmentSlots[slotKey];",
+                    "        continue;",
+                    "      }",
+                    "      entry = { object: visual, itemID };",
+                    "      state.equipmentSlots[slotKey] = entry;",
+                    "    }",
+                    "",
+                    "    const visual = entry.object;",
+                    "    visual.setLayer(slotObject.getLayer());",
+                    "    visual.setPosition(slotObject.getX(), slotObject.getY());",
+                    "    visual.setWidth(slotObject.getWidth());",
+                    "    visual.setHeight(slotObject.getHeight());",
+                    "    visual.setZOrder(slotObject.getZOrder() + 1);",
+                    "",
+                    "    const draggingEquipment = globalVariables.get(\"is_dragging\").getAsBoolean();",
+                    "    const dragOrigin = globalVariables.get(\"temp_origin_drag_type\").getAsString();",
+                    "    const originSlotType = globalVariables.get(\"temp_origin_slot_index\").getAsString();",
+                    "",
+                    "    visual.setOpacity(",
+                    "      draggingEquipment && dragOrigin === \"equipment\" && originSlotType === slotType",
+                    "        ? 100",
+                    "        : 255",
+                    "    );",
+                    "    visual.hide(false);",
+                    "  }",
+                    "}",
+                    "",
+                    "for (const [slotKey, entry] of Object.entries(state.equipmentSlots)) {",
+                    "  if (!inventoryOpen || !activeEquipmentSlotKeys.has(slotKey)) {",
+                    "    deleteObject(entry.object);",
+                    "    delete state.equipmentSlots[slotKey];",
+                    "  }",
+                    "}",
+                    "",
+                    "const gameState = globalVariables.get(\"Game_State\").getAsString();",
+                    "const currentMarketID = String(",
+                    "  globalVariables.get(\"Current_Market_ID\").getAsString() || \"\"",
+                    ").trim();",
+                    "const marketSlotObjects = runtimeScene.getObjects(\"market_slot\");",
+                    "const activeMarketSlotKeys = new Set();",
+                    "",
+                    "if (gameState === \"MARKET\" && currentMarketID) {",
+                    "  for (let index = 0; index < marketSlotObjects.length; index += 1) {",
+                    "    const slotObject = marketSlotObjects[index];",
+                    "    const slotVariables = slotObject.getVariables();",
+                    "    const slotMarketID = String(",
+                    "      slotVariables.get(\"slot_market_name\").getAsString() || \"\"",
+                    "    ).trim();",
+                    "    const slotIndex = Math.trunc(",
+                    "      slotVariables.get(\"market_slot_id\").getAsNumber()",
+                    "    );",
+                    "    const itemID = normalizeItemID(",
+                    "      slotVariables.get(\"slot_item_id\").getAsString()",
+                    "    );",
+                    "",
+                    "    if (slotMarketID !== currentMarketID || slotIndex < 0 || !itemID) {",
+                    "      continue;",
+                    "    }",
+                    "",
+                    "    const slotKey = slotMarketID + \":\" + slotIndex;",
+                    "    activeMarketSlotKeys.add(slotKey);",
+                    "    let entry = state.marketSlots[slotKey];",
+                    "",
+                    "    if (!entry || entry.itemID !== itemID || !isAlive(entry.object)) {",
+                    "      if (entry) deleteObject(entry.object);",
+                    "      const visual = createVisual(itemID, \"market\");",
+                    "      if (!visual) {",
+                    "        delete state.marketSlots[slotKey];",
+                    "        continue;",
+                    "      }",
+                    "      entry = { object: visual, itemID };",
+                    "      state.marketSlots[slotKey] = entry;",
+                    "    }",
+                    "",
+                    "    const visual = entry.object;",
+                    "    visual.setLayer(slotObject.getLayer());",
+                    "    visual.setPosition(slotObject.getX(), slotObject.getY());",
+                    "    visual.setWidth(slotObject.getWidth());",
+                    "    visual.setHeight(slotObject.getHeight());",
+                    "    visual.setZOrder(slotObject.getZOrder() + 1);",
+                    "    visual.setOpacity(255);",
+                    "    visual.hide(false);",
+                    "  }",
+                    "}",
+                    "",
+                    "for (const [slotKey, entry] of Object.entries(state.marketSlots)) {",
+                    "  if (gameState !== \"MARKET\" || !activeMarketSlotKeys.has(slotKey)) {",
+                    "    deleteObject(entry.object);",
+                    "    delete state.marketSlots[slotKey];",
+                    "  }",
+                    "}",
+                    "",
+                    "const dragging = globalVariables.get(\"is_dragging\").getAsBoolean();",
+                    "const draggedItemID = normalizeItemID(",
+                    "  sceneVariables.get(\"temp_id_item_slot\").getAsString()",
+                    ");",
+                    "const dragAnchors = runtimeScene.getObjects(\"drag_item_display\");",
+                    "",
+                    "if (",
+                    "  inventoryOpen &&",
+                    "  dragging &&",
+                    "  gameState !== \"MARKET\" &&",
+                    "  draggedItemID &&",
+                    "  dragAnchors.length > 0",
+                    ") {",
+                    "  const anchor = dragAnchors[0];",
+                    "",
+                    "  if (",
+                    "    !state.drag ||",
+                    "    state.dragVisualName !== draggedItemID ||",
+                    "    !isAlive(state.drag)",
+                    "  ) {",
+                    "    deleteObject(state.drag);",
+                    "    state.drag = createVisual(draggedItemID);",
+                    "    state.dragVisualName = state.drag ? draggedItemID : \"\";",
+                    "  }",
+                    "",
+                    "  if (state.drag) {",
+                    "    state.drag.setLayer(anchor.getLayer());",
+                    "    const inventorySlotReference =",
+                    "      slotObjects.length > 0 ? slotObjects[0] : null;",
+                    "    const dragWidth =",
+                    "      inventorySlotReference ? inventorySlotReference.getWidth() : anchor.getWidth();",
+                    "    const dragHeight =",
+                    "      inventorySlotReference ? inventorySlotReference.getHeight() : anchor.getHeight();",
+                    "",
+                    "    state.drag.setPosition(",
+                    "      anchor.getX() - dragWidth / 2,",
+                    "      anchor.getY() - dragHeight / 2",
+                    "    );",
+                    "    state.drag.setWidth(dragWidth);",
+                    "    state.drag.setHeight(dragHeight);",
+                    "    state.drag.setZOrder(anchor.getZOrder() + 1);",
+                    "    state.drag.setOpacity(255);",
+                    "    state.drag.hide(false);",
+                    "  }",
+                    "} else {",
+                    "  deleteObject(state.drag);",
+                    "  state.drag = null;",
+                    "  state.dragVisualName = \"\";",
+                    "}"
+                  ],
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": false
                 }
               ],
               "parameters": []
@@ -136809,7 +135873,7 @@
                                 "market_slot",
                                 "Animation",
                                 "=",
-                                "market_slot.slot_item_id"
+                                "\"background\""
                               ]
                             }
                           ]
@@ -137745,7 +136809,7 @@
                       "parameters": [
                         "selected_slot_market_item_id",
                         "=",
-                        "slot_item_display.Animation::Name()"
+                        "inventory[slot_item_display.slot_index].id"
                       ]
                     },
                     {
@@ -137901,7 +136965,7 @@
                         "text",
                         "Text",
                         "+",
-                        "NewLine() + \"=======SELECTED SLOT ITEM TO SELL =======\" + NewLine() + \"slot item selected: \" + slot_item_display.Animation::Name()"
+                        "NewLine() + \"=======SELECTED SLOT ITEM TO SELL =======\" + NewLine() + \"slot item selected: \" + inventory[slot_item_display.slot_index].id"
                       ]
                     }
                   ],
@@ -138461,189 +137525,14 @@
                     },
                     {
                       "type": {
-                        "value": "SetNumberVariable"
+                        "value": "GrandoriaColyseus::BuyItem"
                       },
                       "parameters": [
-                        "player_Gem",
-                        "-",
-                        "items_data[item_type_market][item_Sub_type_market][selected_slot_market_item_id].Gem_price"
+                        "",
+                        "selected_slot_market_item_id",
+                        "\"Gem\"",
+                        ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "txt_character_balance",
-                        "Text",
-                        "=",
-                        "player_Gem"
-                      ]
-                    }
-                  ],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "item_added_Gem",
-                            "=",
-                            "0"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::ForEachChildVariable",
-                      "iterableVariableName": "inventory",
-                      "valueIteratorVariableName": "",
-                      "keyIteratorVariableName": "A",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "StringVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].id",
-                            "=",
-                            "selected_slot_market_item_id"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].quantity",
-                            "<",
-                            "items_data[item_type_market][item_Sub_type_market][selected_slot_market_item_id].max_stack"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].quantity",
-                            "+",
-                            "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "item_added_Gem",
-                            "=",
-                            "1"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::ForEachChildVariable",
-                      "iterableVariableName": "inventory",
-                      "valueIteratorVariableName": "child",
-                      "keyIteratorVariableName": "A",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "StringVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].id",
-                            "=",
-                            "\"empty\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "item_added_Gem",
-                            "=",
-                            "0"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].id",
-                            "=",
-                            "selected_slot_market_item_id"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].type",
-                            "=",
-                            "item_type_market"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].sub_type",
-                            "=",
-                            "item_Sub_type_market"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].quantity",
-                            "+",
-                            "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "item_added_Gem",
-                            "=",
-                            "1"
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "variables": [
-                    {
-                      "name": "A",
-                      "type": "number",
-                      "value": 0
-                    },
-                    {
-                      "name": "B",
-                      "type": "number",
-                      "value": 0
-                    },
-                    {
-                      "name": "item_added_Gem",
-                      "type": "number",
-                      "value": 0
                     }
                   ]
                 },
@@ -138785,189 +137674,14 @@
                     },
                     {
                       "type": {
-                        "value": "SetNumberVariable"
+                        "value": "GrandoriaColyseus::BuyItem"
                       },
                       "parameters": [
-                        "player_Gold",
-                        "-",
-                        "items_data[item_type_market][item_Sub_type_market][selected_slot_market_item_id].Gold_price"
+                        "",
+                        "selected_slot_market_item_id",
+                        "\"Gold\"",
+                        ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "txt_character_balance",
-                        "Text",
-                        "=",
-                        "player_Gold"
-                      ]
-                    }
-                  ],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "item_added_Gold",
-                            "=",
-                            "0"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::ForEachChildVariable",
-                      "iterableVariableName": "inventory",
-                      "valueIteratorVariableName": "",
-                      "keyIteratorVariableName": "A",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "StringVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].id",
-                            "=",
-                            "selected_slot_market_item_id"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].quantity",
-                            "<",
-                            "items_data[item_type_market][item_Sub_type_market][selected_slot_market_item_id].max_stack"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].quantity",
-                            "+",
-                            "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "item_added_Gold",
-                            "=",
-                            "1"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::ForEachChildVariable",
-                      "iterableVariableName": "inventory",
-                      "valueIteratorVariableName": "child",
-                      "keyIteratorVariableName": "A",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "StringVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].id",
-                            "=",
-                            "\"empty\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "item_added_Gold",
-                            "=",
-                            "0"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].id",
-                            "=",
-                            "selected_slot_market_item_id"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].type",
-                            "=",
-                            "item_type_market"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].sub_type",
-                            "=",
-                            "item_Sub_type_market"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "inventory[A].quantity",
-                            "+",
-                            "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "item_added_Gold",
-                            "=",
-                            "1"
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "variables": [
-                    {
-                      "name": "A",
-                      "type": "number",
-                      "value": 0
-                    },
-                    {
-                      "name": "B",
-                      "type": "number",
-                      "value": 0
-                    },
-                    {
-                      "name": "item_added_Gold",
-                      "type": "number",
-                      "value": 0
                     }
                   ]
                 }
@@ -164398,6 +163112,147 @@
                 "      );",
                 "",
                 "      room.onMessage(",
+                "        \"buy_item_result\",",
+                "        (result) => {",
+                "          if (",
+                "            network.room !== room ||",
+                "            !result",
+                "          ) {",
+                "            return;",
+                "          }",
+                "",
+                "          network.lastPurchaseResult = result;",
+                "",
+                "          const globalVariables =",
+                "            runtimeScene",
+                "              .getGame()",
+                "              .getVariables();",
+                "",
+                "          if (Array.isArray(result.inventory)) {",
+                "            const inventoryVariable =",
+                "              globalVariables.get(\"inventory\");",
+                "",
+                "            inventoryVariable.clearChildren();",
+                "            inventoryVariable.castTo(\"array\");",
+                "",
+                "            for (",
+                "              let index = 0;",
+                "              index < result.inventory.length;",
+                "              index++",
+                "            ) {",
+                "              const source =",
+                "                result.inventory[index] || {};",
+                "              const target =",
+                "                inventoryVariable.getChildAt(index);",
+                "",
+                "              target.castTo(\"structure\");",
+                "              target.getChild(\"id\").setString(",
+                "                String(source.id || \"empty\")",
+                "              );",
+                "              target.getChild(\"type\").setString(",
+                "                String(source.type || \"0\")",
+                "              );",
+                "              target.getChild(\"sub_type\").setString(",
+                "                String(source.sub_type || \"0\")",
+                "              );",
+                "              target.getChild(\"quantity\").setNumber(",
+                "                Math.max(",
+                "                  0,",
+                "                  Math.trunc(Number(source.quantity) || 0)",
+                "                )",
+                "              );",
+                "            }",
+                "",
+                "            const normalized =",
+                "              result.inventory.map((slot) => ({",
+                "                id: String(slot.id || \"empty\"),",
+                "                type: String(slot.type || \"0\"),",
+                "                sub_type: String(slot.sub_type || \"0\"),",
+                "                quantity: Math.max(",
+                "                  0,",
+                "                  Math.trunc(Number(slot.quantity) || 0)",
+                "                ),",
+                "              }));",
+                "",
+                "            network.lastInventoryOrderSignature =",
+                "              JSON.stringify(normalized);",
+                "",
+                "            const totals = Object.create(null);",
+                "",
+                "            for (const slot of normalized) {",
+                "              if (",
+                "                slot.id !== \"empty\" &&",
+                "                slot.quantity > 0",
+                "              ) {",
+                "                totals[slot.id] =",
+                "                  (totals[slot.id] || 0) +",
+                "                  slot.quantity;",
+                "              }",
+                "            }",
+                "",
+                "            network.lastInventoryTotalsSignature =",
+                "              JSON.stringify(",
+                "                Object.entries(totals).sort()",
+                "              );",
+                "          }",
+                "",
+                "          const gold = Number(result.gold);",
+                "          const gem = Number(result.gem);",
+                "          const sceneVariables =",
+                "            runtimeScene.getVariables();",
+                "          const activeCharacterData =",
+                "            sceneVariables.get(",
+                "              \"ActiveCharacterData\"",
+                "            );",
+                "          const currencies =",
+                "            activeCharacterData.getChild(",
+                "              \"Currencies\"",
+                "            );",
+                "",
+                "          if (Number.isFinite(gold)) {",
+                "            globalVariables",
+                "              .get(\"player_Gold\")",
+                "              .setNumber(gold);",
+                "            currencies",
+                "              .getChild(\"Gold\")",
+                "              .setNumber(gold);",
+                "          }",
+                "",
+                "          if (Number.isFinite(gem)) {",
+                "            globalVariables",
+                "              .get(\"player_Gem\")",
+                "              .setNumber(gem);",
+                "            currencies",
+                "              .getChild(\"Gem\")",
+                "              .setNumber(gem);",
+                "          }",
+                "",
+                "          sceneVariables",
+                "            .get(\"MarketPurchaseStatus\")",
+                "            .setString(",
+                "              String(",
+                "                result.code ||",
+                "                (result.ok",
+                "                  ? \"ITEM_PURCHASED\"",
+                "                  : \"PURCHASE_FAILED\")",
+                "              )",
+                "            );",
+                "",
+                "          if (result.ok) {",
+                "            console.log(",
+                "              \"[Grandoria] Purchase confirmed:\",",
+                "              result",
+                "            );",
+                "          } else {",
+                "            console.warn(",
+                "              \"[Grandoria] Purchase rejected:\",",
+                "              result",
+                "            );",
+                "          }",
+                "        }",
+                "      );",
+                "",
+                "      room.onMessage(",
                 "        \"xp_awarded\",",
                 "        (reward) => {",
                 "          if (",
@@ -166470,6 +165325,121 @@
           "objectGroups": []
         },
         {
+          "description": "Requests an authoritative market purchase and waits for the server result.",
+          "fullName": "Buy an item",
+          "functionType": "Action",
+          "group": "Market",
+          "name": "BuyItem",
+          "sentence": "Buy item _PARAM1_ using _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const network =",
+                "  gdjs._grandoriaColyseus;",
+                "",
+                "const itemID = String(",
+                "  eventsFunctionContext.getArgument(\"ItemID\") || \"\"",
+                ").trim();",
+                "",
+                "const requestedCurrency = String(",
+                "  eventsFunctionContext.getArgument(\"Currency\") || \"\"",
+                ").trim();",
+                "",
+                "const currency =",
+                "  requestedCurrency.toLowerCase() === \"gold\"",
+                "    ? \"Gold\"",
+                "    : requestedCurrency.toLowerCase() === \"gem\"",
+                "      ? \"Gem\"",
+                "      : \"\";",
+                "",
+                "if (!itemID || !currency) {",
+                "  console.warn(",
+                "    \"[Grandoria] Purchase not sent: item or currency is invalid.\",",
+                "    {",
+                "      itemID,",
+                "      currency: requestedCurrency,",
+                "    }",
+                "  );",
+                "",
+                "  return;",
+                "}",
+                "",
+                "if (",
+                "  !network ||",
+                "  network.status !== \"connected\" ||",
+                "  !network.room",
+                ") {",
+                "  console.warn(",
+                "    \"[Grandoria] Purchase not sent: Colyseus is unavailable.\",",
+                "    {",
+                "      itemID,",
+                "      currency,",
+                "    }",
+                "  );",
+                "",
+                "  return;",
+                "}",
+                "",
+                "network.purchaseRequestSequence =",
+                "  (Number.isFinite(network.purchaseRequestSequence)",
+                "    ? network.purchaseRequestSequence",
+                "    : 0) + 1;",
+                "",
+                "const requestId = [",
+                "  \"purchase\",",
+                "  String(network.room.sessionId || \"session\"),",
+                "  Date.now().toString(36),",
+                "  network.purchaseRequestSequence.toString(36),",
+                "].join(\"_\");",
+                "",
+                "try {",
+                "  network.room.send(",
+                "    \"buy_item\",",
+                "    {",
+                "      requestId,",
+                "      itemID,",
+                "      currency,",
+                "    }",
+                "  );",
+                "",
+                "  network.lastPurchaseRequest = {",
+                "    requestId,",
+                "    itemID,",
+                "    currency,",
+                "  };",
+                "",
+                "  console.log(",
+                "    \"[Grandoria] Purchase requested:\",",
+                "    network.lastPurchaseRequest",
+                "  );",
+                "} catch (error) {",
+                "  console.error(",
+                "    \"[Grandoria] Error sending purchase:\",",
+                "    error",
+                "  );",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Catalog item ID",
+              "name": "ItemID",
+              "type": "string"
+            },
+            {
+              "description": "Gold or Gem",
+              "name": "Currency",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
           "description": "Leaves the current room and clears the character's previous session state.",
           "fullName": "Disconnect from Colyseus server",
           "functionType": "Action",
@@ -167076,6 +166046,14 @@
             "children": [
               {
                 "functionName": "SyncRemotePlayersState"
+              }
+            ]
+          },
+          {
+            "folderName": "Market",
+            "children": [
+              {
+                "functionName": "BuyItem"
               }
             ]
           }

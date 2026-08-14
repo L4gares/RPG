@@ -17007,6 +17007,14 @@
         "metadata": "",
         "name": "js/colyseus.js",
         "userAdded": false
+      },
+      {
+        "file": "Items/items_comuns/boar_tusk.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Items/items_comuns/boar_tusk.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -23812,11 +23820,13 @@
         },
         {
           "name": "shared_id",
+          "persistentUuid": "ccdbce8f-6f75-4be1-ad5c-0094a6aa23d0",
           "type": "string",
           "value": ""
         },
         {
           "name": "shared",
+          "persistentUuid": "7ffb8f7c-bb6d-497a-9c6a-c080a5dbcd6e",
           "type": "number",
           "value": 0
         }
@@ -24077,6 +24087,54 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Items/Armor_SETS/Armor_01/Chest/icon/purple_chest_icon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 1,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "item_test",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Items/items_comuns/boar_tusk.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -74934,6 +74992,7 @@
       "value": "NONE"
     },
     {
+      "folded": true,
       "name": "ProgressionConfig",
       "persistentUuid": "eae77edb-ca0c-4c3c-a5a3-0dc41ce4f56b",
       "type": "structure",
@@ -75079,17 +75138,18 @@
       "value": false
     },
     {
-      "folded": true,
       "name": "items_data",
       "persistentUuid": "318857e8-17bd-482d-8630-d9cc23113221",
       "type": "structure",
       "children": [
         {
+          "folded": true,
           "name": "Head",
           "persistentUuid": "b7568f3a-7b16-429c-aa2f-d24fbf9153ac",
           "type": "structure",
           "children": [
             {
+              "folded": true,
               "name": "Warrior Helmet",
               "persistentUuid": "674b020e-9c41-49cf-a4c6-e3f9f02947e8",
               "type": "structure",
@@ -75168,11 +75228,13 @@
           "type": "structure",
           "children": [
             {
+              "folded": true,
               "name": "Monster Parts",
               "persistentUuid": "afe5b130-d0d3-4127-a051-e44389710ee1",
               "type": "structure",
               "children": [
                 {
+                  "folded": true,
                   "name": "rabbit_foot",
                   "persistentUuid": "623e668c-fd83-476c-ab72-ce3bbe5b00a4",
                   "type": "structure",
@@ -75222,6 +75284,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "name": "rabbit_skin",
                   "persistentUuid": "9a136676-82e2-4eb6-999a-715e63ba122e",
                   "type": "structure",
@@ -75271,15 +75334,91 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Test Items",
+              "persistentUuid": "145cb831-dc83-43e6-90a4-e2bff1de4474",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "item_test",
+                  "persistentUuid": "bf3d455e-c257-4a86-9706-799e85b92f66",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Gem_price",
+                      "persistentUuid": "189e019d-bf13-4b5b-a329-cc9cb1e283c9",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "Gold_price",
+                      "persistentUuid": "0fe6481c-cc2e-4d51-a122-cb3b673c7eee",
+                      "type": "number",
+                      "value": 20
+                    },
+                    {
+                      "name": "atributes",
+                      "persistentUuid": "2d46a233-0d63-42e7-ae7e-c0f22806ceff",
+                      "type": "structure",
+                      "children": []
+                    },
+                    {
+                      "name": "id_icon",
+                      "persistentUuid": "230a7853-7595-4b72-a215-6bbd51cb6341",
+                      "type": "string",
+                      "value": "item_test"
+                    },
+                    {
+                      "name": "max_stack",
+                      "persistentUuid": "d51d2cbf-6149-43be-8054-d741f28b9611",
+                      "type": "number",
+                      "value": 7
+                    },
+                    {
+                      "name": "name_display",
+                      "persistentUuid": "50e848c1-27c7-435c-8a90-45f2ef3f6b87",
+                      "type": "string",
+                      "value": "Teste Item"
+                    },
+                    {
+                      "name": "rarity",
+                      "persistentUuid": "74ac249e-8254-4a9e-b6f0-95b466307aa8",
+                      "type": "string",
+                      "value": "Common"
+                    },
+                    {
+                      "name": "sell_price",
+                      "persistentUuid": "9ac6c547-56b6-4870-b3bd-9f2d47431c4f",
+                      "type": "number",
+                      "value": 10
+                    },
+                    {
+                      "name": "sub_type",
+                      "persistentUuid": "c485d1c9-db7b-443f-912e-5f7b8bf54b0a",
+                      "type": "string",
+                      "value": "\"\""
+                    },
+                    {
+                      "name": "type",
+                      "persistentUuid": "ebe9ada0-03ab-4ca7-9095-a2b83514345f",
+                      "type": "string",
+                      "value": "\"\""
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
         {
+          "folded": true,
           "name": "Tronco",
           "persistentUuid": "667a0a9b-9150-46b4-83f6-364a0ce9f410",
           "type": "structure",
           "children": [
             {
+              "folded": true,
               "name": "Warrior Chest",
               "persistentUuid": "a33080ca-666c-46ec-ac79-515b360cde9d",
               "type": "structure",
@@ -76343,6 +76482,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "Markets_data",
       "persistentUuid": "611d0312-5bf8-42f7-ad14-af903c4ee552",
       "type": "structure",
@@ -76406,6 +76546,7 @@
       "children": []
     },
     {
+      "folded": true,
       "name": "WorldConfig",
       "persistentUuid": "c0b091fe-54ab-42a7-8ae7-c7caccb65273",
       "type": "structure",
@@ -87764,6 +87905,7 @@
               "type": "structure",
               "children": [
                 {
+                  "folded": true,
                   "name": "Attack",
                   "persistentUuid": "ced983ad-002d-4828-bfb2-02afdf04a442",
                   "type": "structure",
@@ -87831,7 +87973,6 @@
                   "value": 192
                 },
                 {
-                  "folded": true,
                   "name": "Drops",
                   "persistentUuid": "67acd2b7-99e3-47ef-b10f-46dc33a5cb14",
                   "type": "structure",
@@ -87840,10 +87981,9 @@
                       "name": "ChancePercent",
                       "persistentUuid": "8bb0eb77-4bb3-4677-860f-3bc7da6b8026",
                       "type": "number",
-                      "value": 80
+                      "value": 100
                     },
                     {
-                      "folded": true,
                       "name": "Common",
                       "persistentUuid": "359b0f4d-5172-4040-b3ca-a8655ed1b0d3",
                       "type": "structure",
@@ -87851,14 +87991,39 @@
                         {
                           "name": "Item1",
                           "persistentUuid": "c8cb1d1f-42c8-413b-9e24-f2ff3e890f17",
-                          "type": "string",
-                          "value": "rabbit_skin"
-                        },
-                        {
-                          "name": "Item2",
-                          "persistentUuid": "5cc5cf82-54c2-45af-b7ee-3f28a61cfe22",
-                          "type": "string",
-                          "value": "rabbit_foot"
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Guaranteed",
+                              "persistentUuid": "4380d02c-afe3-45fd-a0c5-3e9329ff1f4a",
+                              "type": "boolean",
+                              "value": false
+                            },
+                            {
+                              "name": "ID",
+                              "persistentUuid": "3a0b99a5-b03e-4e67-b123-5c1207576d1a",
+                              "type": "string",
+                              "value": "item_test"
+                            },
+                            {
+                              "name": "MaxQuantity",
+                              "persistentUuid": "9333f8fe-fe5b-4919-abb7-51cb5bac5083",
+                              "type": "number",
+                              "value": 3
+                            },
+                            {
+                              "name": "MinQuantity",
+                              "persistentUuid": "0a2fe8ba-fdd5-414c-abda-d9bbd4da3d2b",
+                              "type": "number",
+                              "value": 3
+                            },
+                            {
+                              "name": "Weight",
+                              "persistentUuid": "18e1e900-d22e-4983-ba00-cae3f69ba477",
+                              "type": "number",
+                              "value": 1
+                            }
+                          ]
                         },
                         {
                           "name": "Weight",
@@ -87873,6 +88038,12 @@
                       "persistentUuid": "29e733bd-b124-4ea5-b28c-a7516b6b4499",
                       "type": "boolean",
                       "value": true
+                    },
+                    {
+                      "name": "Rolls",
+                      "persistentUuid": "f8e43000-1ac4-40e2-b087-e6180fce5d64",
+                      "type": "number",
+                      "value": 1
                     }
                   ]
                 },
@@ -126759,6 +126930,28 @@
                         "        message.subType || \"0\"",
                         "      ).trim() || \"0\";",
                         "",
+                        "    let collectedQuantity =",
+                        "      Number(message.quantity);",
+                        "",
+                        "    if (",
+                        "      !Number.isFinite(",
+                        "        collectedQuantity",
+                        "      ) ||",
+                        "      collectedQuantity <= 0",
+                        "    ) {",
+                        "      finishCollectWithError(",
+                        "        \"INVALID_SERVER_QUANTITY\"",
+                        "      );",
+                        "",
+                        "      return;",
+                        "    }",
+                        "",
+                        "    collectedQuantity =",
+                        "      Math.max(",
+                        "        1,",
+                        "        Math.trunc(collectedQuantity)",
+                        "      );",
+                        "",
                         "    const globalVariables =",
                         "      runtimeScene",
                         "        .getGame()",
@@ -126797,13 +126990,18 @@
                         "        \"inventory\"",
                         "      );",
                         "",
-                        "    let targetSlot = null;",
-                        "    let targetMode = \"\";",
+                        "    const plannedChanges = [];",
+                        "    let remainingQuantity =",
+                        "      collectedQuantity;",
                         "",
+                        "    /*",
+                        "     * First fill existing stacks of the same item.",
+                        "     */",
                         "    for (",
                         "      let slotIndex = 0;",
                         "      slotIndex <",
-                        "        inventory.getChildrenCount();",
+                        "        inventory.getChildrenCount() &&",
+                        "        remainingQuantity > 0;",
                         "      slotIndex++",
                         "    ) {",
                         "      const slot =",
@@ -126815,49 +127013,105 @@
                         "        slot",
                         "          .getChild(\"id\")",
                         "          .getAsString()",
-                        "          .trim() === itemID &&",
+                        "          .trim() !== itemID",
+                        "      ) {",
+                        "        continue;",
+                        "      }",
+                        "",
+                        "      const currentQuantity =",
+                        "        Math.max(",
+                        "          0,",
+                        "          Math.trunc(",
+                        "            slot",
+                        "              .getChild(\"quantity\")",
+                        "              .getAsNumber()",
+                        "          )",
+                        "        );",
+                        "",
+                        "      const freeSpace =",
+                        "        Math.max(",
+                        "          0,",
+                        "          maximumStack -",
+                        "            currentQuantity",
+                        "        );",
+                        "",
+                        "      if (freeSpace <= 0) {",
+                        "        continue;",
+                        "      }",
+                        "",
+                        "      const addedQuantity =",
+                        "        Math.min(",
+                        "          freeSpace,",
+                        "          remainingQuantity",
+                        "        );",
+                        "",
+                        "      plannedChanges.push({",
+                        "        slot,",
+                        "        mode: \"STACK\",",
+                        "        quantity:",
+                        "          currentQuantity +",
+                        "          addedQuantity,",
+                        "      });",
+                        "",
+                        "      remainingQuantity -=",
+                        "        addedQuantity;",
+                        "    }",
+                        "",
+                        "    /*",
+                        "     * Then use empty slots, splitting the server quantity according to",
+                        "     * max_stack when more than one slot is required.",
+                        "     */",
+                        "    for (",
+                        "      let slotIndex = 0;",
+                        "      slotIndex <",
+                        "        inventory.getChildrenCount() &&",
+                        "        remainingQuantity > 0;",
+                        "      slotIndex++",
+                        "    ) {",
+                        "      const slot =",
+                        "        inventory.getChildAt(",
+                        "          slotIndex",
+                        "        );",
+                        "",
+                        "      const slotItemID =",
                         "        slot",
-                        "          .getChild(\"quantity\")",
-                        "          .getAsNumber() <",
-                        "          maximumStack",
+                        "          .getChild(\"id\")",
+                        "          .getAsString()",
+                        "          .trim();",
+                        "",
+                        "      if (",
+                        "        slotItemID !== \"\" &&",
+                        "        slotItemID !== \"empty\" &&",
+                        "        slotItemID !== \"0\"",
                         "      ) {",
-                        "        targetSlot = slot;",
-                        "        targetMode = \"STACK\";",
-                        "        break;",
+                        "        continue;",
                         "      }",
+                        "",
+                        "      const addedQuantity =",
+                        "        Math.min(",
+                        "          maximumStack,",
+                        "          remainingQuantity",
+                        "        );",
+                        "",
+                        "      plannedChanges.push({",
+                        "        slot,",
+                        "        mode: \"EMPTY\",",
+                        "        quantity: addedQuantity,",
+                        "      });",
+                        "",
+                        "      remainingQuantity -=",
+                        "        addedQuantity;",
                         "    }",
                         "",
-                        "    if (!targetSlot) {",
-                        "      for (",
-                        "        let slotIndex = 0;",
-                        "        slotIndex <",
-                        "          inventory.getChildrenCount();",
-                        "        slotIndex++",
-                        "      ) {",
-                        "        const slot =",
-                        "          inventory.getChildAt(",
-                        "            slotIndex",
-                        "          );",
-                        "",
-                        "        const slotItemID =",
-                        "          slot",
-                        "            .getChild(\"id\")",
-                        "            .getAsString()",
-                        "            .trim();",
-                        "",
-                        "        if (",
-                        "          slotItemID === \"\" ||",
-                        "          slotItemID === \"empty\" ||",
-                        "          slotItemID === \"0\"",
-                        "        ) {",
-                        "          targetSlot = slot;",
-                        "          targetMode = \"EMPTY\";",
-                        "          break;",
-                        "        }",
-                        "      }",
-                        "    }",
-                        "",
-                        "    if (!targetSlot || itemID === \"\") {",
+                        "    /*",
+                        "     * The server already validated inventory capacity. Reaching this branch",
+                        "     * means the local GDevelop mirror is out of sync, so do not partially",
+                        "     * mutate it.",
+                        "     */",
+                        "    if (",
+                        "      remainingQuantity > 0 ||",
+                        "      itemID === \"\"",
+                        "    ) {",
                         "      finishCollectWithError(",
                         "        \"INVENTORY_CHANGED\"",
                         "      );",
@@ -126865,30 +127119,26 @@
                         "      return;",
                         "    }",
                         "",
-                        "    if (targetMode === \"STACK\") {",
-                        "      targetSlot",
+                        "    for (const change of plannedChanges) {",
+                        "      if (change.mode === \"EMPTY\") {",
+                        "        change.slot",
+                        "          .getChild(\"id\")",
+                        "          .setString(itemID);",
+                        "",
+                        "        change.slot",
+                        "          .getChild(\"type\")",
+                        "          .setString(itemType);",
+                        "",
+                        "        change.slot",
+                        "          .getChild(\"sub_type\")",
+                        "          .setString(itemSubType);",
+                        "      }",
+                        "",
+                        "      change.slot",
                         "        .getChild(\"quantity\")",
                         "        .setNumber(",
-                        "          targetSlot",
-                        "            .getChild(\"quantity\")",
-                        "            .getAsNumber() + 1",
+                        "          change.quantity",
                         "        );",
-                        "    } else {",
-                        "      targetSlot",
-                        "        .getChild(\"id\")",
-                        "        .setString(itemID);",
-                        "",
-                        "      targetSlot",
-                        "        .getChild(\"type\")",
-                        "        .setString(itemType);",
-                        "",
-                        "      targetSlot",
-                        "        .getChild(\"sub_type\")",
-                        "        .setString(itemSubType);",
-                        "",
-                        "      targetSlot",
-                        "        .getChild(\"quantity\")",
-                        "        .setNumber(1);",
                         "    }",
                         "",
                         "    sceneVariables",
@@ -126905,7 +127155,9 @@
                         "",
                         "    resultVariable.setString(",
                         "      \"SHARED_ITEM_COLLECTED: \" +",
-                        "      itemID",
+                        "      itemID +",
+                        "      \" x\" +",
+                        "      collectedQuantity",
                         "    );",
                         "",
                         "    gdjs.evtTools.sound.playSound(",
