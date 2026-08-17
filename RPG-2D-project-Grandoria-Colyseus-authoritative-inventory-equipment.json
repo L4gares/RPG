@@ -73848,6 +73848,50 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "Txt_HealthPotionCooldown",
+      "persistentUuid": "73ce9e3c-b5eb-4d86-a2fd-2b74b4d875c7",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "30",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 22,
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "30",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 22,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -74873,6 +74917,110 @@
                   ]
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "skills_data",
+      "persistentUuid": "cd280595-5fe2-4414-a835-437029bbdf09",
+      "type": "structure",
+      "folded": true,
+      "children": [
+        {
+          "name": "skill_heal_basic",
+          "persistentUuid": "c7099ab4-ee9d-48b4-b2ee-604a7f970cee",
+          "type": "structure",
+          "folded": true,
+          "children": [
+            {
+              "name": "available_to_all",
+              "persistentUuid": "217ea6ef-1e51-4936-9d8b-a421f61e1ffc",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "name": "cast_time_ms",
+              "persistentUuid": "5c5487d3-fd85-4d92-9131-d5e2aca10cee",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "cooldown_ms",
+              "persistentUuid": "a40631ea-36e3-4ec4-b830-6e2f39807254",
+              "type": "number",
+              "value": 30000
+            },
+            {
+              "name": "effects",
+              "persistentUuid": "9099f389-092b-4d7e-8a9d-add9047a7131",
+              "type": "structure",
+              "folded": true,
+              "children": [
+                {
+                  "name": "heal_percent_max_hp",
+                  "persistentUuid": "9ed2bb5b-5a30-49b3-b3bf-711456d8c256",
+                  "type": "number",
+                  "value": 20
+                }
+              ]
+            },
+            {
+              "name": "enabled",
+              "persistentUuid": "77711d7e-5ace-441d-a8cf-5178d77a250d",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "name": "name_display",
+              "persistentUuid": "46bb80f4-c349-4336-bc18-e0fbc27538e9",
+              "type": "string",
+              "value": "Basic Heal"
+            },
+            {
+              "name": "resource_cost",
+              "persistentUuid": "5885e38d-a705-48d3-84f7-40db18cac704",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "resource_type",
+              "persistentUuid": "410b6924-c34a-48b4-b1e4-1c23a8a20bb1",
+              "type": "string",
+              "value": "none"
+            },
+            {
+              "name": "scaling",
+              "persistentUuid": "2e3eeb1a-52e9-43e7-b7c4-7ec67049f7f4",
+              "type": "structure",
+              "folded": true,
+              "children": [
+                {
+                  "name": "attribute",
+                  "persistentUuid": "732488ce-297c-4685-ae7e-1e51962b42a7",
+                  "type": "string",
+                  "value": "none"
+                },
+                {
+                  "name": "per_point",
+                  "persistentUuid": "98aab729-6cb7-42d7-b7a5-c6b3b41137d3",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "target",
+              "persistentUuid": "bd98b720-9721-4f60-aa98-54c43b490fd2",
+              "type": "string",
+              "value": "self"
+            },
+            {
+              "name": "type",
+              "persistentUuid": "a50fca9c-97b2-4090-9bb6-7c485feaa34f",
+              "type": "string",
+              "value": "healing"
             }
           ]
         }
@@ -76570,6 +76718,24 @@
           "persistentUuid": "f4c70ff0-3520-4fa7-83aa-b31e11d21ede",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "BasicHealStatus",
+          "persistentUuid": "09c45cb5-2c50-470b-8643-ae261e3cf39f",
+          "type": "string",
+          "value": "IDLE"
+        },
+        {
+          "name": "BasicHealCooldownSeconds",
+          "persistentUuid": "fbf9a693-0835-4d90-b064-3b5f731e7992",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "BasicHealVisualPending",
+          "persistentUuid": "fea4ee3d-2ec7-4996-9281-85238622260c",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -83490,6 +83656,23 @@
           "x": 1075,
           "y": 25,
           "zOrder": 1000000,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 34,
+          "keepRatio": true,
+          "layer": "HUB_game",
+          "name": "Txt_HealthPotionCooldown",
+          "persistentUuid": "37d80745-6340-4652-87b8-bdf80331b5ae",
+          "width": 60,
+          "x": 244,
+          "y": 659,
+          "zOrder": 332,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -115971,7 +116154,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Set the boolean attack variable to identify when the attack sprite should be enabled. It is enabled when the button is pressed and the variable is false. Set the animation to attack_down_1 so the event logic can use it as the starting point for subsequent attacks."
+                  "comment": "Right-click release requests the attack through Colyseus. SendMonsterAttack checks the server-provided attackIntervalMs before setting character.attack=true, so the local animation cannot restart during the authoritative cooldown."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -116029,12 +116212,10 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "SetBooleanObjectVariable"
+                        "value": "GrandoriaColyseus::SendMonsterAttack"
                       },
                       "parameters": [
-                        "character",
-                        "attack",
-                        "True",
+                        "",
                         ""
                       ]
                     }
@@ -117202,17 +117383,6 @@
                         },
                         {
                           "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "potion_Life_hub",
-                            "Animation",
-                            "=",
-                            "\"potion_life\""
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "NumberObjectVariable"
                           },
                           "parameters": [
@@ -117221,6 +117391,16 @@
                             "<",
                             "character.max_HP"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "BasicHealCooldownSeconds",
+                            "<=",
+                            "0"
+                          ]
                         }
                       ]
                     }
@@ -117228,408 +117408,44 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ChangeColor"
+                        "value": "GrandoriaColyseus::UseSkill"
                       },
                       "parameters": [
-                        "Player_Tronco",
-                        "\"57;209;14\""
+                        "",
+                        "\"skill_heal_basic\""
                       ]
-                    },
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
                     {
                       "type": {
-                        "value": "ChangeColor"
+                        "value": "GrandoriaColyseus::UpdateBasicHealCooldown"
                       },
                       "parameters": [
-                        "PlayerParts",
-                        "\"57;209;14\""
+                        ""
                       ]
-                    },
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
-                        "value": "ChangeColor"
+                        "value": "NumberVariable"
                       },
                       "parameters": [
-                        "Player_Hair",
-                        "\"57;209;14\""
+                        "BasicHealCooldownSeconds",
+                        ">",
+                        "0"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Tronco",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Shadow",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_EyesWhite",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_BaseClothes",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "CharacterAppearanceStatus",
-                        "=",
-                        "\"DATA_READY\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Tronco",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "PlayerParts",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Hair",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Tronco",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberObjectVariable"
-                      },
-                      "parameters": [
-                        "character",
-                        "HP",
-                        "=",
-                        "min(\n  character.HP + (character.max_HP / 2),\n  character.max_HP\n)\n"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Shadow",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_EyesWhite",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_BaseClothes",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "CharacterAppearanceStatus",
-                        "=",
-                        "\"DATA_READY\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Tronco",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "PlayerParts",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Hair",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Tronco",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Shadow",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_EyesWhite",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_BaseClothes",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "CharacterAppearanceStatus",
-                        "=",
-                        "\"DATA_READY\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Tronco",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "PlayerParts",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Hair",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Tronco",
-                        "\"57;209;14\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Shadow",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_EyesWhite",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_BaseClothes",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "CharacterAppearanceStatus",
-                        "=",
-                        "\"DATA_READY\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_Shadow",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_EyesWhite",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeColor"
-                      },
-                      "parameters": [
-                        "Player_BaseClothes",
-                        "\"255;255;255\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "CharacterAppearanceStatus",
-                        "=",
-                        "\"DATA_READY\""
-                      ]
-                    },
+                    }
+                  ],
+                  "actions": [
                     {
                       "type": {
                         "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -117643,12 +117459,61 @@
                     },
                     {
                       "type": {
-                        "value": "Wait"
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                       },
                       "parameters": [
-                        "10"
+                        "Txt_HealthPotionCooldown",
+                        "Text",
+                        "=",
+                        "ToString(BasicHealCooldownSeconds)"
                       ]
                     },
+                    {
+                      "type": {
+                        "value": "SetX"
+                      },
+                      "parameters": [
+                        "Txt_HealthPotionCooldown",
+                        "=",
+                        "potion_Life_hub.X() + potion_Life_hub.Width()/2 - Txt_HealthPotionCooldown.Width()/2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetY"
+                      },
+                      "parameters": [
+                        "Txt_HealthPotionCooldown",
+                        "=",
+                        "potion_Life_hub.Y() + potion_Life_hub.Height()/2 - Txt_HealthPotionCooldown.Height()/2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Show"
+                      },
+                      "parameters": [
+                        "Txt_HealthPotionCooldown",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "BasicHealCooldownSeconds",
+                        "<=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
                     {
                       "type": {
                         "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -117658,6 +117523,434 @@
                         "Animation",
                         "=",
                         "\"potion_life\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "Txt_HealthPotionCooldown"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "BasicHealVisualPending",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "BasicHealVisualPending",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Tronco",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "PlayerParts",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Hair",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Tronco",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Shadow",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_EyesWhite",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_BaseClothes",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "CharacterAppearanceStatus",
+                        "=",
+                        "\"DATA_READY\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Tronco",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "PlayerParts",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Hair",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Tronco",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Shadow",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_EyesWhite",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_BaseClothes",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "CharacterAppearanceStatus",
+                        "=",
+                        "\"DATA_READY\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Tronco",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "PlayerParts",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Hair",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Tronco",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Shadow",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_EyesWhite",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_BaseClothes",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "CharacterAppearanceStatus",
+                        "=",
+                        "\"DATA_READY\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Tronco",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "PlayerParts",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Hair",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Tronco",
+                        "\"57;209;14\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Shadow",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_EyesWhite",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_BaseClothes",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "CharacterAppearanceStatus",
+                        "=",
+                        "\"DATA_READY\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_Shadow",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_EyesWhite",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Player_BaseClothes",
+                        "\"255;255;255\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "CharacterAppearanceStatus",
+                        "=",
+                        "\"DATA_READY\""
                       ]
                     }
                   ]
@@ -117671,7 +117964,7 @@
               "colorR": 245,
               "creationTime": 0,
               "folded": true,
-              "name": "LOCAL CHARACTER — LEVEL UP",
+              "name": "CHARACTER — AUTHORITATIVE LEVEL PROGRESS",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -117685,7 +117978,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "set the variables "
+                  "comment": "XP, Level and attribute-point rewards are calculated and persisted by Colyseus. This group only mirrors the authoritative values in the HUD."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -117709,122 +118002,8 @@
                       "parameters": [
                         "XP_HUD",
                         "=",
-                        "character.XP_NextLevel",
+                        "max(1, character.XP_NextLevel)",
                         ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "To Integer"
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberObjectVariable"
-                      },
-                      "parameters": [
-                        "character",
-                        "max_HP",
-                        "=",
-                        "max(0, ceil(character.Variable(max_HP)))"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberObjectVariable"
-                      },
-                      "parameters": [
-                        "character",
-                        "XP_NextLevel",
-                        "=",
-                        "max(0, ceil(character.Variable(XP_NextLevel)))"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "level up"
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "character",
-                        "XP",
-                        ">=",
-                        "character.XP_NextLevel"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberObjectVariable"
-                      },
-                      "parameters": [
-                        "character",
-                        "level",
-                        "+",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberObjectVariable"
-                      },
-                      "parameters": [
-                        "character",
-                        "XP",
-                        "-",
-                        "character.XP_NextLevel"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberObjectVariable"
-                      },
-                      "parameters": [
-                        "character",
-                        "XP_NextLevel",
-                        "*",
-                        "1.25"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberObjectVariable"
-                      },
-                      "parameters": [
-                        "character",
-                        "max_HP",
-                        "=",
-                        "ceil((50 + (FinalAttributes.Vitality * 2)) * pow(1.08, max(0, character.Variable(level) - 1)))"
                       ]
                     },
                     {
@@ -117834,411 +118013,7 @@
                       "parameters": [
                         "levels_numbers",
                         "=",
-                        "character.level - 1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "ActiveCharacterData.Experience",
-                        "=",
-                        "character.Variable(XP)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "ActiveCharacterData.Level",
-                        "=",
-                        "character.Variable(level)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "ActiveCharacterData.UnspentAttributePoints",
-                        "+",
-                        "ProgressionConfig[\"AttributePointsPerLevel\"]"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "ActiveCharacterData.Resources.MaxHP",
-                        "=",
-                        "character.Variable(max_HP)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "ActiveCharacterData.Resources.CurrentHP",
-                        "=",
-                        "character.Variable(HP)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "CharacterProgressSaveResult",
-                        "=",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "CharacterProgressSaveStatus",
-                        "=",
-                        "\"REQUESTED\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status_action\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status \""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status_action\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status \""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status_action\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status \""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status_action\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status \""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status_action\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status \""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status_action\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status \""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status_action\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status \""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status_action\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status \""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status_action\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Life_Mana_Stamina",
-                        "Animation",
-                        "=",
-                        "\"HUB_status \""
+                        "max(0, character.level - 1)"
                       ]
                     }
                   ]
@@ -118320,7 +118095,7 @@
                         "character",
                         "max_HP",
                         "=",
-                        "ceil(\n  (50 + (FinalAttributes.Vitality * 2))\n  * pow(1.08, max(0, ActiveCharacterData.Level - 1))\n)"
+                        "ActiveCharacterData.Resources.MaxHP"
                       ]
                     },
                     {
@@ -119218,7 +118993,7 @@
                         "character",
                         "max_HP",
                         "=",
-                        "ceil(\n  (50 + (FinalAttributes.Vitality * 2))\n  * pow(1.08, max(0, ActiveCharacterData.Level - 1))\n)"
+                        "ActiveCharacterData.Resources.MaxHP"
                       ]
                     },
                     {
@@ -119566,7 +119341,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "PERSISTENT DATA - INVENTORY EQUIPMENT CURRENCIES"
+                  "comment": "PERSISTENT CHARACTER PROGRESS - INVENTORY, EQUIPMENT, AND CURRENCIES ARE SERVER-OWNED"
                 },
                 {
                   "folded": true,
@@ -119625,8 +119400,6 @@
                         "  sceneVariables.get(\"CharacterProgressDirty\");",
                         "",
                         "const currentSnapshot = JSON.stringify({",
-                        "  gold: globalVariables.get(\"player_Gold\").getAsNumber(),",
-                        "  gem: globalVariables.get(\"player_Gem\").getAsNumber(),",
                         "  level: activeCharacterData.getChild(\"Level\").getAsNumber(),",
                         "  experience: activeCharacterData.getChild(\"Experience\").getAsNumber(),",
                         "  attributes: activeCharacterData.getChild(\"Attributes\").toJSObject(),",
@@ -119639,7 +119412,6 @@
                         "",
                         "const previousSnapshot = snapshotVariable.getAsString();",
                         "const persistentDataMissing =",
-                        "  !activeCharacterData.hasChild(\"Currencies\") ||",
                         "  !activeCharacterData.hasChild(\"Level\") ||",
                         "  !activeCharacterData.hasChild(\"Experience\") ||",
                         "  !activeCharacterData.hasChild(\"Attributes\") ||",
@@ -119678,71 +119450,6 @@
                     "textR": 0
                   },
                   "comment": "save progress in firestone"
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "StringVariable"
-                      },
-                      "parameters": [
-                        "CharacterProgressSaveStatus",
-                        "=",
-                        "\"REQUESTED\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "StringVariable"
-                      },
-                      "parameters": [
-                        "PlayerUID",
-                        "!=",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "StringVariable"
-                      },
-                      "parameters": [
-                        "ActiveCharacterData.CharacterID",
-                        "!=",
-                        "\"\""
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::JsCode",
-                      "inlineCode": [
-                        "const sceneVariables =",
-                        "  runtimeScene.getVariables();",
-                        "",
-                        "const globalVariables =",
-                        "  runtimeScene.getGame().getVariables();",
-                        "",
-                        "const activeCharacterData =",
-                        "  sceneVariables.get(\"ActiveCharacterData\");",
-                        "",
-                        "const currencies =",
-                        "  activeCharacterData.getChild(\"Currencies\");",
-                        "",
-                        "currencies.getChild(\"Gold\").setNumber(",
-                        "  globalVariables.get(\"player_Gold\").getAsNumber()",
-                        ");",
-                        "",
-                        "currencies.getChild(\"Gem\").setNumber(",
-                        "  globalVariables.get(\"player_Gem\").getAsNumber()",
-                        ");"
-                      ],
-                      "parameterObjects": "",
-                      "useStrict": true,
-                      "eventsSheetExpanded": true
-                    }
-                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -122305,96 +122012,6 @@
                         },
                         {
                           "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.AttackPower",
-                            "+",
-                            "PendingAttributePoints.AttackPower"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.MagicPower",
-                            "+",
-                            "PendingAttributePoints.MagicPower"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.HealingPower",
-                            "+",
-                            "PendingAttributePoints.HealingPower"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.Agility",
-                            "+",
-                            "PendingAttributePoints.Agility"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.Vitality",
-                            "+",
-                            "PendingAttributePoints.Vitality"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.Regeneration",
-                            "+",
-                            "PendingAttributePoints.Regeneration"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.Armor",
-                            "+",
-                            "PendingAttributePoints.Armor"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.CriticalChance",
-                            "+",
-                            "PendingAttributePoints.CriticalChance"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.UnspentAttributePoints",
-                            "-",
-                            "PendingPointsUsed"
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "SetStringVariable"
                           },
                           "parameters": [
@@ -122405,32 +122022,19 @@
                         },
                         {
                           "type": {
-                            "value": "SetStringVariable"
+                            "value": "GrandoriaColyseus::AllocateAttributes"
                           },
                           "parameters": [
-                            "FinalAttributesStatus",
-                            "=",
-                            "\"IDLE\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "CharacterProgressSaveResult",
-                            "=",
-                            "\"\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "CharacterProgressSaveStatus",
-                            "=",
-                            "\"REQUESTED\""
+                            "",
+                            "PendingAttributePoints.AttackPower",
+                            "PendingAttributePoints.MagicPower",
+                            "PendingAttributePoints.HealingPower",
+                            "PendingAttributePoints.Agility",
+                            "PendingAttributePoints.Vitality",
+                            "PendingAttributePoints.Regeneration",
+                            "PendingAttributePoints.Armor",
+                            "PendingAttributePoints.CriticalChance",
+                            ""
                           ]
                         }
                       ]
@@ -122446,27 +122050,7 @@
                           "parameters": [
                             "AttributeAllocationStatus",
                             "=",
-                            "\"SAVING\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "StringVariable"
-                          },
-                          "parameters": [
-                            "CharacterProgressSaveStatus",
-                            "=",
                             "\"SAVED\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "StringVariable"
-                          },
-                          "parameters": [
-                            "CharacterProgressSaveResult",
-                            "=",
-                            "\"ok\""
                           ]
                         }
                       ],
@@ -122589,16 +122173,6 @@
                             "=",
                             "\"IDLE\""
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "CharacterProgressSaveStatus",
-                            "=",
-                            "\"IDLE\""
-                          ]
                         }
                       ],
                       "events": [
@@ -122664,161 +122238,11 @@
                           "parameters": [
                             "AttributeAllocationStatus",
                             "=",
-                            "\"SAVING\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "StringVariable"
-                          },
-                          "parameters": [
-                            "CharacterProgressSaveStatus",
-                            "=",
-                            "\"SAVING\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "StringVariable"
-                          },
-                          "parameters": [
-                            "CharacterProgressSaveResult",
-                            "!=",
-                            "\"ok\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "StringVariable"
-                          },
-                          "parameters": [
-                            "CharacterProgressSaveResult",
-                            "!=",
-                            "\"\""
+                            "\"ERROR\""
                           ]
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.AttackPower",
-                            "-",
-                            "PendingAttributePoints.AttackPower"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.MagicPower",
-                            "-",
-                            "PendingAttributePoints.MagicPower"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.HealingPower",
-                            "-",
-                            "PendingAttributePoints.HealingPower"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.Agility",
-                            "-",
-                            "PendingAttributePoints.Agility"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.Vitality",
-                            "-",
-                            "PendingAttributePoints.Vitality"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.Regeneration",
-                            "-",
-                            "PendingAttributePoints.Regeneration"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.Armor",
-                            "-",
-                            "PendingAttributePoints.Armor"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.Attributes.Allocated.CriticalChance",
-                            "-",
-                            "PendingAttributePoints.CriticalChance"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "ActiveCharacterData.UnspentAttributePoints",
-                            "+",
-                            "PendingPointsUsed"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "FinalAttributesStatus",
-                            "=",
-                            "\"IDLE\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "CharacterProgressSaveStatus",
-                            "=",
-                            "\"IDLE\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetStringVariable"
-                          },
-                          "parameters": [
-                            "CharacterProgressSaveResult",
-                            "=",
-                            "\"\""
-                          ]
-                        },
                         {
                           "type": {
                             "value": "SetStringVariable"
@@ -125264,7 +124688,8 @@
                         ""
                       ]
                     }
-                  ]
+                  ],
+                  "disabled": true
                 }
               ],
               "parameters": []
@@ -138083,6 +137508,16 @@
                         "<=",
                         "inventory[sell_selected_slot_MERCHANT].quantity"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "sell_selected_quantity_MERCHANT",
+                        ">=",
+                        "1"
+                      ]
                     }
                   ],
                   "actions": [
@@ -138118,32 +137553,13 @@
                     },
                     {
                       "type": {
-                        "value": "SetNumberVariable"
+                        "value": "GrandoriaColyseus::SellItem"
                       },
                       "parameters": [
-                        "player_Gold",
-                        "+",
-                        "sell_selected_quantity_MERCHANT * items_data[\n    inventory[sell_selected_slot_MERCHANT].type\n][\n    inventory[sell_selected_slot_MERCHANT].sub_type\n][\n    inventory[sell_selected_slot_MERCHANT].id\n].sell_price"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "inventory[sell_selected_slot_MERCHANT].quantity",
-                        "-",
-                        "sell_selected_quantity_MERCHANT"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "sell_selected_max_MERCHANT",
-                        "=",
-                        "inventory[sell_selected_slot_MERCHANT].quantity"
+                        "",
+                        "inventory[sell_selected_slot_MERCHANT].id",
+                        "sell_selected_quantity_MERCHANT",
+                        ""
                       ]
                     }
                   ]
@@ -138299,36 +137715,6 @@
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "inventory[sell_selected_slot_MERCHANT].id",
-                        "=",
-                        "\"empty\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "inventory[sell_selected_slot_MERCHANT].type",
-                        "=",
-                        "\"0\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "inventory[sell_selected_slot_MERCHANT].sub_type",
-                        "=",
-                        "\"0\""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "Hide"
@@ -162028,7 +161414,7 @@
       "sceneVariables": [],
       "eventsFunctions": [
         {
-          "description": "Saves persistent character data to Firestore.\n",
+          "description": "Compatibility no-op. Character progression and Resources are persisted by the authoritative Colyseus server.",
           "fullName": "Backend_SaveCharacter",
           "functionType": "Action",
           "name": "SaveCharacter",
@@ -162037,74 +161423,18 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "const playerUID =",
-                "  String(",
-                "    eventsFunctionContext.getArgument(",
-                "      \"PlayerUID\"",
-                "    ) || \"\"",
-                "  );",
-                "",
-                "const characterID =",
-                "  String(",
-                "    eventsFunctionContext.getArgument(",
-                "      \"CharacterID\"",
-                "    ) || \"\"",
-                "  );",
-                "",
-                "const sceneVariables =",
-                "  runtimeScene.getVariables();",
-                "",
-                "const characterData =",
-                "  sceneVariables.get(",
-                "    \"ActiveCharacterData\"",
-                "  );",
-                "",
                 "const saveResult =",
-                "  sceneVariables.get(",
-                "    \"CharacterProgressSaveResult\"",
-                "  );",
+                "  runtimeScene",
+                "    .getVariables()",
+                "    .get(\"CharacterProgressSaveResult\");",
                 "",
-                "if (",
-                "  playerUID === \"\" ||",
-                "  characterID === \"\"",
-                ") {",
-                "  saveResult.setString(",
-                "    \"error: PlayerUID ou CharacterID vazio\"",
-                "  );",
-                "",
-                "  return;",
-                "}",
-                "",
-                "const progressData =",
-                "  new gdjs.Variable({",
-                "    type: \"structure\",",
-                "  });",
-                "",
-                "const persistentFields = [",
-                "  \"Experience\",",
-                "  \"Level\",",
-                "  \"Attributes\",",
-                "  \"Resources\",",
-                "  \"UnspentAttributePoints\",",
-                "  \"Currencies\",",
-                "];",
-                "",
-                "for (const fieldName of persistentFields) {",
-                "  gdjs.Variable.copy(",
-                "    characterData.getChild(fieldName),",
-                "    progressData.getChild(fieldName),",
-                "    false",
-                "  );",
-                "}",
-                "",
-                "gdjs.evtTools.firebaseTools.firestore.updateDocument(",
-                "  \"users/\" +",
-                "    playerUID +",
-                "    \"/characters\",",
-                "  characterID,",
-                "  progressData,",
-                "  saveResult",
-                ");"
+                "/*",
+                " * Character progression, attributes, Resources, inventory,",
+                " * equipment and currencies are authoritative on Colyseus.",
+                " * This function remains only as a compatibility no-op for",
+                " * older event calls that still expect an immediate save result.",
+                " */",
+                "saveResult.setString(\"ok\");"
               ],
               "parameterObjects": "",
               "useStrict": true,
@@ -162203,6 +161533,9 @@
                 "      equipmentSyncSessionId: null,",
                 "      lastSentEquipment: Object.create(null),",
                 "      sceneUnloadCallback: null,",
+                "      skillCooldownEndsAt: Object.create(null),",
+                "      skillUseRequestSequence: 0,",
+                "      lastSkillUseResult: null,",
                 "    },",
                 "    previousNetwork",
                 "  );",
@@ -162239,6 +161572,17 @@
                 ") {",
                 "  network.lastSentEquipment =",
                 "    Object.create(null);",
+                "}",
+                "",
+                "if (",
+                "  !network.skillCooldownEndsAt ||",
+                "  typeof network.skillCooldownEndsAt !== \"object\"",
+                ") {",
+                "  network.skillCooldownEndsAt = Object.create(null);",
+                "}",
+                "",
+                "if (!Number.isFinite(network.skillUseRequestSequence)) {",
+                "  network.skillUseRequestSequence = 0;",
                 "}",
                 "",
                 "const readTextArgument = (name) => {",
@@ -162535,6 +161879,8 @@
                 "  network.equipmentSyncSessionId = null;",
                 "  network.lastSentEquipment =",
                 "    Object.create(null);",
+                "  network.skillCooldownEndsAt = Object.create(null);",
+                "  network.lastSkillUseResult = null;",
                 "};",
                 "",
                 "if (",
@@ -163253,67 +162599,7 @@
                 "      );",
                 "",
                 "      room.onMessage(",
-                "        \"xp_awarded\",",
-                "        (reward) => {",
-                "          if (",
-                "            network.room !== room ||",
-                "            !reward",
-                "          ) {",
-                "            return;",
-                "          }",
-                "",
-                "          const amount = Math.max(",
-                "            0,",
-                "            Math.trunc(Number(reward.amount) || 0)",
-                "          );",
-                "",
-                "          if (amount === 0) {",
-                "            return;",
-                "          }",
-                "",
-                "          const characterObjects =",
-                "            runtimeScene.getObjects(\"character\");",
-                "",
-                "          if (characterObjects.length === 0) {",
-                "            return;",
-                "          }",
-                "",
-                "          const character = characterObjects[0];",
-                "          const characterVariables =",
-                "            character.getVariables();",
-                "          const xpVariable =",
-                "            characterVariables.get(\"XP\");",
-                "",
-                "          xpVariable.setNumber(",
-                "            xpVariable.getAsNumber() + amount",
-                "          );",
-                "",
-                "          const sceneVariables =",
-                "            runtimeScene.getVariables();",
-                "",
-                "          sceneVariables",
-                "            .get(\"ActiveCharacterData\")",
-                "            .getChild(\"Experience\")",
-                "            .setNumber(xpVariable.getAsNumber());",
-                "",
-                "          sceneVariables",
-                "            .get(\"CharacterProgressDirty\")",
-                "            .setBoolean(true);",
-                "",
-                "          console.log(",
-                "            \"[Grandoria] XP received:\",",
-                "            {",
-                "              amount,",
-                "              monsterId: reward.monsterId,",
-                "              monsterType: reward.monsterType,",
-                "              currentXP: xpVariable.getAsNumber(),",
-                "            }",
-                "          );",
-                "        }",
-                "      );",
-                "",
-                "      room.onMessage(",
-                "        \"set_max_health_result\",",
+                "        \"sell_item_result\",",
                 "        (result) => {",
                 "          if (",
                 "            network.room !== room ||",
@@ -163322,19 +162608,385 @@
                 "            return;",
                 "          }",
                 "",
-                "          if (",
-                "            Number.isFinite(",
-                "              Number(result.maxHealth)",
-                "            )",
-                "          ) {",
-                "            network.lastRequestedMaxHealth =",
-                "              Number(result.maxHealth);",
+                "          network.lastSaleResult = result;",
+                "",
+                "          const globalVariables =",
+                "            runtimeScene",
+                "              .getGame()",
+                "              .getVariables();",
+                "          const sceneVariables =",
+                "            runtimeScene.getVariables();",
+                "",
+                "          if (Array.isArray(result.inventory)) {",
+                "            const inventoryVariable =",
+                "              globalVariables.get(\"inventory\");",
+                "",
+                "            inventoryVariable.clearChildren();",
+                "            inventoryVariable.castTo(\"array\");",
+                "",
+                "            for (",
+                "              let index = 0;",
+                "              index < result.inventory.length;",
+                "              index++",
+                "            ) {",
+                "              const source =",
+                "                result.inventory[index] || {};",
+                "              const target =",
+                "                inventoryVariable.getChildAt(index);",
+                "",
+                "              target.castTo(\"structure\");",
+                "              target.getChild(\"id\").setString(",
+                "                String(source.id || \"empty\")",
+                "              );",
+                "              target.getChild(\"type\").setString(",
+                "                String(source.type || \"0\")",
+                "              );",
+                "              target.getChild(\"sub_type\").setString(",
+                "                String(source.sub_type || \"0\")",
+                "              );",
+                "              target.getChild(\"quantity\").setNumber(",
+                "                Math.max(",
+                "                  0,",
+                "                  Math.trunc(Number(source.quantity) || 0)",
+                "                )",
+                "              );",
+                "            }",
+                "",
+                "            const normalized =",
+                "              result.inventory.map((slot) => ({",
+                "                id: String(slot.id || \"empty\"),",
+                "                type: String(slot.type || \"0\"),",
+                "                sub_type: String(slot.sub_type || \"0\"),",
+                "                quantity: Math.max(",
+                "                  0,",
+                "                  Math.trunc(Number(slot.quantity) || 0)",
+                "                ),",
+                "              }));",
+                "",
+                "            network.lastInventoryOrderSignature =",
+                "              JSON.stringify(normalized);",
+                "",
+                "            const totals = Object.create(null);",
+                "",
+                "            for (const slot of normalized) {",
+                "              if (",
+                "                slot.id !== \"empty\" &&",
+                "                slot.quantity > 0",
+                "              ) {",
+                "                totals[slot.id] =",
+                "                  (totals[slot.id] || 0) +",
+                "                  slot.quantity;",
+                "              }",
+                "            }",
+                "",
+                "            network.lastInventoryTotalsSignature =",
+                "              JSON.stringify(",
+                "                Object.entries(totals).sort()",
+                "              );",
+                "",
+                "            const selectedSlot = Math.trunc(",
+                "              sceneVariables",
+                "                .get(\"sell_selected_slot_MERCHANT\")",
+                "                .getAsNumber()",
+                "            );",
+                "            const selectedItem =",
+                "              selectedSlot >= 0",
+                "                ? normalized[selectedSlot]",
+                "                : null;",
+                "            const remainingQuantity =",
+                "              selectedItem &&",
+                "              selectedItem.id !== \"empty\"",
+                "                ? selectedItem.quantity",
+                "                : 0;",
+                "",
+                "            sceneVariables",
+                "              .get(\"sell_selected_max_MERCHANT\")",
+                "              .setNumber(remainingQuantity);",
+                "",
+                "            if (",
+                "              remainingQuantity > 0 &&",
+                "              sceneVariables",
+                "                .get(\"sell_selected_quantity_MERCHANT\")",
+                "                .getAsNumber() > remainingQuantity",
+                "            ) {",
+                "              sceneVariables",
+                "                .get(\"sell_selected_quantity_MERCHANT\")",
+                "                .setNumber(remainingQuantity);",
+                "            }",
                 "          }",
                 "",
-                "          console.log(",
-                "            \"[Grandoria] Max health result:\",",
-                "            result",
+                "          const gold = Number(result.gold);",
+                "          const gem = Number(result.gem);",
+                "          const activeCharacterData =",
+                "            sceneVariables.get(",
+                "              \"ActiveCharacterData\"",
+                "            );",
+                "          const currencies =",
+                "            activeCharacterData.getChild(",
+                "              \"Currencies\"",
+                "            );",
+                "",
+                "          if (Number.isFinite(gold)) {",
+                "            globalVariables",
+                "              .get(\"player_Gold\")",
+                "              .setNumber(gold);",
+                "            currencies",
+                "              .getChild(\"Gold\")",
+                "              .setNumber(gold);",
+                "          }",
+                "",
+                "          if (Number.isFinite(gem)) {",
+                "            globalVariables",
+                "              .get(\"player_Gem\")",
+                "              .setNumber(gem);",
+                "            currencies",
+                "              .getChild(\"Gem\")",
+                "              .setNumber(gem);",
+                "          }",
+                "",
+                "          sceneVariables",
+                "            .get(\"MarketSaleStatus\")",
+                "            .setString(",
+                "              String(",
+                "                result.code ||",
+                "                (result.ok",
+                "                  ? \"ITEM_SOLD\"",
+                "                  : \"SALE_FAILED\")",
+                "              )",
+                "            );",
+                "",
+                "          if (result.ok) {",
+                "            console.log(",
+                "              \"[Grandoria] Sale confirmed:\",",
+                "              result",
+                "            );",
+                "          } else {",
+                "            console.warn(",
+                "              \"[Grandoria] Sale rejected:\",",
+                "              result",
+                "            );",
+                "          }",
+                "        }",
+                "      );",
+                "",
+                "      room.onMessage(",
+                "        \"use_skill_result\",",
+                "        (result) => {",
+                "          if (network.room !== room || !result) {",
+                "            return;",
+                "          }",
+                "",
+                "          network.lastSkillUseResult = result;",
+                "",
+                "          const skillID = String(result.skillID || \"\").trim();",
+                "          const remainingMs = Math.max(",
+                "            0,",
+                "            Number(result.cooldownRemainingMs) || 0",
                 "          );",
+                "",
+                "          if (skillID) {",
+                "            if (remainingMs > 0) {",
+                "              network.skillCooldownEndsAt[skillID] = Date.now() + remainingMs;",
+                "            } else {",
+                "              delete network.skillCooldownEndsAt[skillID];",
+                "            }",
+                "          }",
+                "",
+                "          const sceneVariables = runtimeScene.getVariables();",
+                "",
+                "          if (skillID === \"skill_heal_basic\") {",
+                "            sceneVariables",
+                "              .get(\"BasicHealStatus\")",
+                "              .setString(String(result.code || (result.ok ? \"SKILL_USED\" : \"SKILL_FAILED\")));",
+                "            sceneVariables",
+                "              .get(\"BasicHealCooldownSeconds\")",
+                "              .setNumber(remainingMs > 0 ? Math.ceil(remainingMs / 1000) : 0);",
+                "",
+                "            if (result.ok) {",
+                "              sceneVariables.get(\"BasicHealVisualPending\").setBoolean(true);",
+                "            }",
+                "          }",
+                "",
+                "          const currentHealth = Number(result.currentHealth);",
+                "          const maxHealth = Number(result.maxHealth);",
+                "",
+                "          if (Number.isFinite(currentHealth)) {",
+                "            const activeCharacterData = sceneVariables.get(\"ActiveCharacterData\");",
+                "            activeCharacterData",
+                "              .getChild(\"Resources\")",
+                "              .getChild(\"CurrentHP\")",
+                "              .setNumber(currentHealth);",
+                "",
+                "            for (const characterObject of runtimeScene.getObjects(\"character\")) {",
+                "              characterObject.getVariables().get(\"HP\").setNumber(currentHealth);",
+                "            }",
+                "          }",
+                "",
+                "          if (Number.isFinite(maxHealth)) {",
+                "            const activeCharacterData = sceneVariables.get(\"ActiveCharacterData\");",
+                "            activeCharacterData",
+                "              .getChild(\"Resources\")",
+                "              .getChild(\"MaxHP\")",
+                "              .setNumber(maxHealth);",
+                "",
+                "            for (const characterObject of runtimeScene.getObjects(\"character\")) {",
+                "              characterObject.getVariables().get(\"max_HP\").setNumber(maxHealth);",
+                "            }",
+                "          }",
+                "",
+                "          if (result.ok) {",
+                "            console.log(\"[Grandoria] Skill confirmed:\", result);",
+                "          } else {",
+                "            console.warn(\"[Grandoria] Skill rejected:\", result);",
+                "          }",
+                "        }",
+                "      );",
+                "",
+                "      room.onMessage(",
+                "        \"skill_cooldown_state\",",
+                "        (result) => {",
+                "          if (network.room !== room || !result) {",
+                "            return;",
+                "          }",
+                "",
+                "          network.skillCooldownEndsAt = Object.create(null);",
+                "          const cooldowns = result.cooldowns && typeof result.cooldowns === \"object\"",
+                "            ? result.cooldowns",
+                "            : {};",
+                "",
+                "          for (const [skillID, rawRemainingMs] of Object.entries(cooldowns)) {",
+                "            const remainingMs = Math.max(0, Number(rawRemainingMs) || 0);",
+                "",
+                "            if (remainingMs > 0) {",
+                "              network.skillCooldownEndsAt[skillID] = Date.now() + remainingMs;",
+                "            }",
+                "          }",
+                "",
+                "          const basicHealRemaining = Math.max(",
+                "            0,",
+                "            Number(cooldowns.skill_heal_basic) || 0",
+                "          );",
+                "",
+                "          runtimeScene",
+                "            .getVariables()",
+                "            .get(\"BasicHealCooldownSeconds\")",
+                "            .setNumber(",
+                "              basicHealRemaining > 0",
+                "                ? Math.ceil(basicHealRemaining / 1000)",
+                "                : 0",
+                "            );",
+                "        }",
+                "      );",
+                "",
+                "      try {",
+                "        room.send(\"request_skill_cooldowns\", {});",
+                "      } catch (error) {",
+                "        console.warn(\"[Grandoria] Failed to request skill cooldown state:\", error);",
+                "      }",
+                "",
+                "      room.onMessage(",
+                "        \"allocate_attributes_result\",",
+                "        (result) => {",
+                "          if (network.room !== room || !result) {",
+                "            return;",
+                "          }",
+                "",
+                "          const sceneVariables = runtimeScene.getVariables();",
+                "",
+                "          if (!result.ok) {",
+                "            sceneVariables",
+                "              .get(\"CharacterProgressLastError\")",
+                "              .setString(String(result.code || \"ATTRIBUTE_ALLOCATION_FAILED\"));",
+                "            sceneVariables",
+                "              .get(\"AttributeAllocationStatus\")",
+                "              .setString(\"ERROR\");",
+                "",
+                "            console.warn(\"[Grandoria] Attribute allocation rejected:\", result);",
+                "            return;",
+                "          }",
+                "",
+                "          const activeCharacterData = sceneVariables.get(\"ActiveCharacterData\");",
+                "          const allocatedVariable = activeCharacterData",
+                "            .getChild(\"Attributes\")",
+                "            .getChild(\"Allocated\");",
+                "          const attributeNames = [",
+                "            \"AttackPower\",",
+                "            \"MagicPower\",",
+                "            \"HealingPower\",",
+                "            \"Agility\",",
+                "            \"Vitality\",",
+                "            \"Regeneration\",",
+                "            \"Armor\",",
+                "            \"CriticalChance\",",
+                "          ];",
+                "",
+                "          for (const attributeName of attributeNames) {",
+                "            const value = Number(result.allocated?.[attributeName]);",
+                "            if (Number.isFinite(value)) {",
+                "              allocatedVariable.getChild(attributeName).setNumber(value);",
+                "            }",
+                "          }",
+                "",
+                "          activeCharacterData",
+                "            .getChild(\"UnspentAttributePoints\")",
+                "            .setNumber(Math.max(0, Math.trunc(Number(result.unspentAttributePoints) || 0)));",
+                "",
+                "          sceneVariables.get(\"FinalAttributesStatus\").setString(\"IDLE\");",
+                "          sceneVariables.get(\"CharacterProgressLastError\").setString(\"\");",
+                "          sceneVariables.get(\"AttributeAllocationStatus\").setString(\"SAVED\");",
+                "",
+                "          console.log(\"[Grandoria] Attribute allocation confirmed:\", result);",
+                "        }",
+                "      );",
+                "",
+                "      room.onMessage(",
+                "        \"progression_updated\",",
+                "        (result) => {",
+                "          if (network.room !== room || !result) {",
+                "            return;",
+                "          }",
+                "",
+                "          const sceneVariables = runtimeScene.getVariables();",
+                "",
+                "          if (!result.ok) {",
+                "            sceneVariables",
+                "              .get(\"CharacterProgressLastError\")",
+                "              .setString(String(result.code || \"PROGRESSION_UPDATE_FAILED\"));",
+                "",
+                "            console.warn(\"[Grandoria] Progression update rejected:\", result);",
+                "            return;",
+                "          }",
+                "",
+                "          const activeCharacterData = sceneVariables.get(\"ActiveCharacterData\");",
+                "          const experience = Math.max(0, Math.trunc(Number(result.experience) || 0));",
+                "          const level = Math.max(1, Math.trunc(Number(result.level) || 1));",
+                "          const experienceToNextLevel = Math.max(0, Math.trunc(Number(result.experienceToNextLevel) || 0));",
+                "          const unspentAttributePoints = Math.max(0, Math.trunc(Number(result.unspentAttributePoints) || 0));",
+                "",
+                "          activeCharacterData.getChild(\"Experience\").setNumber(experience);",
+                "          activeCharacterData.getChild(\"Level\").setNumber(level);",
+                "          activeCharacterData.getChild(\"UnspentAttributePoints\").setNumber(unspentAttributePoints);",
+                "",
+                "          const characterObjects = runtimeScene.getObjects(\"character\");",
+                "          if (characterObjects.length > 0) {",
+                "            const characterVariables = characterObjects[0].getVariables();",
+                "            characterVariables.get(\"XP\").setNumber(experience);",
+                "            characterVariables.get(\"level\").setNumber(level);",
+                "            characterVariables.get(\"XP_NextLevel\").setNumber(experienceToNextLevel);",
+                "          }",
+                "",
+                "          sceneVariables.get(\"CharacterProgressLastError\").setString(\"\");",
+                "",
+                "          console.log(\"[Grandoria] Authoritative progression synchronized:\", {",
+                "            amount: result.amount,",
+                "            experience,",
+                "            experienceToNextLevel,",
+                "            level,",
+                "            levelsGained: result.levelsGained,",
+                "            monsterId: result.monsterId,",
+                "            monsterType: result.monsterType,",
+                "            unspentAttributePoints,",
+                "          });",
                 "        }",
                 "      );",
                 "",
@@ -164252,6 +163904,25 @@
                 "    serverCurrentHealth > 0",
                 "  );",
                 "",
+                "/* Mirror authoritative health into ActiveCharacterData. */",
+                "const authoritativeHealthData =",
+                "  runtimeScene",
+                "    .getVariables()",
+                "    .get(\"ActiveCharacterData\")",
+                "    .getChild(\"Resources\");",
+                "",
+                "if (Number.isFinite(serverCurrentHealth)) {",
+                "  authoritativeHealthData",
+                "    .getChild(\"CurrentHP\")",
+                "    .setNumber(serverCurrentHealth);",
+                "}",
+                "",
+                "if (Number.isFinite(serverMaxHealth)) {",
+                "  authoritativeHealthData",
+                "    .getChild(\"MaxHP\")",
+                "    .setNumber(serverMaxHealth);",
+                "}",
+                "",
                 "const deltaSeconds = Math.min(",
                 "  runtimeScene.getElapsedTime() / 1000,",
                 "  0.05",
@@ -165157,8 +164828,6 @@
                 "  network.lastInventoryOrderSignature = null;",
                 "  network.lastInventoryTotalsSignature = null;",
                 "  network.inventoryOrderRequestSequence = 0;",
-                "  network.lastRequestedMaxHealth = null;",
-                "  network.maxHealthRequestSequence = 0;",
                 "",
                 "  for (const slotName of slotNames) {",
                 "    network.lastSentEquipment[slotName] =",
@@ -165267,54 +164936,7 @@
                 "",
                 "  network.lastInventoryOrderSignature = orderSignature;",
                 "}",
-                "",
-                "const activeCharacterData =",
-                "  runtimeScene",
-                "    .getVariables()",
-                "    .get(\"ActiveCharacterData\");",
-                "const savedMaxHealth = Math.max(",
-                "  1,",
-                "  Math.trunc(",
-                "    activeCharacterData",
-                "      .getChild(\"Resources\")",
-                "      .getChild(\"MaxHP\")",
-                "      .getAsNumber()",
-                "  )",
-                ");",
-                "const serverMaxHealth = network.localPlayer",
-                "  ? Math.max(",
-                "      1,",
-                "      Math.trunc(",
-                "        Number(network.localPlayer.maxHealth) || 1",
-                "      )",
-                "    )",
-                "  : savedMaxHealth;",
-                "",
-                "if (network.lastRequestedMaxHealth === null) {",
-                "  network.lastRequestedMaxHealth = serverMaxHealth;",
-                "}",
-                "",
-                "if (",
-                "  savedMaxHealth !== serverMaxHealth &&",
-                "  savedMaxHealth !== network.lastRequestedMaxHealth",
-                ") {",
-                "  network.maxHealthRequestSequence =",
-                "    (network.maxHealthRequestSequence || 0) + 1;",
-                "",
-                "  const requestId = [",
-                "    \"max_health\",",
-                "    currentSessionId,",
-                "    Date.now(),",
-                "    network.maxHealthRequestSequence,",
-                "  ].join(\"_\");",
-                "",
-                "  network.room.send(\"set_max_health\", {",
-                "    requestId,",
-                "    maxHealth: savedMaxHealth,",
-                "  });",
-                "",
-                "  network.lastRequestedMaxHealth = savedMaxHealth;",
-                "}"
+                ""
               ],
               "parameterObjects": "",
               "useStrict": true,
@@ -165435,6 +165057,117 @@
               "description": "Gold or Gem",
               "name": "Currency",
               "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Requests an authoritative item sale and waits for the server result.",
+          "fullName": "Sell an item",
+          "functionType": "Action",
+          "group": "Market",
+          "name": "SellItem",
+          "sentence": "Sell _PARAM2_ of item _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const network =",
+                "  gdjs._grandoriaColyseus;",
+                "",
+                "const itemID = String(",
+                "  eventsFunctionContext.getArgument(\"ItemID\") || \"\"",
+                ").trim();",
+                "",
+                "const quantity = Number(",
+                "  eventsFunctionContext.getArgument(\"Quantity\")",
+                ");",
+                "",
+                "if (",
+                "  !itemID ||",
+                "  !Number.isSafeInteger(quantity) ||",
+                "  quantity <= 0",
+                ") {",
+                "  console.warn(",
+                "    \"[Grandoria] Sale not sent: item or quantity is invalid.\",",
+                "    { itemID, quantity }",
+                "  );",
+                "",
+                "  return;",
+                "}",
+                "",
+                "if (",
+                "  !network ||",
+                "  network.status !== \"connected\" ||",
+                "  !network.room",
+                ") {",
+                "  console.warn(",
+                "    \"[Grandoria] Sale not sent: Colyseus is unavailable.\",",
+                "    { itemID, quantity }",
+                "  );",
+                "",
+                "  return;",
+                "}",
+                "",
+                "network.saleRequestSequence =",
+                "  (Number.isFinite(network.saleRequestSequence)",
+                "    ? network.saleRequestSequence",
+                "    : 0) + 1;",
+                "",
+                "const requestId = [",
+                "  \"sale\",",
+                "  String(network.room.sessionId || \"session\"),",
+                "  Date.now().toString(36),",
+                "  network.saleRequestSequence.toString(36),",
+                "].join(\"_\");",
+                "",
+                "try {",
+                "  network.room.send(",
+                "    \"sell_item\",",
+                "    {",
+                "      requestId,",
+                "      itemID,",
+                "      quantity,",
+                "    }",
+                "  );",
+                "",
+                "  network.lastSaleRequest = {",
+                "    requestId,",
+                "    itemID,",
+                "    quantity,",
+                "  };",
+                "",
+                "  runtimeScene",
+                "    .getVariables()",
+                "    .get(\"MarketSaleStatus\")",
+                "    .setString(\"SALE_PENDING\");",
+                "",
+                "  console.log(",
+                "    \"[Grandoria] Sale requested:\",",
+                "    network.lastSaleRequest",
+                "  );",
+                "} catch (error) {",
+                "  console.error(",
+                "    \"[Grandoria] Error sending sale:\",",
+                "    error",
+                "  );",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Catalog item ID",
+              "name": "ItemID",
+              "type": "string"
+            },
+            {
+              "description": "Positive integer quantity",
+              "name": "Quantity",
+              "type": "expression"
             }
           ],
           "objectGroups": []
@@ -165761,6 +165494,15 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
+                "const setLocalAttackState = (value) => {",
+                "  for (const characterObject of runtimeScene.getObjects(\"character\")) {",
+                "    characterObject",
+                "      .getVariables()",
+                "      .get(\"attack\")",
+                "      .setBoolean(Boolean(value));",
+                "  }",
+                "};",
+                "",
                 "const network =",
                 "  gdjs._grandoriaColyseus;",
                 "",
@@ -165771,6 +165513,8 @@
                 "  !network.localPlayer ||",
                 "  !(network.syncedMonsters instanceof Map)",
                 ") {",
+                "  setLocalAttackState(false);",
+                "",
                 "  console.warn(",
                 "    \"[Grandoria] Attack not sent: Colyseus state is unavailable.\"",
                 "  );",
@@ -165781,6 +165525,47 @@
                 "const player =",
                 "  network.localPlayer;",
                 "",
+                "/* [Grandoria] AUTHORITATIVE_ATTACK_INTERVAL_GATE */",
+                "const attackIntervalMs = Number(player.attackIntervalMs);",
+                "",
+                "if (!Number.isFinite(attackIntervalMs) || attackIntervalMs <= 0) {",
+                "  setLocalAttackState(false);",
+                "",
+                "  console.warn(",
+                "    \"[Grandoria] Attack not sent: authoritative attack interval is unavailable.\"",
+                "  );",
+                "",
+                "  return;",
+                "}",
+                "",
+                "const attackSessionId = String(network.room.sessionId || \"\");",
+                "const attackNow =",
+                "  globalThis.performance &&",
+                "  typeof globalThis.performance.now === \"function\"",
+                "    ? globalThis.performance.now()",
+                "    : Date.now();",
+                "",
+                "const sameAttackSession =",
+                "  network.lastAttackSessionId === attackSessionId;",
+                "const lastAttackSentAt = sameAttackSession",
+                "  ? Number(network.lastAttackSentAt)",
+                "  : Number.NaN;",
+                "const previousAttackIntervalMs = sameAttackSession",
+                "  ? Number(network.lastAttackIntervalMs)",
+                "  : Number.NaN;",
+                "const requiredIntervalMs =",
+                "  Number.isFinite(previousAttackIntervalMs) &&",
+                "  previousAttackIntervalMs > 0",
+                "    ? previousAttackIntervalMs",
+                "    : attackIntervalMs;",
+                "",
+                "if (",
+                "  Number.isFinite(lastAttackSentAt) &&",
+                "  attackNow - lastAttackSentAt < requiredIntervalMs",
+                ") {",
+                "  setLocalAttackState(false);",
+                "  return;",
+                "}",
                 "",
                 "const playerX =",
                 "  Number(player.x);",
@@ -165981,15 +165766,29 @@
                 "    attackMessage",
                 "  );",
                 "",
+                "  network.lastAttackSessionId = attackSessionId;",
+                "  network.lastAttackSentAt = attackNow;",
+                "  network.lastAttackIntervalMs = attackIntervalMs;",
+                "",
+                "  /*",
+                "   * Start the local visual only after the authoritative interval gate",
+                "   * permits the request. This prevents the 320 ms animation from restarting",
+                "   * visually while the server is still inside the attack cooldown.",
+                "   */",
+                "  setLocalAttackState(true);",
+                "",
                 "  console.log(",
                 "    \"[Grandoria] Attack sent:\",",
                 "    {",
                 "      monsterId:",
                 "        selectedMonsterId || null,",
                 "      direction,",
+                "      attackIntervalMs,",
                 "    }",
                 "  );",
                 "} catch (error) {",
+                "  setLocalAttackState(false);",
+                "",
                 "  console.error(",
                 "    \"[Grandoria] Error sending attack:\",",
                 "    error",
@@ -166003,6 +165802,244 @@
           ],
           "parameters": [],
           "objectGroups": []
+        },
+        {
+          "description": "Requests an authoritative allocation of pending character attribute points.",
+          "fullName": "Allocate character attributes",
+          "functionType": "Action",
+          "name": "AllocateAttributes",
+          "sentence": "Allocate pending character attributes on the authoritative server",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const network = gdjs._grandoriaColyseus;",
+                "const sceneVariables = runtimeScene.getVariables();",
+                "",
+                "const readPoint = (name) => {",
+                "  const value = Number(eventsFunctionContext.getArgument(name));",
+                "  return Number.isSafeInteger(value) && value >= 0 ? value : null;",
+                "};",
+                "",
+                "const allocations = {",
+                "  AttackPower: readPoint(\"AttackPower\"),",
+                "  MagicPower: readPoint(\"MagicPower\"),",
+                "  HealingPower: readPoint(\"HealingPower\"),",
+                "  Agility: readPoint(\"Agility\"),",
+                "  Vitality: readPoint(\"Vitality\"),",
+                "  Regeneration: readPoint(\"Regeneration\"),",
+                "  Armor: readPoint(\"Armor\"),",
+                "  CriticalChance: readPoint(\"CriticalChance\"),",
+                "};",
+                "",
+                "if (Object.values(allocations).some((value) => value === null)) {",
+                "  sceneVariables.get(\"CharacterProgressLastError\").setString(\"INVALID_ATTRIBUTE_ALLOCATION\");",
+                "  sceneVariables.get(\"AttributeAllocationStatus\").setString(\"ERROR\");",
+                "  return;",
+                "}",
+                "",
+                "const totalPoints = Object.values(allocations).reduce((sum, value) => sum + value, 0);",
+                "",
+                "if (totalPoints <= 0) {",
+                "  sceneVariables.get(\"CharacterProgressLastError\").setString(\"NO_ATTRIBUTE_POINTS_REQUESTED\");",
+                "  sceneVariables.get(\"AttributeAllocationStatus\").setString(\"ERROR\");",
+                "  return;",
+                "}",
+                "",
+                "if (!network || network.status !== \"connected\" || !network.room) {",
+                "  sceneVariables.get(\"CharacterProgressLastError\").setString(\"COLYSEUS_UNAVAILABLE\");",
+                "  sceneVariables.get(\"AttributeAllocationStatus\").setString(\"ERROR\");",
+                "  return;",
+                "}",
+                "",
+                "network.attributeAllocationRequestSequence =",
+                "  (Number.isFinite(network.attributeAllocationRequestSequence)",
+                "    ? network.attributeAllocationRequestSequence",
+                "    : 0) + 1;",
+                "",
+                "const requestId = [",
+                "  \"attributes\",",
+                "  String(network.room.sessionId || \"session\"),",
+                "  Date.now().toString(36),",
+                "  network.attributeAllocationRequestSequence.toString(36),",
+                "].join(\"_\");",
+                "",
+                "try {",
+                "  network.room.send(\"allocate_attributes\", { requestId, allocations });",
+                "  network.lastAttributeAllocationRequest = { requestId, allocations };",
+                "  console.log(\"[Grandoria] Attribute allocation requested:\", network.lastAttributeAllocationRequest);",
+                "} catch (error) {",
+                "  sceneVariables.get(\"CharacterProgressLastError\").setString(\"ATTRIBUTE_REQUEST_SEND_FAILED\");",
+                "  sceneVariables.get(\"AttributeAllocationStatus\").setString(\"ERROR\");",
+                "  console.error(\"[Grandoria] Error sending attribute allocation:\", error);",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Pending Attack Power points",
+              "name": "AttackPower",
+              "type": "expression"
+            },
+            {
+              "description": "Pending Magic Power points",
+              "name": "MagicPower",
+              "type": "expression"
+            },
+            {
+              "description": "Pending Healing Power points",
+              "name": "HealingPower",
+              "type": "expression"
+            },
+            {
+              "description": "Pending Agility points",
+              "name": "Agility",
+              "type": "expression"
+            },
+            {
+              "description": "Pending Vitality points",
+              "name": "Vitality",
+              "type": "expression"
+            },
+            {
+              "description": "Pending Regeneration points",
+              "name": "Regeneration",
+              "type": "expression"
+            },
+            {
+              "description": "Pending Armor points",
+              "name": "Armor",
+              "type": "expression"
+            },
+            {
+              "description": "Pending Critical Chance points",
+              "name": "CriticalChance",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Requests use of a skill on the authoritative Colyseus server.",
+          "fullName": "Use authoritative skill",
+          "functionType": "Action",
+          "name": "UseSkill",
+          "sentence": "Use skill _PARAM1_ on the authoritative server",
+          "parameters": [
+            {
+              "description": "Canonical Skill ID",
+              "name": "SkillID",
+              "type": "string"
+            }
+          ],
+          "objectGroups": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const network = gdjs._grandoriaColyseus;",
+                "const sceneVariables = runtimeScene.getVariables();",
+                "const skillID = String(eventsFunctionContext.getArgument(\"SkillID\") || \"\").trim();",
+                "",
+                "if (!skillID) {",
+                "  sceneVariables.get(\"BasicHealStatus\").setString(\"INVALID_SKILL_ID\");",
+                "  return;",
+                "}",
+                "",
+                "const now = Date.now();",
+                "const cooldownEndsAt = Number(network?.skillCooldownEndsAt?.[skillID]);",
+                "",
+                "if (Number.isFinite(cooldownEndsAt) && cooldownEndsAt > now) {",
+                "  if (skillID === \"skill_heal_basic\") {",
+                "    sceneVariables",
+                "      .get(\"BasicHealCooldownSeconds\")",
+                "      .setNumber(Math.ceil((cooldownEndsAt - now) / 1000));",
+                "    sceneVariables.get(\"BasicHealStatus\").setString(\"SKILL_ON_COOLDOWN\");",
+                "  }",
+                "  return;",
+                "}",
+                "",
+                "if (!network || network.status !== \"connected\" || !network.room) {",
+                "  if (skillID === \"skill_heal_basic\") {",
+                "    sceneVariables.get(\"BasicHealStatus\").setString(\"COLYSEUS_UNAVAILABLE\");",
+                "  }",
+                "  return;",
+                "}",
+                "",
+                "network.skillUseRequestSequence =",
+                "  (Number.isFinite(network.skillUseRequestSequence)",
+                "    ? network.skillUseRequestSequence",
+                "    : 0) + 1;",
+                "",
+                "const requestId = [",
+                "  \"skill\",",
+                "  String(network.room.sessionId || \"session\"),",
+                "  skillID,",
+                "  Date.now().toString(36),",
+                "  network.skillUseRequestSequence.toString(36),",
+                "].join(\"_\");",
+                "",
+                "try {",
+                "  network.room.send(\"use_skill\", { requestId, skillID });",
+                "",
+                "  if (skillID === \"skill_heal_basic\") {",
+                "    sceneVariables.get(\"BasicHealStatus\").setString(\"REQUESTED\");",
+                "  }",
+                "",
+                "  console.log(\"[Grandoria] Skill requested:\", { requestId, skillID });",
+                "} catch (error) {",
+                "  if (skillID === \"skill_heal_basic\") {",
+                "    sceneVariables.get(\"BasicHealStatus\").setString(\"SKILL_REQUEST_SEND_FAILED\");",
+                "  }",
+                "",
+                "  console.error(\"[Grandoria] Error sending skill request:\", error);",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "description": "Updates the local visual countdown for the universal heal from the last authoritative server result.",
+          "fullName": "Update basic heal cooldown HUD",
+          "functionType": "Action",
+          "name": "UpdateBasicHealCooldown",
+          "sentence": "Update the basic heal cooldown HUD",
+          "parameters": [],
+          "objectGroups": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const network = gdjs._grandoriaColyseus;",
+                "const sceneVariables = runtimeScene.getVariables();",
+                "const skillID = \"skill_heal_basic\";",
+                "const now = Date.now();",
+                "const cooldownEndsAt = Number(network?.skillCooldownEndsAt?.[skillID]);",
+                "const remainingMs =",
+                "  Number.isFinite(cooldownEndsAt) && cooldownEndsAt > now",
+                "    ? cooldownEndsAt - now",
+                "    : 0;",
+                "",
+                "if (remainingMs <= 0 && network?.skillCooldownEndsAt) {",
+                "  delete network.skillCooldownEndsAt[skillID];",
+                "}",
+                "",
+                "sceneVariables",
+                "  .get(\"BasicHealCooldownSeconds\")",
+                "  .setNumber(remainingMs > 0 ? Math.ceil(remainingMs / 1000) : 0);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
         }
       ],
       "eventsFunctionsFolderStructure": {
@@ -166054,8 +166091,14 @@
             "children": [
               {
                 "functionName": "BuyItem"
+              },
+              {
+                "functionName": "SellItem"
               }
             ]
+          },
+          {
+            "functionName": "AllocateAttributes"
           }
         ]
       },

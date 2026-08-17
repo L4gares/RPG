@@ -115971,7 +115971,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Right-click release requests the attack through Colyseus. SendMonsterAttack checks the server-provided attackIntervalMs before setting character.attack=true, so the local animation cannot restart during the authoritative cooldown."
+                  "comment": "Set the boolean attack variable to identify when the attack sprite should be enabled. It is enabled when the button is pressed and the variable is false. Set the animation to attack_down_1 so the event logic can use it as the starting point for subsequent attacks."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -116029,10 +116029,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "GrandoriaColyseus::SendMonsterAttack"
+                        "value": "SetBooleanObjectVariable"
                       },
                       "parameters": [
-                        "",
+                        "character",
+                        "attack",
+                        "True",
                         ""
                       ]
                     }
@@ -124393,8 +124395,7 @@
                         ""
                       ]
                     }
-                  ],
-                  "disabled": true
+                  ]
                 }
               ],
               "parameters": []
@@ -165068,15 +165069,6 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "const setLocalAttackState = (value) => {",
-                "  for (const characterObject of runtimeScene.getObjects(\"character\")) {",
-                "    characterObject",
-                "      .getVariables()",
-                "      .get(\"attack\")",
-                "      .setBoolean(Boolean(value));",
-                "  }",
-                "};",
-                "",
                 "const network =",
                 "  gdjs._grandoriaColyseus;",
                 "",
@@ -165087,8 +165079,6 @@
                 "  !network.localPlayer ||",
                 "  !(network.syncedMonsters instanceof Map)",
                 ") {",
-                "  setLocalAttackState(false);",
-                "",
                 "  console.warn(",
                 "    \"[Grandoria] Attack not sent: Colyseus state is unavailable.\"",
                 "  );",
@@ -165099,16 +165089,23 @@
                 "const player =",
                 "  network.localPlayer;",
                 "",
-                "/* [Grandoria] AUTHORITATIVE_ATTACK_INTERVAL_GATE */",
+                "/* [Grandoria] BASE_ATTACK_INTERVAL_AUTHORITATIVE */",
+                "const cancelLocalAttack = () => {",
+                "  for (const characterObject of runtimeScene.getObjects(\"character\")) {",
+                "    characterObject",
+                "      .getVariables()",
+                "      .get(\"attack\")",
+                "      .setBoolean(false);",
+                "  }",
+                "};",
+                "",
                 "const attackIntervalMs = Number(player.attackIntervalMs);",
                 "",
                 "if (!Number.isFinite(attackIntervalMs) || attackIntervalMs <= 0) {",
-                "  setLocalAttackState(false);",
-                "",
+                "  cancelLocalAttack();",
                 "  console.warn(",
                 "    \"[Grandoria] Attack not sent: authoritative attack interval is unavailable.\"",
                 "  );",
-                "",
                 "  return;",
                 "}",
                 "",
@@ -165124,22 +165121,15 @@
                 "const lastAttackSentAt = sameAttackSession",
                 "  ? Number(network.lastAttackSentAt)",
                 "  : Number.NaN;",
-                "const previousAttackIntervalMs = sameAttackSession",
-                "  ? Number(network.lastAttackIntervalMs)",
-                "  : Number.NaN;",
-                "const requiredIntervalMs =",
-                "  Number.isFinite(previousAttackIntervalMs) &&",
-                "  previousAttackIntervalMs > 0",
-                "    ? previousAttackIntervalMs",
-                "    : attackIntervalMs;",
                 "",
                 "if (",
                 "  Number.isFinite(lastAttackSentAt) &&",
-                "  attackNow - lastAttackSentAt < requiredIntervalMs",
+                "  attackNow - lastAttackSentAt < attackIntervalMs",
                 ") {",
-                "  setLocalAttackState(false);",
+                "  cancelLocalAttack();",
                 "  return;",
                 "}",
+                "",
                 "",
                 "const playerX =",
                 "  Number(player.x);",
@@ -165342,14 +165332,6 @@
                 "",
                 "  network.lastAttackSessionId = attackSessionId;",
                 "  network.lastAttackSentAt = attackNow;",
-                "  network.lastAttackIntervalMs = attackIntervalMs;",
-                "",
-                "  /*",
-                "   * Start the local visual only after the authoritative interval gate",
-                "   * permits the request. This prevents the 320 ms animation from restarting",
-                "   * visually while the server is still inside the attack cooldown.",
-                "   */",
-                "  setLocalAttackState(true);",
                 "",
                 "  console.log(",
                 "    \"[Grandoria] Attack sent:\",",
@@ -165357,12 +165339,9 @@
                 "      monsterId:",
                 "        selectedMonsterId || null,",
                 "      direction,",
-                "      attackIntervalMs,",
                 "    }",
                 "  );",
                 "} catch (error) {",
-                "  setLocalAttackState(false);",
-                "",
                 "  console.error(",
                 "    \"[Grandoria] Error sending attack:\",",
                 "    error",
