@@ -1,0 +1,4 @@
+Grandoria - UI organizada
+Pacote reorganizado para uso no GDevelop.
+Pastas: fonts, windows, buttons, icons, action_bar, character, spells, chat, minimap, unitframes, login, menu, notifications.
+Total de assets organizados: 112
