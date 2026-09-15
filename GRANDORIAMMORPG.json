@@ -100922,12 +100922,32 @@
         "gridColor": 1263086,
         "gridAlpha": 0.2,
         "snap": false,
-        "zoomFactor": 0.3553434558817999,
+        "zoomFactor": 0.8141881203712237,
         "windowMask": true,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [
+        {
+          "name": "Server_MonsterColliders",
+          "objects": [
+            {
+              "name": "MagicTreevillage"
+            },
+            {
+              "name": "cabana1"
+            },
+            {
+              "name": "collision_floor_1"
+            },
+            {
+              "name": "collision_mobs"
+            },
+            {
+              "name": "fogueira1"
+            }
+          ]
+        },
         {
           "name": "Group_AttributesPanel",
           "objects": [
@@ -141926,6 +141946,39 @@
               "value": 3
             }
           ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "rock2",
+          "persistentUuid": "6fc69396-ce33-4f58-adbf-ad2a79053472",
+          "width": 0,
+          "x": 183,
+          "y": 1486,
+          "zOrder": 1000080,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 16,
+          "keepRatio": true,
+          "layer": "floor_1",
+          "name": "collision_floor_1",
+          "persistentUuid": "9727c536-1483-4192-ac31-eb85e24e4871",
+          "width": 246,
+          "x": 169,
+          "y": 1368,
+          "zOrder": 338,
+          "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         }
@@ -205492,7 +205545,6 @@
                   "value": "Bandido"
                 },
                 {
-                  "folded": true,
                   "name": "Drops",
                   "persistentUuid": "9269d720-c9d6-49fa-8b8c-536cd65b1fe3",
                   "type": "structure",
@@ -205523,7 +205575,7 @@
                               "name": "ID",
                               "persistentUuid": "34638450-69f3-48eb-ad2e-962df245d5ec",
                               "type": "string",
-                              "value": "wild_boar_tusks"
+                              "value": "stolen_items"
                             },
                             {
                               "name": "MaxQuantity",
@@ -214886,6 +214938,1084 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "rock2",
+          "persistentUuid": "27f4319c-0921-48c8-8b9c-b2944d4544fe",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "YSort",
+              "type": "YSort::YSort"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Ruin5_grass_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 17,
+                        "y": 28.5
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 7.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9.5,
+                            "y": 28
+                          },
+                          {
+                            "x": 4.5,
+                            "y": 28
+                          },
+                          {
+                            "x": 2.5,
+                            "y": 25.5
+                          },
+                          {
+                            "x": 2.5,
+                            "y": 19.5
+                          },
+                          {
+                            "x": 6,
+                            "y": 19
+                          },
+                          {
+                            "x": 7,
+                            "y": 12.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 15,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 26,
+                            "y": 8
+                          },
+                          {
+                            "x": 27.5,
+                            "y": 10
+                          },
+                          {
+                            "x": 27.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 19,
+                            "y": 29
+                          },
+                          {
+                            "x": 15.5,
+                            "y": 28.5
+                          },
+                          {
+                            "x": 12.5,
+                            "y": 23
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Ruin5_ground_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 17,
+                        "y": 28.5
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 7.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9.5,
+                            "y": 28
+                          },
+                          {
+                            "x": 4.5,
+                            "y": 28
+                          },
+                          {
+                            "x": 2.5,
+                            "y": 25.5
+                          },
+                          {
+                            "x": 2.5,
+                            "y": 19.5
+                          },
+                          {
+                            "x": 6,
+                            "y": 19
+                          },
+                          {
+                            "x": 7,
+                            "y": 12.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 15,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 26,
+                            "y": 8
+                          },
+                          {
+                            "x": 27.5,
+                            "y": 10
+                          },
+                          {
+                            "x": 27.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 19,
+                            "y": 29
+                          },
+                          {
+                            "x": 15.5,
+                            "y": 28.5
+                          },
+                          {
+                            "x": 12.5,
+                            "y": 23
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Stone1_grass_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 33.5,
+                        "y": 55
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 31.5,
+                        "y": 17
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9.5,
+                            "y": 28
+                          },
+                          {
+                            "x": 8.5,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 22
+                          },
+                          {
+                            "x": 12.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 16.5,
+                            "y": 18.5
+                          },
+                          {
+                            "x": 21.5,
+                            "y": 17.5
+                          },
+                          {
+                            "x": 27,
+                            "y": 17
+                          },
+                          {
+                            "x": 37,
+                            "y": 14.5
+                          },
+                          {
+                            "x": 44.5,
+                            "y": 14.5
+                          },
+                          {
+                            "x": 51,
+                            "y": 18
+                          },
+                          {
+                            "x": 55.5,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 59.5,
+                            "y": 26.5
+                          },
+                          {
+                            "x": 51,
+                            "y": 44.5
+                          },
+                          {
+                            "x": 36,
+                            "y": 55.5
+                          },
+                          {
+                            "x": 25.5,
+                            "y": 51.5
+                          },
+                          {
+                            "x": 15.5,
+                            "y": 44
+                          },
+                          {
+                            "x": 12.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 12.5,
+                            "y": 29.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Stone1_ground_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 33,
+                        "y": 56
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 32.5,
+                        "y": 18
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8,
+                            "y": 25
+                          },
+                          {
+                            "x": 16,
+                            "y": 18.5
+                          },
+                          {
+                            "x": 35,
+                            "y": 14.5
+                          },
+                          {
+                            "x": 47.5,
+                            "y": 16.5
+                          },
+                          {
+                            "x": 59.5,
+                            "y": 26
+                          },
+                          {
+                            "x": 57,
+                            "y": 34.5
+                          },
+                          {
+                            "x": 54.5,
+                            "y": 36.5
+                          },
+                          {
+                            "x": 50,
+                            "y": 47.5
+                          },
+                          {
+                            "x": 43.5,
+                            "y": 53.5
+                          },
+                          {
+                            "x": 34.5,
+                            "y": 56.5
+                          },
+                          {
+                            "x": 15.5,
+                            "y": 45.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Stone2_grass_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 30.5,
+                        "y": 49
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 30,
+                        "y": 19
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.5,
+                            "y": 22.5
+                          },
+                          {
+                            "x": 19,
+                            "y": 19
+                          },
+                          {
+                            "x": 27.5,
+                            "y": 18
+                          },
+                          {
+                            "x": 34.5,
+                            "y": 18
+                          },
+                          {
+                            "x": 42,
+                            "y": 17.5
+                          },
+                          {
+                            "x": 48.5,
+                            "y": 18.5
+                          },
+                          {
+                            "x": 51.5,
+                            "y": 19.5
+                          },
+                          {
+                            "x": 51,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 53.5,
+                            "y": 27
+                          },
+                          {
+                            "x": 53.5,
+                            "y": 34.5
+                          },
+                          {
+                            "x": 49.5,
+                            "y": 41
+                          },
+                          {
+                            "x": 42,
+                            "y": 41.5
+                          },
+                          {
+                            "x": 37,
+                            "y": 36
+                          },
+                          {
+                            "x": 36.5,
+                            "y": 43.5
+                          },
+                          {
+                            "x": 28.5,
+                            "y": 49.5
+                          },
+                          {
+                            "x": 20,
+                            "y": 48
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 43
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Stone2_ground_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 31,
+                        "y": 51
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 30.5,
+                        "y": 19.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16.5,
+                            "y": 21.5
+                          },
+                          {
+                            "x": 22,
+                            "y": 19
+                          },
+                          {
+                            "x": 47,
+                            "y": 18.5
+                          },
+                          {
+                            "x": 51,
+                            "y": 25.5
+                          },
+                          {
+                            "x": 53.5,
+                            "y": 28.5
+                          },
+                          {
+                            "x": 53.5,
+                            "y": 32.5
+                          },
+                          {
+                            "x": 52,
+                            "y": 40.5
+                          },
+                          {
+                            "x": 47.5,
+                            "y": 42.5
+                          },
+                          {
+                            "x": 42.5,
+                            "y": 43
+                          },
+                          {
+                            "x": 37,
+                            "y": 36.5
+                          },
+                          {
+                            "x": 36.5,
+                            "y": 44
+                          },
+                          {
+                            "x": 29.5,
+                            "y": 50
+                          },
+                          {
+                            "x": 17,
+                            "y": 48.5
+                          },
+                          {
+                            "x": 13,
+                            "y": 44
+                          },
+                          {
+                            "x": 16.5,
+                            "y": 38
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 33
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 26.5
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 22.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Stone3_grass_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 17,
+                        "y": 28.5
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 7.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 26
+                          },
+                          {
+                            "x": 4,
+                            "y": 25
+                          },
+                          {
+                            "x": 2.5,
+                            "y": 19.5
+                          },
+                          {
+                            "x": 3,
+                            "y": 13
+                          },
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 15,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 26,
+                            "y": 8
+                          },
+                          {
+                            "x": 27.5,
+                            "y": 10
+                          },
+                          {
+                            "x": 31,
+                            "y": 14.5
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 18.5
+                          },
+                          {
+                            "x": 27.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 19,
+                            "y": 29
+                          },
+                          {
+                            "x": 15.5,
+                            "y": 28.5
+                          },
+                          {
+                            "x": 12.5,
+                            "y": 26.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Stone3_ground_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 17,
+                        "y": 28.5
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 7.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 25.5
+                          },
+                          {
+                            "x": 8,
+                            "y": 25.5
+                          },
+                          {
+                            "x": 4,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 2.5,
+                            "y": 19.5
+                          },
+                          {
+                            "x": 2.5,
+                            "y": 12.5
+                          },
+                          {
+                            "x": 6.5,
+                            "y": 11.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 15,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 26,
+                            "y": 8
+                          },
+                          {
+                            "x": 27.5,
+                            "y": 10
+                          },
+                          {
+                            "x": 30,
+                            "y": 11.5
+                          },
+                          {
+                            "x": 31,
+                            "y": 14.5
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 18.5
+                          },
+                          {
+                            "x": 31,
+                            "y": 20
+                          },
+                          {
+                            "x": 28.5,
+                            "y": 21.5
+                          },
+                          {
+                            "x": 26.5,
+                            "y": 27.5
+                          },
+                          {
+                            "x": 22,
+                            "y": 31
+                          },
+                          {
+                            "x": 16,
+                            "y": 30.5
+                          },
+                          {
+                            "x": 12.5,
+                            "y": 27
+                          },
+                          {
+                            "x": 12,
+                            "y": 26
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Stone4_grass_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 17,
+                        "y": 26.5
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 9
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8.5,
+                            "y": 26
+                          },
+                          {
+                            "x": 7.5,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 7.5,
+                            "y": 20.5
+                          },
+                          {
+                            "x": 7,
+                            "y": 12.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 15,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 26,
+                            "y": 8
+                          },
+                          {
+                            "x": 27.5,
+                            "y": 10
+                          },
+                          {
+                            "x": 28,
+                            "y": 15.5
+                          },
+                          {
+                            "x": 22.5,
+                            "y": 21
+                          },
+                          {
+                            "x": 17,
+                            "y": 20.5
+                          },
+                          {
+                            "x": 16.5,
+                            "y": 24
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 26.5
+                          },
+                          {
+                            "x": 11.5,
+                            "y": 26.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Stone4_ground_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 16.5,
+                        "y": 26.5
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 9
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.5,
+                            "y": 25.5
+                          },
+                          {
+                            "x": 12.5,
+                            "y": 27
+                          },
+                          {
+                            "x": 7.5,
+                            "y": 25.5
+                          },
+                          {
+                            "x": 7,
+                            "y": 19
+                          },
+                          {
+                            "x": 6,
+                            "y": 16
+                          },
+                          {
+                            "x": 6,
+                            "y": 12.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 15,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 26,
+                            "y": 8
+                          },
+                          {
+                            "x": 27.5,
+                            "y": 10
+                          },
+                          {
+                            "x": 28,
+                            "y": 15.5
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 20.5
+                          },
+                          {
+                            "x": 17,
+                            "y": 21
+                          },
+                          {
+                            "x": 16.5,
+                            "y": 23.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Stone5_grass_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 8.5,
+                        "y": 14
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 9,
+                        "y": 6
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 5
+                          },
+                          {
+                            "x": 13,
+                            "y": 4
+                          },
+                          {
+                            "x": 15,
+                            "y": 5
+                          },
+                          {
+                            "x": 15,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 14
+                          },
+                          {
+                            "x": 6,
+                            "y": 13.5
+                          },
+                          {
+                            "x": 3,
+                            "y": 11
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/objects-png/map1/grassland/pedras/Stone5_ground_shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 8.5,
+                        "y": 14
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 9,
+                        "y": 5.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 4.5
+                          },
+                          {
+                            "x": 13,
+                            "y": 3.5
+                          },
+                          {
+                            "x": 14,
+                            "y": 5.5
+                          },
+                          {
+                            "x": 15,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 12,
+                            "y": 11.5
+                          },
+                          {
+                            "x": 8.5,
+                            "y": 14
+                          },
+                          {
+                            "x": 5.5,
+                            "y": 13
+                          },
+                          {
+                            "x": 3.5,
+                            "y": 11
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -216009,6 +217139,9 @@
           },
           {
             "objectName": "rock"
+          },
+          {
+            "objectName": "rock2"
           },
           {
             "objectName": "bush"
@@ -219364,10 +220497,10 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": true,
+          "isLocked": false,
           "name": "floor_1",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -219628,7 +220761,7 @@
           "isLocked": true,
           "name": "HUB_game",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -219682,7 +220815,7 @@
           "isLocked": true,
           "name": "Inventory",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -219736,7 +220869,7 @@
           "isLocked": true,
           "name": "NPCs_windows",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -219790,7 +220923,7 @@
           "isLocked": true,
           "name": "AttributesLayer",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -219844,7 +220977,7 @@
           "isLocked": true,
           "name": "trade",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -219898,7 +221031,7 @@
           "isLocked": true,
           "name": "buttons_ingame",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -219952,7 +221085,7 @@
           "isLocked": true,
           "name": "chat_box",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -220006,7 +221139,7 @@
           "isLocked": true,
           "name": "Minimap",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -220060,7 +221193,7 @@
           "isLocked": true,
           "name": "QuestsLayer",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -220114,7 +221247,7 @@
           "isLocked": true,
           "name": "SkillsLayer",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -220168,7 +221301,7 @@
           "isLocked": true,
           "name": "BlacksmithLayer",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -220222,7 +221355,7 @@
           "isLocked": true,
           "name": "PartyHUDLayer",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -220276,7 +221409,7 @@
           "isLocked": true,
           "name": "PartyLayer",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -220330,7 +221463,7 @@
           "isLocked": true,
           "name": "SettingsLayer",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -247821,6 +248954,16 @@
                       "parameters": [
                         "character",
                         "rock",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SeparateFromObjects"
+                      },
+                      "parameters": [
+                        "character",
+                        "rock2",
                         ""
                       ]
                     },
